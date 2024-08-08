@@ -1,0 +1,42 @@
+.sliderFilm {
+    position: relative;
+    height: 1000px;
+
+    &__backdrop {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        &_img {
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__left {
+        z-index: 1;
+    }
+
+    &__logo {
+        &_img {
+            max-width: 500px;
+            height: auto;
+        }
+    }
+}

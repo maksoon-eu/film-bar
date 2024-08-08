@@ -1,0 +1,566 @@
+{
+    "docs": [
+        {
+            "rating": {
+                "kp": 8.628,
+                "imdb": 8.1,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "alternativeName": "The Big Bang Theory",
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a0000016b741cf4fe19ff4fce4f7a70cfdd/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a0000016b741cf4fe19ff4fce4f7a70cfdd/x1000"
+            },
+            "id": 306084,
+            "name": "Теория большого взрыва",
+            "description": "Два блестящих физика Леонард и Шелдон - великие умы, которые понимают, как устроена вселенная. Но их гениальность ничуть не помогает им общаться с людьми, особенно с женщинами. Всё начинает меняться, когда напротив них поселяется красавица Пенни. \n\nСтоит также отметить пару странных друзей этих физиков: Воловиц который любит употреблять фразы на разных языках, включая русский, а Раджеш Кутрапали теряет дар речи при виде женщин.",
+            "year": 2007,
+            "genres": [
+                {
+                    "name": "комедия"
+                },
+                {
+                    "name": "мелодрама"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "enName": "The Big Bang Theory",
+            "shortDescription": "Физики превращаются в лириков. Ситком про гениальных ученых-гиков, которые ищут любовь",
+            "ageRating": 18,
+            "logo": {
+                "url": "https://avatars.mds.yandex.net/get-ott/2385704/2a00000176f21cbab61e42c30e88f9c4bd2f/orig"
+            },
+            "top250": 14
+        },
+        {
+            "id": 508161,
+            "name": "Ходячие мертвецы",
+            "rating": {
+                "kp": 7.974,
+                "imdb": 8.1,
+                "filmCritics": 0,
+                "russianFilmCritics": 62.5,
+                "await": null
+            },
+            "description": "Зомби-эпидемия захлестнула планету. Шериф Рик Граймс путешествует с семьей и небольшой группой выживших в поисках безопасного места. Но постоянный страх смерти каждый день приносит тяжелые потери, заставляя товарищей по несчастью чувствовать глубины человеческой жестокости. Рик пытается спасти близких и понимает, что всепоглощающий страх людей может быть опаснее ходячих мертвецов.",
+            "year": 2010,
+            "genres": [
+                {
+                    "name": "ужасы"
+                },
+                {
+                    "name": "триллер"
+                },
+                {
+                    "name": "драма"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "alternativeName": "The Walking Dead",
+            "enName": "The Walking Dead",
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a0000017b772d61b2b35b200f466b544289/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a0000017b772d61b2b35b200f466b544289/x1000"
+            },
+            "shortDescription": "Как сохранить человеческое лицо в условиях зомби-апокалипсиса? Сериал-эпопея, совместивший хоррор и драму",
+            "ageRating": 18,
+            "logo": {
+                "url": "https://avatars.mds.yandex.net/get-ott/239697/2a0000017f206c8eaa0dcea1fb92d1beb652/orig"
+            },
+            "top250": 227
+        },
+        {
+            "id": 891337,
+            "name": "11.22.63",
+            "rating": {
+                "kp": 7.852,
+                "imdb": 8.1,
+                "filmCritics": 0,
+                "russianFilmCritics": 100,
+                "await": null
+            },
+            "description": "Учитель английского языка отправляется в прошлое, чтобы предотвратить убийство Кеннеди, но в результате сильно привязывается к той жизни, которая у него появилась в ушедшей эпохе.",
+            "year": 2016,
+            "genres": [
+                {
+                    "name": "фантастика"
+                },
+                {
+                    "name": "триллер"
+                },
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "детектив"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "alternativeName": "11.22.63",
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/223007/2a0000017c31f6a58afae8e48127bc516438/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/223007/2a0000017c31f6a58afae8e48127bc516438/x1000"
+            },
+            "enName": "11/22/63",
+            "ageRating": 18,
+            "shortDescription": "Школьный учитель проникает в прошлое, чтобы предотвратить убийство президента Кеннеди. По роману Стивена Кинга",
+            "logo": {
+                "url": "https://avatars.mds.yandex.net/get-ott/224348/2a0000017c31f707bb5278df22d9ab66049b/orig"
+            },
+            "top250": 235
+        },
+        {
+            "id": 823594,
+            "name": "Вечность",
+            "rating": {
+                "kp": 8.279,
+                "imdb": 8.2,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "description": "У доктора Генри Моргана, звездного судебно-медицинского эксперта Нью-Йорка, есть секрет. Он изучает мертвых не только, чтобы раскрывать уголовные дела. Он это делает, чтобы раскрыть тайну, которая ускользала от него на протяжении 200 лет, — причину своего бессмертия...",
+            "year": 2014,
+            "genres": [
+                {
+                    "name": "фантастика"
+                },
+                {
+                    "name": "фэнтези"
+                },
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "криминал"
+                },
+                {
+                    "name": "детектив"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "alternativeName": "Forever",
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/223007/2a000001658f19cedf06cb781401afefa2d5/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/223007/2a000001658f19cedf06cb781401afefa2d5/x1000"
+            },
+            "enName": "Forever",
+            "ageRating": 18,
+            "shortDescription": "Обаятельный судмедэксперт пытается найти причину своего бессмертия. Захватывающий детектив в духе «Менталиста»",
+            "logo": {
+                "url": "https://avatars.mds.yandex.net/get-ott/223007/2a0000016e043c122509d3bcb411afe262b9/orig"
+            },
+            "top250": 100
+        },
+        {
+            "id": 104122,
+            "name": "Остаться в живых",
+            "rating": {
+                "kp": 8.142,
+                "imdb": 8.3,
+                "filmCritics": 0,
+                "russianFilmCritics": 100,
+                "await": null
+            },
+            "description": "Красавец-лайнер, совершающий полет из Сиднея в Лос-Анджелес, неожиданно терпит крушение. 48 пассажиров оказываются на пустынном острове посреди океана. Люди в панике.\n\nНадежда быть найденными довольно призрачна. Поэтому остается только одно: собраться с силами и постараться выжить на острове, начиненном множеством опасностей...",
+            "year": 2004,
+            "genres": [
+                {
+                    "name": "фантастика"
+                },
+                {
+                    "name": "детектив"
+                },
+                {
+                    "name": "фэнтези"
+                },
+                {
+                    "name": "триллер"
+                },
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "приключения"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "alternativeName": "Lost",
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/239697/2a0000016a698e8bc8d139f5ee37f69114ea/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/239697/2a0000016a698e8bc8d139f5ee37f69114ea/x1000"
+            },
+            "enName": "Lost",
+            "shortDescription": "Выжившие в авиакатастрофе попадают на загадочный остров в Тихом океане. Главная приключенческая драма 2000-х",
+            "ageRating": 18,
+            "logo": {
+                "url": "https://avatars.mds.yandex.net/get-ott/1672343/2a0000016e044611ebe1caeafce7415d36c6/orig"
+            },
+            "top250": 120
+        },
+        {
+            "rating": {
+                "kp": 8.608,
+                "imdb": 8.4,
+                "filmCritics": 0,
+                "russianFilmCritics": 100,
+                "await": null
+            },
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/374297/2a0000018988658b54509d09e378788907ce/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/374297/2a0000018988658b54509d09e378788907ce/x1000"
+            },
+            "id": 1236393,
+            "name": "Голяк",
+            "description": "Мелкий воришка Винни и его друзья живут в английской глубинке и ежедневно промышляют нелегальными делами, приносящими небольшой доход. Все меняется, когда компания переходит дорогу местному криминальному авторитету.",
+            "year": 2019,
+            "genres": [
+                {
+                    "name": "комедия"
+                },
+                {
+                    "name": "криминал"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Великобритания"
+                }
+            ],
+            "alternativeName": "Brassic",
+            "enName": "Brassic",
+            "shortDescription": "Похождения Винни и его подельников в британской глубинке. Остроумная криминальная комедия с Джозефом Гилганом",
+            "ageRating": 18,
+            "logo": {
+                "url": "https://avatars.mds.yandex.net/get-ott/1672343/2a0000017f31d676433fb1ffc58fda212a02/orig"
+            },
+            "top250": 17
+        },
+        {
+            "id": 682255,
+            "name": "Викинги",
+            "rating": {
+                "kp": 8.158,
+                "imdb": 8.5,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "description": "Рассказ об отряде викингов Рагнара. Он восстал, чтобы стать королём племён викингов. Норвежская легенда гласит, что он был прямым потомком Одина, бога войны и воинов.",
+            "year": 2013,
+            "genres": [
+                {
+                    "name": "история"
+                },
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "боевик"
+                },
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "приключения"
+                },
+                {
+                    "name": "военный"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Ирландия"
+                },
+                {
+                    "name": "Канада"
+                }
+            ],
+            "alternativeName": "Vikings",
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/1672343/2a0000016edab0f0fc66cc174324ef76eaba/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/1672343/2a0000016edab0f0fc66cc174324ef76eaba/x1000"
+            },
+            "enName": "Vikings",
+            "shortDescription": "Амбициозный воин возглавляет поход на чужие земли и борется за власть. Эпический боевик по скандинавским сагам",
+            "ageRating": 18,
+            "logo": {
+                "url": "https://imagetmdb.com/t/p/original/x9sDkV3lDeleSkCUzKNE6VGLhwm.png"
+            },
+            "top250": 176
+        },
+        {
+            "id": 571335,
+            "name": "Бесстыжие",
+            "rating": {
+                "kp": 8.643,
+                "imdb": 8.5,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "description": "О взбалмошной многодетной семье Галлагеров и их соседях, которые веселятся, попадают в самые невероятные ситуации и пытаются выжить в этом мире всеми возможными средствами, но при этом как можно меньше работая.",
+            "year": 2011,
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "комедия"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "alternativeName": "Shameless",
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/1672343/2a0000017642e37cbfab7feb7395bad33169/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/1672343/2a0000017642e37cbfab7feb7395bad33169/x1000"
+            },
+            "enName": "Shameless",
+            "shortDescription": "Невероятные приключения непутевого папаши и его детей. Легендарная драмеди, которую хочется пересматривать",
+            "ageRating": 18,
+            "logo": {
+                "url": "https://avatars.mds.yandex.net/get-ott/2439731/2a0000017a456c49ee88b780d9dae9a3eb3d/orig"
+            },
+            "top250": 43
+        },
+        {
+            "rating": {
+                "kp": 8.283,
+                "imdb": 8.7,
+                "filmCritics": 0,
+                "russianFilmCritics": 75,
+                "await": null
+            },
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/2385704/2a000001717e04c997712b6aec7bb76a5899/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/2385704/2a000001717e04c997712b6aec7bb76a5899/x1000"
+            },
+            "id": 991739,
+            "name": "Дрянь",
+            "description": "История остроумной сексуально озабоченной и упивающейся своими горестями женщины, которая бросается на баррикады повседневности современного Лондона.",
+            "year": 2016,
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "комедия"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Великобритания"
+                }
+            ],
+            "alternativeName": "Fleabag",
+            "enName": "Flea Bag",
+            "shortDescription": "Душевные травмы, родня с причудами, беспорядочный секс и шутки на грани. Сериал-бенефис Фиби Уоллер-Бридж",
+            "ageRating": 18,
+            "logo": {
+                "url": "https://avatars.mds.yandex.net/get-ott/224348/2a00000176f155459ad66242616e4d5d57eb/orig"
+            },
+            "top250": 67
+        },
+        {
+            "id": 178710,
+            "name": "Доктор Хаус",
+            "rating": {
+                "kp": 8.795,
+                "imdb": 8.7,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "description": "Сериал рассказывает о команде врачей, которые должны правильно поставить диагноз пациенту и спасти его. Возглавляет команду доктор Грегори Хаус, который ходит с тростью после того, как его мышечный инфаркт в правой ноге слишком поздно правильно диагностировали. Как врач Хаус просто гений, но сам не отличается проникновенностью в общении с больными и с удовольствием избегает их, если только есть возможность. Он сам всё время проводит в борьбе с собственной болью, а трость в его руке только подчеркивает его жесткую, ядовитую манеру общения. Порой его поведение можно назвать почти бесчеловечным, и при этом он прекрасный врач, обладающий нетипичным умом и безупречным инстинктом, что снискало ему глубокое уважение. Будучи инфекционистом, он ещё и замечательный диагност, который любит разгадывать медицинские загадки, чтобы спасти кому-то жизнь. Если бы все было по его воле, то Хаус лечил бы больных не выходя из своего кабинета.",
+            "year": 2004,
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "детектив"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "alternativeName": "House, M.D.",
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/212840/2a0000016b94647cff0c079b6516bdcb1572/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/212840/2a0000016b94647cff0c079b6516bdcb1572/x1000"
+            },
+            "enName": "House",
+            "shortDescription": "Все люди врут, но этого не проведешь. Выдающийся медицинский детектив о докторе-гении",
+            "ageRating": 18,
+            "logo": {
+                "url": "https://avatars.mds.yandex.net/get-ott/1648503/2a0000016e4aedc43d624ce1456e2ce33e0d/orig"
+            },
+            "top250": 16
+        }
+    ],
+    "allGenres": [
+        {
+            "name": "аниме",
+            "slug": "anime"
+        },
+        {
+            "name": "биография",
+            "slug": "biografiya"
+        },
+        {
+            "name": "боевик",
+            "slug": "boevik"
+        },
+        {
+            "name": "вестерн",
+            "slug": "vestern"
+        },
+        {
+            "name": "военный",
+            "slug": "voennyy"
+        },
+        {
+            "name": "детектив",
+            "slug": "detektiv"
+        },
+        {
+            "name": "детский",
+            "slug": "detskiy"
+        },
+        {
+            "name": "для взрослых",
+            "slug": "dlya-vzroslyh"
+        },
+        {
+            "name": "документальный",
+            "slug": "dokumentalnyy"
+        },
+        {
+            "name": "драма",
+            "slug": "drama"
+        },
+        {
+            "name": "игра",
+            "slug": "igra"
+        },
+        {
+            "name": "история",
+            "slug": "istoriya"
+        },
+        {
+            "name": "комедия",
+            "slug": "komediya"
+        },
+        {
+            "name": "концерт",
+            "slug": "koncert"
+        },
+        {
+            "name": "короткометражка",
+            "slug": "korotkometrazhka"
+        },
+        {
+            "name": "криминал",
+            "slug": "kriminal"
+        },
+        {
+            "name": "мелодрама",
+            "slug": "melodrama"
+        },
+        {
+            "name": "музыка",
+            "slug": "muzyka"
+        },
+        {
+            "name": "мультфильм",
+            "slug": "multfilm"
+        },
+        {
+            "name": "мюзикл",
+            "slug": "myuzikl"
+        },
+        {
+            "name": "новости",
+            "slug": "novosti"
+        },
+        {
+            "name": "приключения",
+            "slug": "priklyucheniya"
+        },
+        {
+            "name": "реальное ТВ",
+            "slug": "realnoe-TV"
+        },
+        {
+            "name": "семейный",
+            "slug": "semeynyy"
+        },
+        {
+            "name": "спорт",
+            "slug": "sport"
+        },
+        {
+            "name": "ток-шоу",
+            "slug": "tok-shou"
+        },
+        {
+            "name": "триллер",
+            "slug": "triller"
+        },
+        {
+            "name": "ужасы",
+            "slug": "uzhasy"
+        },
+        {
+            "name": "фантастика",
+            "slug": "fantastika"
+        },
+        {
+            "name": "фильм-нуар",
+            "slug": "film-nuar"
+        },
+        {
+            "name": "фэнтези",
+            "slug": "fentezi"
+        },
+        {
+            "name": "церемония",
+            "slug": "ceremoniya"
+        }
+    ],
+    "total": 18,
+    "limit": 10,
+    "page": 1,
+    "pages": 2
+}
