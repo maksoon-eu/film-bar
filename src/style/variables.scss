@@ -1,9 +1,37 @@
 :root {
-	--font-family-main: consolas, "Times New Roman", serif;
-	--font-size-m: 16px;
-	--font-line-m: 24px;
+	--font-family-main: "Open Sans", sans-serif;
+
 	--font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
 
+    --font-size-m: 18px;
+    --font-size-l: 22px;
+    --font-size-xl: 26px;
+    --font-size-title: 32px;
+
+    --font-line-m: 24px;
+
+    --font-weight-m: 400;
+    --font-weight-l: 600;
+    --font-weight-xl: 900;
+
     --font-color: #fff;
-    --background-color: #000;
+    --font-color-kp: #f50;
+    --font-color-imdb: #f5c518;
+    --font-color-optional: #9b9b9b;
+
+    --background-color: #000000;
+    --background-color-widgets: #930215;
+    --background-color-assets: #93021571;
 }
+
+// #e91e62db
+
+// Основной цвет: #FF4081 (ярко-розовый)
+// Дополнительный цвет: #FFCDD2 (светло-розовый)
+// Акцентный цвет: #880E4F (темно-розовый)
+// Основной цвет: #E91E63 (темно-розовый)
+// Дополнительный цвет: #F8BBD0 (светло-розовый)
+// Акцентный цвет: #C2185B (глубокий розовый)
+// Основной цвет: #FF80AB (светло-розовый)
+// Дополнительный цвет: #FFC1E3 (пастельно-розовый)
+// Акцентный цвет: #F50057 (ярко-розовый)

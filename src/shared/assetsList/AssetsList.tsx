@@ -3,14 +3,15 @@ import { useAppSelector } from '../../hooks/selector.hook';
 import { compareGenreToGenreWithSlug } from '../../service/compareGenreToGenreWithSlug';
 import { selectGenres } from '../../store/features/featureGenres/featureGenresSelectors';
 import { NameItem } from '../../store/types/types';
-import styles from './genresList.module.scss';
+import styles from './assetsList.module.scss';
 import { IGenre } from '../../store/features/featureGenres/featureGenresTypes';
 
-interface GenresListProps {
-    genres: NameItem[];
+interface AssetsListProps {
+    list: NameItem[];
+    path: string;
 }
 
-const GenresList: React.FC<GenresListProps> = ({ genres }) => {
+const AssetsList: React.FC<AssetsListProps> = ({ list, path }) => {
     // const [modGenres, setModGenres] = useState<IGenre[]>([]);
 
     // const { loadingStatus, genres: genresWithSlug } = useAppSelector(selectGenres);
@@ -22,25 +23,28 @@ const GenresList: React.FC<GenresListProps> = ({ genres }) => {
     //     }
     // }, [genresWithSlug, genres]);
 
-    const genresList = genres.map((genre) => {
+    const assetsList = list.map((item) => {
         // const modGenre = modGenres[i];
-        const imagePath = require(`../../assets/icon/${genre.name}.png`);
+        let imagePath = null;
+        try {
+            imagePath = require(`../../assets/${path}/${item.name}.png`);
+        } catch {
+            imagePath = null;
+        }
 
         // if (modGenre) {
-            return (
-                <div key={genre.name} className={styles.genreList__item}>
-                    <img
-                        src={imagePath}
-                        alt=""
-                        className={styles.genreList__item_img}
-                    />
-                    <div className={styles.genreList__item_name}>{genre.name}</div>
-                </div>
-            );
+        return (
+            <div key={item.name} className={styles.assetsList__item}>
+                {imagePath ? (
+                    <img src={imagePath} alt="" className={styles.assetsList__item_img} />
+                ) : null}
+                <div className={styles.assetsList__item_name}>{item.name}</div>
+            </div>
+        );
         // }
     });
 
-    return <div className={styles.genresList}>{genresList}</div>;
+    return <div className={styles.assetsList}>{assetsList}</div>;
 };
 
-export default GenresList;
+export default AssetsList;

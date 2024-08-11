@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { request } from '../utils/api';
-import { IGenre, IGenres } from '../store/features/featureGenres/featureGenresTypes';
+import { IGenre } from '../store/features/featureGenres/featureGenresTypes';
 
 export const getGenres = createAsyncThunk<IGenre[], void, { rejectValue: string }>(
     'genres/getGenres',

@@ -1,0 +1,34 @@
+.genresSlider {
+    margin-top: 150px;
+    padding: 0 50px;
+
+    &__group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item {
+        border-radius: 10px;
+        padding: 10px 20px;
+        background-color: var(--background-color-assets);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &_img {
+            width: 150px;
+            margin: 0 30px;
+        }
+
+        &_name {
+            margin-top: 20px;
+            padding: 5px 0;
+            width: 100%;
+            text-align: center;
+            border-radius: 10px;
+            background-color: var(--background-color-widgets);
+        }
+    }
+}

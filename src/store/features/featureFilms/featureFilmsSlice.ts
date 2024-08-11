@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { getFilms } from '../../../service/filmsService';
-import { IFilms } from './featureMoviesTypes';
+import { IFilmsSlice } from './featureFilmsTypes';
 
-const initialState: IFilms = {
+const initialState: IFilmsSlice = {
     films: [],
     loadingStatus: 'idle',
 };

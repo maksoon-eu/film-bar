@@ -2,143 +2,23 @@
     "docs": [
         {
             "rating": {
-                "kp": 8.628,
-                "imdb": 8.1,
-                "filmCritics": 0,
-                "russianFilmCritics": 0,
+                "kp": 8.388,
+                "imdb": 8.6,
+                "filmCritics": 8.6,
+                "russianFilmCritics": 88.8889,
                 "await": null
             },
-            "alternativeName": "The Big Bang Theory",
             "backdrop": {
-                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a0000016b741cf4fe19ff4fce4f7a70cfdd/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a0000016b741cf4fe19ff4fce4f7a70cfdd/x1000"
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/236744/2a0000018ae27db581167489caa54b7dbb60/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/236744/2a0000018ae27db581167489caa54b7dbb60/x1000"
             },
-            "id": 306084,
-            "name": "Теория большого взрыва",
-            "description": "Два блестящих физика Леонард и Шелдон - великие умы, которые понимают, как устроена вселенная. Но их гениальность ничуть не помогает им общаться с людьми, особенно с женщинами. Всё начинает меняться, когда напротив них поселяется красавица Пенни. \n\nСтоит также отметить пару странных друзей этих физиков: Воловиц который любит употреблять фразы на разных языках, включая русский, а Раджеш Кутрапали теряет дар речи при виде женщин.",
-            "year": 2007,
+            "id": 1219177,
+            "name": "Человек-паук: Паутина вселенных",
+            "description": "После воссоединения с Гвен Стейси дружелюбный сосед Человек-Паук попадает из Бруклина в Мультивселенную, где встречает команду Паучков, защищающих само её существование. Пытаясь справиться с новой угрозой, Майлз сталкивается с Пауками из других вселенных. Настаёт момент, когда ему необходимо решить, что значит быть героем, спасающим тех, кого любишь больше всего.",
             "genres": [
                 {
-                    "name": "комедия"
+                    "name": "мультфильм"
                 },
-                {
-                    "name": "мелодрама"
-                }
-            ],
-            "countries": [
-                {
-                    "name": "США"
-                }
-            ],
-            "enName": "The Big Bang Theory",
-            "shortDescription": "Физики превращаются в лириков. Ситком про гениальных ученых-гиков, которые ищут любовь",
-            "ageRating": 18,
-            "logo": {
-                "url": "https://avatars.mds.yandex.net/get-ott/2385704/2a00000176f21cbab61e42c30e88f9c4bd2f/orig"
-            },
-            "top250": 14
-        },
-        {
-            "id": 508161,
-            "name": "Ходячие мертвецы",
-            "rating": {
-                "kp": 7.974,
-                "imdb": 8.1,
-                "filmCritics": 0,
-                "russianFilmCritics": 62.5,
-                "await": null
-            },
-            "description": "Зомби-эпидемия захлестнула планету. Шериф Рик Граймс путешествует с семьей и небольшой группой выживших в поисках безопасного места. Но постоянный страх смерти каждый день приносит тяжелые потери, заставляя товарищей по несчастью чувствовать глубины человеческой жестокости. Рик пытается спасти близких и понимает, что всепоглощающий страх людей может быть опаснее ходячих мертвецов.",
-            "year": 2010,
-            "genres": [
-                {
-                    "name": "ужасы"
-                },
-                {
-                    "name": "триллер"
-                },
-                {
-                    "name": "драма"
-                }
-            ],
-            "countries": [
-                {
-                    "name": "США"
-                }
-            ],
-            "alternativeName": "The Walking Dead",
-            "enName": "The Walking Dead",
-            "backdrop": {
-                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a0000017b772d61b2b35b200f466b544289/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a0000017b772d61b2b35b200f466b544289/x1000"
-            },
-            "shortDescription": "Как сохранить человеческое лицо в условиях зомби-апокалипсиса? Сериал-эпопея, совместивший хоррор и драму",
-            "ageRating": 18,
-            "logo": {
-                "url": "https://avatars.mds.yandex.net/get-ott/239697/2a0000017f206c8eaa0dcea1fb92d1beb652/orig"
-            },
-            "top250": 227
-        },
-        {
-            "id": 891337,
-            "name": "11.22.63",
-            "rating": {
-                "kp": 7.852,
-                "imdb": 8.1,
-                "filmCritics": 0,
-                "russianFilmCritics": 100,
-                "await": null
-            },
-            "description": "Учитель английского языка отправляется в прошлое, чтобы предотвратить убийство Кеннеди, но в результате сильно привязывается к той жизни, которая у него появилась в ушедшей эпохе.",
-            "year": 2016,
-            "genres": [
-                {
-                    "name": "фантастика"
-                },
-                {
-                    "name": "триллер"
-                },
-                {
-                    "name": "драма"
-                },
-                {
-                    "name": "мелодрама"
-                },
-                {
-                    "name": "детектив"
-                }
-            ],
-            "countries": [
-                {
-                    "name": "США"
-                }
-            ],
-            "alternativeName": "11.22.63",
-            "backdrop": {
-                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/223007/2a0000017c31f6a58afae8e48127bc516438/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/223007/2a0000017c31f6a58afae8e48127bc516438/x1000"
-            },
-            "enName": "11/22/63",
-            "ageRating": 18,
-            "shortDescription": "Школьный учитель проникает в прошлое, чтобы предотвратить убийство президента Кеннеди. По роману Стивена Кинга",
-            "logo": {
-                "url": "https://avatars.mds.yandex.net/get-ott/224348/2a0000017c31f707bb5278df22d9ab66049b/orig"
-            },
-            "top250": 235
-        },
-        {
-            "id": 823594,
-            "name": "Вечность",
-            "rating": {
-                "kp": 8.279,
-                "imdb": 8.2,
-                "filmCritics": 0,
-                "russianFilmCritics": 0,
-                "await": null
-            },
-            "description": "У доктора Генри Моргана, звездного судебно-медицинского эксперта Нью-Йорка, есть секрет. Он изучает мертвых не только, чтобы раскрывать уголовные дела. Он это делает, чтобы раскрыть тайну, которая ускользала от него на протяжении 200 лет, — причину своего бессмертия...",
-            "year": 2014,
-            "genres": [
                 {
                     "name": "фантастика"
                 },
@@ -146,60 +26,7 @@
                     "name": "фэнтези"
                 },
                 {
-                    "name": "драма"
-                },
-                {
-                    "name": "криминал"
-                },
-                {
-                    "name": "детектив"
-                }
-            ],
-            "countries": [
-                {
-                    "name": "США"
-                }
-            ],
-            "alternativeName": "Forever",
-            "backdrop": {
-                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/223007/2a000001658f19cedf06cb781401afefa2d5/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/223007/2a000001658f19cedf06cb781401afefa2d5/x1000"
-            },
-            "enName": "Forever",
-            "ageRating": 18,
-            "shortDescription": "Обаятельный судмедэксперт пытается найти причину своего бессмертия. Захватывающий детектив в духе «Менталиста»",
-            "logo": {
-                "url": "https://avatars.mds.yandex.net/get-ott/223007/2a0000016e043c122509d3bcb411afe262b9/orig"
-            },
-            "top250": 100
-        },
-        {
-            "id": 104122,
-            "name": "Остаться в живых",
-            "rating": {
-                "kp": 8.142,
-                "imdb": 8.3,
-                "filmCritics": 0,
-                "russianFilmCritics": 100,
-                "await": null
-            },
-            "description": "Красавец-лайнер, совершающий полет из Сиднея в Лос-Анджелес, неожиданно терпит крушение. 48 пассажиров оказываются на пустынном острове посреди океана. Люди в панике.\n\nНадежда быть найденными довольно призрачна. Поэтому остается только одно: собраться с силами и постараться выжить на острове, начиненном множеством опасностей...",
-            "year": 2004,
-            "genres": [
-                {
-                    "name": "фантастика"
-                },
-                {
-                    "name": "детектив"
-                },
-                {
-                    "name": "фэнтези"
-                },
-                {
-                    "name": "триллер"
-                },
-                {
-                    "name": "драма"
+                    "name": "боевик"
                 },
                 {
                     "name": "приключения"
@@ -210,18 +37,10 @@
                     "name": "США"
                 }
             ],
-            "alternativeName": "Lost",
-            "backdrop": {
-                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/239697/2a0000016a698e8bc8d139f5ee37f69114ea/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/239697/2a0000016a698e8bc8d139f5ee37f69114ea/x1000"
-            },
-            "enName": "Lost",
-            "shortDescription": "Выжившие в авиакатастрофе попадают на загадочный остров в Тихом океане. Главная приключенческая драма 2000-х",
-            "ageRating": 18,
+            "ageRating": 12,
             "logo": {
-                "url": "https://avatars.mds.yandex.net/get-ott/1672343/2a0000016e044611ebe1caeafce7415d36c6/orig"
-            },
-            "top250": 120
+                "url": "https://imagetmdb.com/t/p/original/cmE0j3mQQe6xrzLryxGF9rF2KC8.png"
+            }
         },
         {
             "rating": {
@@ -238,7 +57,6 @@
             "id": 1236393,
             "name": "Голяк",
             "description": "Мелкий воришка Винни и его друзья живут в английской глубинке и ежедневно промышляют нелегальными делами, приносящими небольшой доход. Все меняется, когда компания переходит дорогу местному криминальному авторитету.",
-            "year": 2019,
             "genres": [
                 {
                     "name": "комедия"
@@ -252,83 +70,64 @@
                     "name": "Великобритания"
                 }
             ],
-            "alternativeName": "Brassic",
-            "enName": "Brassic",
-            "shortDescription": "Похождения Винни и его подельников в британской глубинке. Остроумная криминальная комедия с Джозефом Гилганом",
             "ageRating": 18,
             "logo": {
                 "url": "https://avatars.mds.yandex.net/get-ott/1672343/2a0000017f31d676433fb1ffc58fda212a02/orig"
-            },
-            "top250": 17
+            }
         },
         {
-            "id": 682255,
-            "name": "Викинги",
+            "id": 1200189,
+            "name": "Засланец из космоса",
             "rating": {
-                "kp": 8.158,
-                "imdb": 8.5,
+                "kp": 8.063,
+                "imdb": 8.1,
                 "filmCritics": 0,
                 "russianFilmCritics": 0,
                 "await": null
             },
-            "description": "Рассказ об отряде викингов Рагнара. Он восстал, чтобы стать королём племён викингов. Норвежская легенда гласит, что он был прямым потомком Одина, бога войны и воинов.",
-            "year": 2013,
+            "description": "Доктор Гарри Вендершпигль — отшельник в небольшом городке в Колорадо. Ещё он — пришелец, который на самом деле упал на Землю и занял тело врача. Когда же доктора убивают, пришелец вынужден отложить миссию по возвращению домой и занять место убитого. Живя в новом теле, он постепенно начинает задаваться вопросами, стоят люди спасения или нет.",
             "genres": [
                 {
-                    "name": "история"
+                    "name": "фантастика"
                 },
                 {
                     "name": "драма"
                 },
                 {
-                    "name": "боевик"
+                    "name": "комедия"
                 },
                 {
-                    "name": "мелодрама"
-                },
-                {
-                    "name": "приключения"
-                },
-                {
-                    "name": "военный"
+                    "name": "детектив"
                 }
             ],
             "countries": [
                 {
-                    "name": "Ирландия"
-                },
-                {
-                    "name": "Канада"
+                    "name": "США"
                 }
             ],
-            "alternativeName": "Vikings",
             "backdrop": {
-                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/1672343/2a0000016edab0f0fc66cc174324ef76eaba/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/1672343/2a0000016edab0f0fc66cc174324ef76eaba/x1000"
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a0000017e982e6670e08c31cafc17331b8c/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a0000017e982e6670e08c31cafc17331b8c/x1000"
             },
-            "enName": "Vikings",
-            "shortDescription": "Амбициозный воин возглавляет поход на чужие земли и борется за власть. Эпический боевик по скандинавским сагам",
             "ageRating": 18,
             "logo": {
-                "url": "https://imagetmdb.com/t/p/original/x9sDkV3lDeleSkCUzKNE6VGLhwm.png"
-            },
-            "top250": 176
+                "url": "https://avatars.mds.yandex.net/get-ott/1652588/2a000001809a1922b928a0c22738afc9aeec/orig"
+            }
         },
         {
-            "id": 571335,
-            "name": "Бесстыжие",
+            "id": 1167154,
+            "name": "Уэйн",
             "rating": {
-                "kp": 8.643,
-                "imdb": 8.5,
+                "kp": 8.139,
+                "imdb": 8.3,
                 "filmCritics": 0,
                 "russianFilmCritics": 0,
                 "await": null
             },
-            "description": "О взбалмошной многодетной семье Галлагеров и их соседях, которые веселятся, попадают в самые невероятные ситуации и пытаются выжить в этом мире всеми возможными средствами, но при этом как можно меньше работая.",
-            "year": 2011,
+            "description": "16-летний Уэйн вместе с подругой отправляется на мотоцикле из Бостона во Флориду, чтобы вернуть старенький Понтиак своего отца, который был украден до его смерти.",
             "genres": [
                 {
-                    "name": "драма"
+                    "name": "боевик"
                 },
                 {
                     "name": "комедия"
@@ -339,18 +138,124 @@
                     "name": "США"
                 }
             ],
-            "alternativeName": "Shameless",
             "backdrop": {
-                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/1672343/2a0000017642e37cbfab7feb7395bad33169/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/1672343/2a0000017642e37cbfab7feb7395bad33169/x1000"
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/1534341/2a000001768f8b7452f6f5ff82e2b1b888b8/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/1534341/2a000001768f8b7452f6f5ff82e2b1b888b8/x1000"
             },
-            "enName": "Shameless",
-            "shortDescription": "Невероятные приключения непутевого папаши и его детей. Легендарная драмеди, которую хочется пересматривать",
             "ageRating": 18,
             "logo": {
-                "url": "https://avatars.mds.yandex.net/get-ott/2439731/2a0000017a456c49ee88b780d9dae9a3eb3d/orig"
+                "url": "https://image.openmoviedb.com/tmdb-images/original/bqBZuf2vb2pkNZre2PzTe0ms36F.png",
+                "previewUrl": "https://image.openmoviedb.com/tmdb-images/w500/bqBZuf2vb2pkNZre2PzTe0ms36F.png"
+            }
+        },
+        {
+            "rating": {
+                "kp": 7.99,
+                "imdb": 8.4,
+                "filmCritics": 7.3,
+                "russianFilmCritics": 89.2857,
+                "await": null
             },
-            "top250": 43
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/1534341/2a0000016f0e2ff213c7112837259eaa4b4e/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/1534341/2a0000016f0e2ff213c7112837259eaa4b4e/x1000"
+            },
+            "id": 1048334,
+            "name": "Джокер",
+            "description": "Готэм, начало 1980-х годов. Комик Артур Флек живет с больной матерью, которая с детства учит его «ходить с улыбкой». Пытаясь нести в мир хорошее и дарить людям радость, Артур сталкивается с человеческой жестокостью и постепенно приходит к выводу, что этот мир получит от него не добрую улыбку, а ухмылку злодея Джокера.",
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "криминал"
+                },
+                {
+                    "name": "триллер"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                },
+                {
+                    "name": "Канада"
+                },
+                {
+                    "name": "Австралия"
+                }
+            ],
+            "ageRating": 18,
+            "logo": {
+                "url": "https://avatars.mds.yandex.net/get-ott/1534341/2a00000176f15a40fc3ec20b6a61c0b19850/orig"
+            }
+        },
+        {
+            "id": 394,
+            "name": "Бешеные псы",
+            "rating": {
+                "kp": 8.115,
+                "imdb": 8.3,
+                "filmCritics": 8.9,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "description": "Это должно было стать идеальным преступлением. Задумав ограбить ювелирный магазин, криминальный босс Джо Кэбот собрал вместе шестерых опытных и совершенно незнакомых друг с другом преступников. Но с самого начала все пошло не так, и обычный грабеж превратился в кровавую бойню.",
+            "genres": [
+                {
+                    "name": "криминал"
+                },
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "триллер"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "ageRating": 18,
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a0000016224f0360420d935a974fc5a76e4/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a0000016224f0360420d935a974fc5a76e4/x1000"
+            },
+            "logo": {
+                "url": "https://avatars.mds.yandex.net/get-ott/2419418/2a00000172982695aba03b7c1b6e9a1e5398/orig"
+            }
+        },
+        {
+            "rating": {
+                "kp": 8.003,
+                "imdb": 8,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/1534341/2a0000017d8750c5ee3f0d3991c11636b9e7/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/1534341/2a0000017d8750c5ee3f0d3991c11636b9e7/x1000"
+            },
+            "id": 1011528,
+            "name": "Хороший доктор",
+            "description": "История молодого талантливого врача с синдромом саванта, обладающего уникальными способностями - невероятной памятью и фантастической чувствительностью к проблемам, вспыхивающим внутри человеческого организма. Парень становится блестящим хирургом, но несмотря на это, в личностном плане его развитие соответствует уровню десятилетнего ребёнка.",
+            "genres": [
+                {
+                    "name": "драма"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "ageRating": 18,
+            "logo": {
+                "url": "https://image.openmoviedb.com/tmdb-images/original/kqEoyxXu1mWK6un4ZA6rziyRkHj.png",
+                "previewUrl": "https://image.openmoviedb.com/tmdb-images/w500/kqEoyxXu1mWK6un4ZA6rziyRkHj.png"
+            }
         },
         {
             "rating": {
@@ -367,7 +272,6 @@
             "id": 991739,
             "name": "Дрянь",
             "description": "История остроумной сексуально озабоченной и упивающейся своими горестями женщины, которая бросается на баррикады повседневности современного Лондона.",
-            "year": 2016,
             "genres": [
                 {
                     "name": "драма"
@@ -381,52 +285,88 @@
                     "name": "Великобритания"
                 }
             ],
-            "alternativeName": "Fleabag",
-            "enName": "Flea Bag",
-            "shortDescription": "Душевные травмы, родня с причудами, беспорядочный секс и шутки на грани. Сериал-бенефис Фиби Уоллер-Бридж",
             "ageRating": 18,
             "logo": {
                 "url": "https://avatars.mds.yandex.net/get-ott/224348/2a00000176f155459ad66242616e4d5d57eb/orig"
-            },
-            "top250": 67
+            }
         },
         {
-            "id": 178710,
-            "name": "Доктор Хаус",
+            "id": 958722,
+            "name": "Твоё имя",
             "rating": {
-                "kp": 8.795,
-                "imdb": 8.7,
-                "filmCritics": 0,
-                "russianFilmCritics": 0,
+                "kp": 8.386,
+                "imdb": 8.4,
+                "filmCritics": 8.2,
+                "russianFilmCritics": 75,
                 "await": null
             },
-            "description": "Сериал рассказывает о команде врачей, которые должны правильно поставить диагноз пациенту и спасти его. Возглавляет команду доктор Грегори Хаус, который ходит с тростью после того, как его мышечный инфаркт в правой ноге слишком поздно правильно диагностировали. Как врач Хаус просто гений, но сам не отличается проникновенностью в общении с больными и с удовольствием избегает их, если только есть возможность. Он сам всё время проводит в борьбе с собственной болью, а трость в его руке только подчеркивает его жесткую, ядовитую манеру общения. Порой его поведение можно назвать почти бесчеловечным, и при этом он прекрасный врач, обладающий нетипичным умом и безупречным инстинктом, что снискало ему глубокое уважение. Будучи инфекционистом, он ещё и замечательный диагност, который любит разгадывать медицинские загадки, чтобы спасти кому-то жизнь. Если бы все было по его воле, то Хаус лечил бы больных не выходя из своего кабинета.",
-            "year": 2004,
+            "description": "Токийский парень Таки и провинциальная девушка Мицуха обнаруживают, что между ними существует странная связь. Во сне они меняются телами и проживают жизни друг друга. Но однажды эта способность исчезает так же внезапно, как появилась. Таки решает во что бы то ни стало отыскать Мицуху.",
+            "genres": [
+                {
+                    "name": "аниме"
+                },
+                {
+                    "name": "мультфильм"
+                },
+                {
+                    "name": "фэнтези"
+                },
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "мелодрама"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Япония"
+                }
+            ],
+            "ageRating": 12,
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/223007/2a0000016128d752f15295e72dd00f999c7f/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/223007/2a0000016128d752f15295e72dd00f999c7f/x1000"
+            },
+            "logo": {
+                "url": "https://avatars.mds.yandex.net/get-ott/224348/2a000001722748afd22b6cd005ea5059c8a4/orig"
+            }
+        },
+        {
+            "rating": {
+                "kp": 8.14,
+                "imdb": 8.1,
+                "filmCritics": 8.4,
+                "russianFilmCritics": 96,
+                "await": null
+            },
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/374297/2a000001624ece4beb2c1152eabbfc4ed60d/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/374297/2a000001624ece4beb2c1152eabbfc4ed60d/x1000"
+            },
+            "id": 944098,
+            "name": "Три билборда на границе Эббинга, Миссури",
+            "description": "Спустя несколько месяцев после убийства дочери Милдред Хейс преступники так и не найдены. Отчаявшаяся женщина решается на смелый шаг - арендует на въезде в город три билборда и оставляет на них послание главе полиции Уильяму Уиллоуби. Когда в ситуацию оказывается втянут ещё и заместитель шерифа Диксон, инфантильный маменькин сынок со склонностью к насилию, борьба между Милдред и властями города только усугубляется.",
             "genres": [
                 {
                     "name": "драма"
                 },
                 {
-                    "name": "детектив"
+                    "name": "криминал"
                 }
             ],
             "countries": [
                 {
+                    "name": "Великобритания"
+                },
+                {
                     "name": "США"
                 }
             ],
-            "alternativeName": "House, M.D.",
-            "backdrop": {
-                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/212840/2a0000016b94647cff0c079b6516bdcb1572/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/212840/2a0000016b94647cff0c079b6516bdcb1572/x1000"
-            },
-            "enName": "House",
-            "shortDescription": "Все люди врут, но этого не проведешь. Выдающийся медицинский детектив о докторе-гении",
             "ageRating": 18,
             "logo": {
-                "url": "https://avatars.mds.yandex.net/get-ott/1648503/2a0000016e4aedc43d624ce1456e2ce33e0d/orig"
-            },
-            "top250": 16
+                "url": "https://avatars.mds.yandex.net/get-ott/2419418/2a00000170ed8b76ad4d0c0700e393a62897/orig"
+            }
         }
     ],
     "allGenres": [
@@ -557,6 +497,406 @@
         {
             "name": "церемония",
             "slug": "ceremoniya"
+        }
+    ],
+    "trailers": [
+        {
+            "id": 4711940,
+            "name": "Люди Икс ’97",
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/b0d5bfc0-f501-49cd-aa52-432dafcde13d/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/b0d5bfc0-f501-49cd-aa52-432dafcde13d/x1000"
+            },
+            "videos": {
+                "trailers": [
+                    {
+                        "url": "https://www.youtube.com/embed/pv3Ss8o9gGQ",
+                        "name": "Official Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/pv3Ss8o9gGQ",
+                        "name": "Official Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4540126,
+            "name": "Дюна: Часть вторая",
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/9784475/0c67265b-6631-4e25-b89c-3ddf4e5a1ee7/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/9784475/0c67265b-6631-4e25-b89c-3ddf4e5a1ee7/x1000"
+            },
+            "videos": {
+                "trailers": [
+                    {
+                        "url": "https://www.youtube.com/embed/U2Qp5pL3ovA",
+                        "name": "Official Trailer 3",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/_YUzQa_1RCE",
+                        "name": "Official Trailer 2",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/Way9Dexny3w",
+                        "name": "Official Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/U2Qp5pL3ovA",
+                        "name": "Official Trailer 3",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/_YUzQa_1RCE",
+                        "name": "Official Trailer 2",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/Way9Dexny3w",
+                        "name": "Official Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 5267249,
+            "name": "Золотое дно",
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10671298/f0fe915e-0ed2-4ca0-9eea-e6604936e465/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10671298/f0fe915e-0ed2-4ca0-9eea-e6604936e465/x1000"
+            },
+            "videos": {
+                "trailers": [
+                    {
+                        "url": "https://www.youtube.com/embed/k8JTT_apg74",
+                        "name": "Золотое Дно | Трейлер | Сериал Иви",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/k8JTT_apg74",
+                        "name": "Золотое Дно | Трейлер | Сериал Иви",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1311083,
+            "name": "Рипли",
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10671298/e34f48ef-1218-4e0a-a5a4-8c13460cf9c1/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10671298/e34f48ef-1218-4e0a-a5a4-8c13460cf9c1/x1000"
+            },
+            "videos": {
+                "trailers": [
+                    {
+                        "url": "https://www.youtube.com/embed/0ri2biYLeaI",
+                        "name": "Official Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/0ri2biYLeaI",
+                        "name": "Official Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1435343,
+            "name": "Джентльмены",
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4483445/5b0baa32-c83d-454e-9f4e-a4214ee93509/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4483445/5b0baa32-c83d-454e-9f4e-a4214ee93509/x1000"
+            },
+            "videos": {
+                "trailers": [
+                    {
+                        "url": "https://www.youtube.com/embed/Tds2g0cUQpg",
+                        "name": "Джентльмены (1 сезон) — Русский трейлер #2 (4К, 2024)",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/Tds2g0cUQpg",
+                        "name": "Джентльмены (1 сезон) — Русский трейлер #2 (4К, 2024)",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/wyEOwHrpZH4",
+                        "name": "Official Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4414587,
+            "name": "Министерство неджентльменских дел",
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10671298/72d3ef84-c785-46aa-8a8d-16e0f0847c56/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10671298/72d3ef84-c785-46aa-8a8d-16e0f0847c56/x1000"
+            },
+            "videos": {
+                "trailers": [
+                    {
+                        "url": "https://www.youtube.com/embed/RDWYoEsLcLU",
+                        "name": "Министерство неджентльменских дел | Трейлер",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/RDWYoEsLcLU",
+                        "name": "Министерство неджентльменских дел | Трейлер",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/zvwDen1Wrx8",
+                        "name": "Official Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4549968,
+            "name": "Детективы с того света",
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10703959/6a34d4f5-e31d-44fa-bfc3-0190b14af090/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10703959/6a34d4f5-e31d-44fa-bfc3-0190b14af090/x1000"
+            },
+            "videos": {
+                "trailers": [
+                    {
+                        "url": "https://www.youtube.com/embed/hwJmZ2Ekfbc",
+                        "name": "Official Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/hwJmZ2Ekfbc",
+                        "name": "Official Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4922886,
+            "name": "Обыкновенные ангелы",
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/e6d3ba93-fcd7-4c87-a1f1-3ca0531fca90/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/e6d3ba93-fcd7-4c87-a1f1-3ca0531fca90/x1000"
+            },
+            "videos": {
+                "trailers": [
+                    {
+                        "url": "https://www.youtube.com/embed/sNv-HpcGe0I",
+                        "name": "Official Trailer #2",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/R1vn8kPgCYA",
+                        "name": "Official Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/sNv-HpcGe0I",
+                        "name": "Official Trailer #2",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/R1vn8kPgCYA",
+                        "name": "Official Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1388409,
+            "name": "Фуриоса: Хроники Безумного Макса",
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10671298/67682659-46ae-48db-865f-2ee993b9af4a/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10671298/67682659-46ae-48db-865f-2ee993b9af4a/x1000"
+            },
+            "videos": {
+                "trailers": [
+                    {
+                        "url": "https://www.youtube.com/embed/XJMuhwVlca4",
+                        "name": "Official Trailer #1",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/XJMuhwVlca4",
+                        "name": "Official Trailer #1",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1199731,
+            "name": "Аватар: Легенда об Аанге",
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/9784475/a9eda22b-5e9c-4166-b615-378a8c667b27/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/9784475/a9eda22b-5e9c-4166-b615-378a8c667b27/x1000"
+            },
+            "videos": {
+                "trailers": [
+                    {
+                        "url": "https://www.youtube.com/embed/qOSM0CpfRPI",
+                        "name": "АВАТАР: ЛЕГЕНДА ОБ ААНГЕ Сезон 1 - Финальный Русский трейлер (IndigoFilms, 2024) Netflix Сериал HD",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/qOSM0CpfRPI",
+                        "name": "АВАТАР: ЛЕГЕНДА ОБ ААНГЕ Сезон 1 - Финальный Русский трейлер (IndigoFilms, 2024) Netflix Сериал HD",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/xEmlE9Ianuo",
+                        "name": "Final Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/ByAn8DF8Ykk",
+                        "name": "Official Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    }
+                ]
+            }
+        }
+    ],
+    "country": [
+        {
+            "name": "Австралия",
+            "slug": "Avstraliya"
+        },
+        {
+            "name": "Бразилия",
+            "slug": "Braziliya"
+        },
+        {
+            "name": "Великобритания",
+            "slug": "Velikobritaniya"
+        },
+        {
+            "name": "Германия",
+            "slug": "Germaniya"
+        },
+        {
+            "name": "Египет",
+            "slug": "Egipet"
+        },
+        {
+            "name": "Индия",
+            "slug": "Indiya"
+        },
+        {
+            "name": "Испания",
+            "slug": "Ispaniya"
+        },
+        {
+            "name": "Италия",
+            "slug": "Italiya"
+        },
+        {
+            "name": "Канада",
+            "slug": "Kanada"
+        },
+        {
+            "name": "Китай",
+            "slug": "Kitay"
+        },
+        {
+            "name": "Корея",
+            "slug": "Koreya"
+        },
+        {
+            "name": "Мексика",
+            "slug": "Meksika"
+        },
+        {
+            "name": "ОАЭ",
+            "slug": "OAE"
+        },
+        {
+            "name": "Польша",
+            "slug": "Polsha"
+        },
+        {
+            "name": "Португалия",
+            "slug": "Portugaliya"
+        },
+        {
+            "name": "Россия",
+            "slug": "Rossiya"
+        },
+        {
+            "name": "СССР",
+            "slug": "SSSR"
+        },
+        {
+            "name": "США",
+            "slug": "SShA"
+        },
+        {
+            "name": "Турция",
+            "slug": "Turciya"
+        },
+        {
+            "name": "Финляндия",
+            "slug": "Finlyandiya"
+        },
+        {
+            "name": "Франция",
+            "slug": "Franciya"
+        },
+        {
+            "name": "Швейцария",
+            "slug": "Shveycariya"
+        },
+        {
+            "name": "Швеция",
+            "slug": "Shveciya"
+        },
+        {
+            "name": "Япония",
+            "slug": "Yaponiya"
         }
     ],
     "total": 18,

@@ -1,0 +1,21 @@
+.assetsList {
+    display: flex;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        background-color: var(--background-color-assets);
+        border-radius: 10px;
+        padding: 10px 25px;
+
+        &:not(:last-of-type) {
+            margin-right: 20px;
+        }
+
+        &_img {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+    }
+}

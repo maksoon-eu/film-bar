@@ -1,0 +1,34 @@
+.arrows {
+    &__next {
+        right: -60px;
+        transform: rotate(180deg) translate(0, 50%);
+        width: 40px;
+        height: 40px;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    &__prev {
+        left: -60px;
+        width: 40px;
+        height: 40px;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    &__prev, &__next {
+        path {
+            transition: .1s linear;
+        }
+
+        &:hover {
+            path {
+                fill: var(--background-color-widgets)
+            }
+        }
+    }
+}

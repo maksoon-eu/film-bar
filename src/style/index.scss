@@ -2,6 +2,27 @@
 @import "reset";
 
 body {
-	// font: var(--);
+	font: var(--font-m);
 	color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+.app {
+    max-width: 3010px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content-page {
+    max-width: 1710px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    font-weight: var(--font-weight-l);
+    font-size: var(--font-size-title);
+    margin-bottom: 50px;
 }

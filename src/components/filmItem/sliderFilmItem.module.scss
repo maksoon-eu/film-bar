@@ -1,6 +1,6 @@
 .sliderFilm {
     position: relative;
-    height: 1000px;
+    height: 1200px;
 
     &__backdrop {
         position: absolute;
@@ -17,26 +17,99 @@
             left: 0;
             width: 50%;
             height: 100%;
-            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+            background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.9),
+                rgba(0, 0, 0, 0.8),
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0)
+            );
             pointer-events: none;
             z-index: 1;
         }
 
         &_img {
             object-fit: cover;
-            width: 100%;
-            height: auto;
         }
     }
 
     &__left {
         z-index: 1;
+        display: flex;
+        padding: 50px;
+        padding-top: 300px;
+        flex-direction: column;
+        height: 100%;
+        width: 40%;
     }
 
     &__logo {
+        display: flex;
+        align-items: center;
+        height: 300px;
+        margin-bottom: 50px;
+
         &_img {
             max-width: 500px;
             height: auto;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 500px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__ageRating {
+        font-size: var(--font-size-xl);
+        color: var(--font-color-optional);
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+
+        &_item {
+            &:not(:last-of-type) {
+                margin-right: 20px;
+            }
+        }
+
+        &_name {
+            font-weight: var(--font-weight-xl);
+        }
+
+        &_kp {
+            color: var(--font-color-kp);
+        }
+
+        &_imdb {
+            color: var(--font-color-imdb);
+        }
+    }
+
+    &__description {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 8;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+
+    &__btn {
+        margin-top: auto;
+    }
+
+    &__assets {
+        margin-bottom: 20px;
+
+        &_last {
+            margin-bottom: 50px;
         }
     }
 }
