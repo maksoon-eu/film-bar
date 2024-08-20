@@ -1,4 +1,4 @@
-import { CustomArrowProps } from "react-slick";
+import { CustomArrowProps } from 'react-slick';
 
 import styles from './arrows.module.scss';
 

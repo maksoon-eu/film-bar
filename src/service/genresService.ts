@@ -4,10 +4,12 @@ import { IGenre } from '../store/features/featureGenres/featureGenresTypes';
 
 export const getGenres = createAsyncThunk<IGenre[], void, { rejectValue: string }>(
     'genres/getGenres',
-    async (state, thunkAPI) => {
+    async (_, thunkAPI) => {
         try {
             // https://api.kinopoisk.dev/v1/movie/possible-values-by-field?field=genres.name
-            const response = await request({ url: `${process.env.REACT_APP_TEST_API_BASE}allGenres` });
+            const response = await request({
+                url: `${process.env.REACT_APP_TEST_API_BASE}allGenres`,
+            });
 
             if (!response) {
                 throw new Error();
@@ -16,7 +18,7 @@ export const getGenres = createAsyncThunk<IGenre[], void, { rejectValue: string 
             return response;
         } catch (e) {
             if (e instanceof Error) {
-                thunkAPI.rejectWithValue(e.message);
+                return thunkAPI.rejectWithValue(e.message);
             }
         }
     }

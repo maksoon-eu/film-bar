@@ -1,3 +1,37 @@
 .search {
-    
+    position: relative;
+
+    &__inner {
+        max-width: 500px;
+        width: 100%;
+        position: relative;
+
+        &_input {
+            background-color: var(--background-color-assets);
+            border-radius: 999px;
+            padding: 0 30px;
+            width: 500px;
+            height: 60px;
+            border: 2px var(--background-color-widgets) solid;
+        }
+
+        &_icon {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__list {
+        position: absolute;
+        top: 75px;
+        right: 0;
+        left: 0;
+        background-color: var(--background-color-assets);
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
 }

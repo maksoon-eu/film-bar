@@ -3,24 +3,34 @@ import { useAppSelector } from '../../hooks/selector.hook';
 import { selectGenres } from '../../store/features/featureGenres/featureGenresSelectors';
 
 import styles from './genresSlider.module.scss';
-import { NextArrow, PrevArrow } from "../arrows/Arrows";
+import { NextArrow, PrevArrow } from '../arrows/Arrows';
+import { useAppDispatch } from '../../hooks/dispatch.hook';
+import { useEffect } from 'react';
+import { getGenres } from '../../service/genresService';
 
 const GenresSlider = () => {
+    const dispatch = useAppDispatch();
     const { loadingStatus, genres } = useAppSelector(selectGenres);
 
+    useEffect(() => {
+        if (!genres.length) {
+            dispatch(getGenres());
+        }
+    }, [dispatch, genres.length]);
+
     const genresList = genres.map((genre) => {
-        const imagePath = require(`../../assets/genres/${genre.name}.png`);
+        const name = genre.name;
+
+        const imagePath = require(`../../assets/genres/${name}.png`);
 
         return (
-            <div key={genre.name}>
+            <div key={name}>
                 <div className={styles.genresSlider__group}>
                     <div className={styles.genresSlider__item}>
-                        <img
-                            src={imagePath}
-                            alt={genre.name}
-                            className={styles.genresSlider__item_img}
-                        />
-                        <div className={styles.genresSlider__item_name}>{genre.name}</div>
+                        <img src={imagePath} alt={name} className={styles.genresSlider__item_img} />
+                        <div className={styles.genresSlider__item_name}>{`${name
+                            .charAt(0)
+                            .toUpperCase()}${name.slice(1)}`}</div>
                     </div>
                 </div>
             </div>

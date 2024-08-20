@@ -369,6 +369,1185 @@
             }
         }
     ],
+    "filmsNew": [
+        {
+            "id": 5451179,
+            "name": "Подземелья Чикен Карри-24. Черный Геленбург",
+            "year": 2024,
+            "rating": {
+                "kp": 8.922,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 105,
+            "ageRating": 18,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10835644/93e96ede-2a35-48b8-a42d-36dd12212c37/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10835644/93e96ede-2a35-48b8-a42d-36dd12212c37/x1000"
+            },
+            "genres": [
+                {
+                    "name": "комедия"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Россия"
+                }
+            ]
+        },
+        {
+            "id": 5452650,
+            "name": "Огненный лис",
+            "year": 2024,
+            "rating": {
+                "kp": 8.52,
+                "imdb": 7.7,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 90,
+            "ageRating": 6,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10592371/8bc0928c-192c-492f-bcff-663c042de9d7/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10592371/8bc0928c-192c-492f-bcff-663c042de9d7/x1000"
+            },
+            "genres": [
+                {
+                    "name": "документальный"
+                },
+                {
+                    "name": "семейный"
+                },
+                {
+                    "name": "приключения"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Россия"
+                }
+            ]
+        },
+        {
+            "id": 5459137,
+            "name": "Рай под ногами матерей",
+            "year": 2024,
+            "rating": {
+                "kp": 8.444,
+                "imdb": 8.6,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 137,
+            "ageRating": 18,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10812607/22288e34-c6a2-427b-9aef-df85cdd51041/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10812607/22288e34-c6a2-427b-9aef-df85cdd51041/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Кыргызстан"
+                }
+            ]
+        },
+        {
+            "id": 1402937,
+            "name": "Артур, ты король",
+            "year": 2024,
+            "rating": {
+                "kp": 8.348,
+                "imdb": 7,
+                "filmCritics": 5.9,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 107,
+            "ageRating": 12,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10809116/02f5c9fa-8ed2-455b-9861-1a01252d73f4/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10809116/02f5c9fa-8ed2-455b-9861-1a01252d73f4/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "приключения"
+                },
+                {
+                    "name": "спорт"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                },
+                {
+                    "name": "Канада"
+                }
+            ]
+        },
+        {
+            "id": 5506813,
+            "name": "Там, где танцуют стерхи",
+            "year": 2024,
+            "rating": {
+                "kp": 8.26,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 95,
+            "ageRating": 16,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10671298/e09eb709-4ddf-4c11-bc14-5ecb8a050273/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10671298/e09eb709-4ddf-4c11-bc14-5ecb8a050273/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Россия"
+                }
+            ]
+        },
+        {
+            "id": 5275429,
+            "name": "Лёд 3",
+            "year": 2024,
+            "rating": {
+                "kp": 8.211,
+                "imdb": 5.9,
+                "filmCritics": 0,
+                "russianFilmCritics": 100,
+                "await": null
+            },
+            "movieLength": 134,
+            "ageRating": 6,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10671298/5d4e5068-4902-4dd3-a318-c13272de7134/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10671298/5d4e5068-4902-4dd3-a318-c13272de7134/x1000"
+            },
+            "genres": [
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "спорт"
+                },
+                {
+                    "name": "мюзикл"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Россия"
+                }
+            ]
+        },
+        {
+            "id": 5503483,
+            "name": "Карина",
+            "year": 2024,
+            "rating": {
+                "kp": 8.168,
+                "imdb": 7,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 91,
+            "ageRating": 16,
+            "genres": [
+                {
+                    "name": "биография"
+                },
+                {
+                    "name": "детектив"
+                },
+                {
+                    "name": "драма"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Россия"
+                },
+                {
+                    "name": "Турция"
+                }
+            ],
+            "poster": {
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/951b544c-245d-4b36-806d-424298e40c15/x1000",
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/951b544c-245d-4b36-806d-424298e40c15/orig"
+            }
+        },
+        {
+            "id": 5444751,
+            "name": "Первые 100 лет. Юбилей киностудии Мосфильм",
+            "year": 2024,
+            "rating": {
+                "kp": 7.949,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 133,
+            "ageRating": 6,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1898899/def56119-76f7-46e8-8ee7-93fa0081a256/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1898899/def56119-76f7-46e8-8ee7-93fa0081a256/x1000"
+            },
+            "genres": [
+                {
+                    "name": "концерт"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Россия"
+                }
+            ]
+        },
+        {
+            "id": 5902045,
+            "name": "Призрачный свет",
+            "year": 2024,
+            "rating": {
+                "kp": 7.902,
+                "imdb": 8,
+                "filmCritics": 8.1,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 115,
+            "ageRating": 16,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10809116/164744db-7232-43e3-8186-5f7a8a419f33/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10809116/164744db-7232-43e3-8186-5f7a8a419f33/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "комедия"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ]
+        },
+        {
+            "id": 6019635,
+            "name": "Слово пацана. Кровь на асфальте. Фильм о фильме",
+            "year": 2024,
+            "rating": {
+                "kp": 7.901,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 48,
+            "ageRating": 18,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/b5acf461-a4ec-476d-a2f6-dc84de47063c/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/b5acf461-a4ec-476d-a2f6-dc84de47063c/x1000"
+            },
+            "genres": [
+                {
+                    "name": "документальный"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Россия"
+                }
+            ]
+        }
+    ],
+    "filmsPopular": [
+        {
+            "rating": {
+                "kp": 9.109,
+                "imdb": 9.3,
+                "filmCritics": 8.2,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 142,
+            "id": 326,
+            "name": "Побег из Шоушенка",
+            "year": 1994,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "ageRating": 18
+        },
+        {
+            "rating": {
+                "kp": 9.076,
+                "imdb": 8.6,
+                "filmCritics": 6.8,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 189,
+            "id": 435,
+            "name": "Зеленая миля",
+            "year": 1999,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1599028/4057c4b8-8208-4a04-b169-26b0661453e3/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1599028/4057c4b8-8208-4a04-b169-26b0661453e3/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "фэнтези"
+                },
+                {
+                    "name": "криминал"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "ageRating": 18
+        },
+        {
+            "rating": {
+                "kp": 8.921,
+                "imdb": 8.8,
+                "filmCritics": 7.9,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 142,
+            "id": 448,
+            "name": "Форрест Гамп",
+            "year": 1994,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1599028/3560b757-9b95-45ec-af8c-623972370f9d/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1599028/3560b757-9b95-45ec-af8c-623972370f9d/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "комедия"
+                },
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "история"
+                },
+                {
+                    "name": "военный"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "ageRating": 18
+        },
+        {
+            "rating": {
+                "kp": 8.847,
+                "imdb": 9,
+                "filmCritics": 9.2,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 195,
+            "id": 329,
+            "name": "Список Шиндлера",
+            "year": 1993,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/6201401/1e1ac6d9-c658-4f5f-937e-d080bca0d893/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/6201401/1e1ac6d9-c658-4f5f-937e-d080bca0d893/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "биография"
+                },
+                {
+                    "name": "история"
+                },
+                {
+                    "name": "военный"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "ageRating": 18
+        },
+        {
+            "id": 535341,
+            "name": "1+1",
+            "year": 2011,
+            "rating": {
+                "kp": 8.83,
+                "imdb": 8.5,
+                "filmCritics": 6.8,
+                "russianFilmCritics": 100,
+                "await": null
+            },
+            "movieLength": 112,
+            "ageRating": 18,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1946459/bf93b465-1189-4155-9dd1-cb9fb5cb1bb5/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1946459/bf93b465-1189-4155-9dd1-cb9fb5cb1bb5/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "комедия"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Франция"
+                }
+            ]
+        },
+        {
+            "id": 42664,
+            "name": "Иван Васильевич меняет профессию",
+            "year": 1973,
+            "rating": {
+                "kp": 8.788,
+                "imdb": 8.2,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 88,
+            "ageRating": 6,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/6201401/a7ef44b8-1983-4992-a889-da6f87a3f559/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/6201401/a7ef44b8-1983-4992-a889-da6f87a3f559/x1000"
+            },
+            "genres": [
+                {
+                    "name": "комедия"
+                },
+                {
+                    "name": "фантастика"
+                },
+                {
+                    "name": "приключения"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "СССР"
+                }
+            ]
+        },
+        {
+            "rating": {
+                "kp": 8.775,
+                "imdb": 8.5,
+                "filmCritics": 8.5,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 88,
+            "id": 2360,
+            "name": "Король Лев",
+            "year": 1994,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1704946/60aa1abc-b754-4817-ad9c-0bcda427a12b/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1704946/60aa1abc-b754-4817-ad9c-0bcda427a12b/x1000"
+            },
+            "genres": [
+                {
+                    "name": "мультфильм"
+                },
+                {
+                    "name": "мюзикл"
+                },
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "приключения"
+                },
+                {
+                    "name": "семейный"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "ageRating": 0
+        },
+        {
+            "rating": {
+                "kp": 8.724,
+                "imdb": 8.4,
+                "filmCritics": 8.3,
+                "russianFilmCritics": 94.1176,
+                "await": null
+            },
+            "movieLength": 105,
+            "id": 679486,
+            "name": "Тайна Коко",
+            "year": 2017,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1946459/6e11a16e-c9e7-491f-9162-01098a7d8dd9/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1946459/6e11a16e-c9e7-491f-9162-01098a7d8dd9/x1000"
+            },
+            "genres": [
+                {
+                    "name": "мультфильм"
+                },
+                {
+                    "name": "фэнтези"
+                },
+                {
+                    "name": "комедия"
+                },
+                {
+                    "name": "приключения"
+                },
+                {
+                    "name": "семейный"
+                },
+                {
+                    "name": "музыка"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                },
+                {
+                    "name": "Мексика"
+                }
+            ],
+            "ageRating": 12
+        },
+        {
+            "id": 42782,
+            "name": "Операция «Ы» и другие приключения Шурика",
+            "year": 1965,
+            "rating": {
+                "kp": 8.709,
+                "imdb": 8.4,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 95,
+            "ageRating": 6,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4774061/ccd69a69-7405-4b41-89a8-60dd6dc2a3ee/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4774061/ccd69a69-7405-4b41-89a8-60dd6dc2a3ee/x1000"
+            },
+            "genres": [
+                {
+                    "name": "комедия"
+                },
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "криминал"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "СССР"
+                }
+            ]
+        },
+        {
+            "rating": {
+                "kp": 8.703,
+                "imdb": 9.2,
+                "filmCritics": 9.4,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "movieLength": 175,
+            "id": 325,
+            "name": "Крестный отец",
+            "year": 1972,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1599028/c11652e8-653b-47c1-8e72-1552399a775b/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1599028/c11652e8-653b-47c1-8e72-1552399a775b/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "криминал"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "ageRating": 18
+        }
+    ],
+    "search": [
+        {
+            "id": 1000048,
+            "name": "Мама.com",
+            "year": 2016,
+            "rating": {
+                "kp": 0,
+                "imdb": 5.4,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1898899/a92fe9b6-1848-4d56-9dad-01332a5f3712/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1898899/a92fe9b6-1848-4d56-9dad-01332a5f3712/x1000"
+            }
+        },
+        {
+            "id": 6059559,
+            "name": "Граница пустоты",
+            "year": 2007,
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1898899/f61fba8b-80a7-47c9-a09b-7b652d17ec92/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1898899/f61fba8b-80a7-47c9-a09b-7b652d17ec92/x1000"
+            }
+        },
+        {
+            "id": 5927251,
+            "name": "Сладкая ловушка",
+            "year": 2024,
+            "rating": {
+                "kp": 0,
+                "imdb": 7.3,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4486362/5b319ce3-81a4-4d95-a3c7-3a3af7ca569e/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4486362/5b319ce3-81a4-4d95-a3c7-3a3af7ca569e/x1000"
+            }
+        },
+        {
+            "id": 5699080,
+            "name": "Наш переводчик",
+            "year": 2024,
+            "rating": {
+                "kp": 0,
+                "imdb": 6.7,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10809116/6870f56b-07d3-4700-88ff-87f9109d20b0/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10809116/6870f56b-07d3-4700-88ff-87f9109d20b0/x1000"
+            }
+        },
+        {
+            "id": 6000382,
+            "name": "Безграничный туман",
+            "year": 2024,
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10592371/b9e853a9-2d2d-4d31-851c-c41b5eef499a/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10592371/b9e853a9-2d2d-4d31-851c-c41b5eef499a/x1000"
+            }
+        },
+        {
+            "id": 5700607,
+            "name": "Чертаново Плаза",
+            "year": 2023,
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10703959/2cd5899e-0dc4-4546-90ab-07264fdcc6fa/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10703959/2cd5899e-0dc4-4546-90ab-07264fdcc6fa/x1000"
+            }
+        },
+        {
+            "id": 5626370,
+            "name": "Парень с вещмешком",
+            "year": 2024,
+            "rating": {
+                "kp": 0,
+                "imdb": 7.3,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4486362/5f26a2a4-cbb3-4b84-9a2f-1edbbadb6322/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4486362/5f26a2a4-cbb3-4b84-9a2f-1edbbadb6322/x1000"
+            }
+        },
+        {
+            "id": 6056506,
+            "name": "МУЛЬТ в кино. Выпуск № 172",
+            "year": 2024,
+            "rating": {
+                "kp": 0,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4486362/56a0575c-c3e3-4b29-95d3-5a875c363605/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4486362/56a0575c-c3e3-4b29-95d3-5a875c363605/x1000"
+            }
+        },
+        {
+            "id": 6038775,
+            "name": "Игры: Экстра",
+            "year": 2024,
+            "rating": {
+                "kp": 7.961,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10835644/281424e6-2e1e-4e5d-842b-b6a976281313/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10835644/281424e6-2e1e-4e5d-842b-b6a976281313/x1000"
+            }
+        },
+        {
+            "id": 5198932,
+            "name": "Сторона защиты",
+            "year": 2021,
+            "rating": {
+                "kp": 0,
+                "imdb": 7.7,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10703959/ad11c23b-a2c1-4fda-8e5c-a4ba2cd2fa8d/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10703959/ad11c23b-a2c1-4fda-8e5c-a4ba2cd2fa8d/x1000"
+            }
+        }
+    ],
+    "series": [
+        {
+            "id": 464963,
+            "name": "Игра престолов",
+            "year": 2011,
+            "rating": {
+                "kp": 8.983,
+                "imdb": 9.2,
+                "filmCritics": 0,
+                "russianFilmCritics": 90,
+                "await": null
+            },
+            "seriesLength": 55,
+            "ageRating": 18,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1777765/dd78edfd-6a1f-486c-9a86-6acbca940418/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1777765/dd78edfd-6a1f-486c-9a86-6acbca940418/x1000"
+            },
+            "genres": [
+                {
+                    "name": "фэнтези"
+                },
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "боевик"
+                },
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "приключения"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                },
+                {
+                    "name": "Великобритания"
+                }
+            ]
+        },
+        {
+            "id": 89540,
+            "name": "Семнадцать мгновений весны",
+            "year": 1973,
+            "rating": {
+                "kp": 8.946,
+                "imdb": 8.8,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "seriesLength": 69,
+            "ageRating": 12,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1599028/a1a8d14f-bff3-44a0-bdd5-77727f733c30/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1599028/a1a8d14f-bff3-44a0-bdd5-77727f733c30/x1000"
+            },
+            "genres": [
+                {
+                    "name": "военный"
+                },
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "приключения"
+                },
+                {
+                    "name": "история"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "СССР"
+                }
+            ]
+        },
+        {
+            "id": 404900,
+            "name": "Во все тяжкие",
+            "rating": {
+                "kp": 8.9,
+                "imdb": 9.5,
+                "filmCritics": 0,
+                "russianFilmCritics": 100,
+                "await": null
+            },
+            "year": 2008,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1900788/fb35416f-3b0d-4b96-bc65-cf6923f9e329/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1900788/fb35416f-3b0d-4b96-bc65-cf6923f9e329/x1000"
+            },
+            "genres": [
+                {
+                    "name": "криминал"
+                },
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "триллер"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "ageRating": 18,
+            "seriesLength": 47
+        },
+        {
+            "id": 502838,
+            "name": "Шерлок",
+            "rating": {
+                "kp": 8.856,
+                "imdb": 9.1,
+                "filmCritics": 0,
+                "russianFilmCritics": 75,
+                "await": null
+            },
+            "year": 2010,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1629390/f28c1ea2-47b0-49d5-b11c-9608744f0233/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1629390/f28c1ea2-47b0-49d5-b11c-9608744f0233/x1000"
+            },
+            "genres": [
+                {
+                    "name": "детектив"
+                },
+                {
+                    "name": "триллер"
+                },
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "криминал"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Великобритания"
+                },
+                {
+                    "name": "США"
+                }
+            ],
+            "ageRating": 12,
+            "seriesLength": 90
+        },
+        {
+            "id": 79848,
+            "name": "Сопрано",
+            "year": 1999,
+            "rating": {
+                "kp": 8.824,
+                "imdb": 9.2,
+                "filmCritics": 0,
+                "russianFilmCritics": 100,
+                "await": null
+            },
+            "seriesLength": 55,
+            "ageRating": 18,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1629390/c5539203-bd0a-4d93-920a-11be2fbbd778/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1629390/c5539203-bd0a-4d93-920a-11be2fbbd778/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "криминал"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ]
+        },
+        {
+            "id": 178710,
+            "name": "Доктор Хаус",
+            "rating": {
+                "kp": 8.795,
+                "imdb": 8.7,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "year": 2004,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1599028/270df10e-2e72-4d8e-a49b-f84c751162a7/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1599028/270df10e-2e72-4d8e-a49b-f84c751162a7/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "детектив"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "ageRating": 18,
+            "seriesLength": 43
+        },
+        {
+            "id": 1227803,
+            "name": "Чернобыль",
+            "year": 2019,
+            "rating": {
+                "kp": 8.773,
+                "imdb": 9.3,
+                "filmCritics": 0,
+                "russianFilmCritics": 75,
+                "await": null
+            },
+            "seriesLength": 59,
+            "ageRating": 18,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1600647/3d0b4a89-acd9-49ac-a83e-480c18c41baa/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1600647/3d0b4a89-acd9-49ac-a83e-480c18c41baa/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "история"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                },
+                {
+                    "name": "Великобритания"
+                }
+            ]
+        },
+        {
+            "rating": {
+                "kp": 8.731,
+                "imdb": 8.4,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "id": 251568,
+            "name": "Клиника",
+            "year": 2001,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/1946459/4f0c84e5-6dcd-4253-ab6d-c070af4f71c0/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1946459/4f0c84e5-6dcd-4253-ab6d-c070af4f71c0/x1000"
+            },
+            "genres": [
+                {
+                    "name": "комедия"
+                },
+                {
+                    "name": "драма"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "ageRating": 18,
+            "seriesLength": 22
+        },
+        {
+            "id": 1387213,
+            "name": "Королева Чорин",
+            "year": 2020,
+            "rating": {
+                "kp": 8.701,
+                "imdb": 8.6,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "seriesLength": 70,
+            "ageRating": 18,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/9784475/ac6e139c-6e23-4a4c-bf85-caf11e0aa4ba/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/9784475/ac6e139c-6e23-4a4c-bf85-caf11e0aa4ba/x1000"
+            },
+            "genres": [
+                {
+                    "name": "комедия"
+                },
+                {
+                    "name": "фэнтези"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Корея Южная"
+                }
+            ]
+        },
+        {
+            "id": 1045172,
+            "name": "Йеллоустоун",
+            "year": 2018,
+            "rating": {
+                "kp": 8.663,
+                "imdb": 8.7,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "seriesLength": 60,
+            "ageRating": 18,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/6201401/d591df2c-becd-4e3f-ac2d-f26ac6d8161e/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/6201401/d591df2c-becd-4e3f-ac2d-f26ac6d8161e/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "вестерн"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ]
+        }
+    ],
     "allGenres": [
         {
             "name": "аниме",
@@ -501,23 +1680,63 @@
     ],
     "trailers": [
         {
-            "id": 4711940,
-            "name": "Люди Икс ’97",
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/236744/2a0000018ae27db581167489caa54b7dbb60/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/236744/2a0000018ae27db581167489caa54b7dbb60/x1000"
+            },
+            "id": 1219177,
+            "name": "Человек-паук: Паутина вселенных",
             "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/b0d5bfc0-f501-49cd-aa52-432dafcde13d/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/b0d5bfc0-f501-49cd-aa52-432dafcde13d/x1000"
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/4df6ae79-1fef-4a72-b55d-9be66233af1e/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/4df6ae79-1fef-4a72-b55d-9be66233af1e/x1000"
             },
             "videos": {
                 "trailers": [
                     {
-                        "url": "https://www.youtube.com/embed/pv3Ss8o9gGQ",
+                        "url": "https://www.youtube.com/embed/2aA298Sk4gY",
+                        "name": "трейлер американского мультика ЧЕЛОВЕК-ПАУК: ПАУТИНА ВСЕЛЕННЫХ, в кино летом",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/2aA298Sk4gY",
+                        "name": "трейлер американского мультика ЧЕЛОВЕК-ПАУК: ПАУТИНА ВСЕЛЕННЫХ, в кино летом",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/mv8uyegB83Q",
+                        "name": "\"Breaking News: Watch Anime Free in Hindi! Introducing Our New Streaming Platform!\"",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/yFrxzaBLDQM",
+                        "name": "Trailer - \"Stronger\"",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/Etv-L2JKCWk",
+                        "name": "International Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/shW9i6k8cB0",
+                        "name": "Official Trailer #2",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/cqGjhVJWtEg",
                         "name": "Official Trailer",
                         "site": "youtube",
                         "type": "TRAILER"
                     },
                     {
-                        "url": "https://www.youtube.com/embed/pv3Ss8o9gGQ",
-                        "name": "Official Trailer",
+                        "url": "https://www.youtube.com/embed/BbXJ3_AQE_o",
+                        "name": "First Look",
                         "site": "youtube",
                         "type": "TRAILER"
                     }
@@ -525,47 +1744,27 @@
             }
         },
         {
-            "id": 4540126,
-            "name": "Дюна: Часть вторая",
+            "id": 4973102,
+            "name": "Мой идеальный незнакомец",
             "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/9784475/0c67265b-6631-4e25-b89c-3ddf4e5a1ee7/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/9784475/0c67265b-6631-4e25-b89c-3ddf4e5a1ee7/x1000"
+                "url": "https://image.openmoviedb.com/kinopoisk-images/9784475/4fede69e-960c-471a-a1ec-a91f76a11cb5/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/9784475/4fede69e-960c-471a-a1ec-a91f76a11cb5/x1000"
+            },
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/2385704/2a00000190b5b2dc933a83032f0aa7df1216/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/2385704/2a00000190b5b2dc933a83032f0aa7df1216/x1000"
             },
             "videos": {
                 "trailers": [
                     {
-                        "url": "https://www.youtube.com/embed/U2Qp5pL3ovA",
-                        "name": "Official Trailer 3",
+                        "url": "https://www.youtube.com/embed/wq2MHMBrGsM",
+                        "name": "My Perfect Stranger - Viu Original - English Subtitles",
                         "site": "youtube",
                         "type": "TRAILER"
                     },
                     {
-                        "url": "https://www.youtube.com/embed/_YUzQa_1RCE",
-                        "name": "Official Trailer 2",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    },
-                    {
-                        "url": "https://www.youtube.com/embed/Way9Dexny3w",
-                        "name": "Official Trailer",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    },
-                    {
-                        "url": "https://www.youtube.com/embed/U2Qp5pL3ovA",
-                        "name": "Official Trailer 3",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    },
-                    {
-                        "url": "https://www.youtube.com/embed/_YUzQa_1RCE",
-                        "name": "Official Trailer 2",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    },
-                    {
-                        "url": "https://www.youtube.com/embed/Way9Dexny3w",
-                        "name": "Official Trailer",
+                        "url": "https://www.youtube.com/embed/wq2MHMBrGsM",
+                        "name": "My Perfect Stranger - Viu Original - English Subtitles",
                         "site": "youtube",
                         "type": "TRAILER"
                     }
@@ -579,6 +1778,10 @@
                 "url": "https://image.openmoviedb.com/kinopoisk-images/10671298/f0fe915e-0ed2-4ca0-9eea-e6604936e465/orig",
                 "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10671298/f0fe915e-0ed2-4ca0-9eea-e6604936e465/x1000"
             },
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/tmdb-images/original/h6dQb9NoR8PkfEGqnwZqu9dllzB.jpg",
+                "previewUrl": "https://image.openmoviedb.com/tmdb-images/w500/h6dQb9NoR8PkfEGqnwZqu9dllzB.jpg"
+            },
             "videos": {
                 "trailers": [
                     {
@@ -597,22 +1800,168 @@
             }
         },
         {
-            "id": 1311083,
-            "name": "Рипли",
+            "id": 4686066,
+            "name": "Поехавшая",
             "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/10671298/e34f48ef-1218-4e0a-a5a4-8c13460cf9c1/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10671298/e34f48ef-1218-4e0a-a5a4-8c13460cf9c1/x1000"
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/87b3dbae-0ebe-43fc-ab87-11fd39619e2c/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/87b3dbae-0ebe-43fc-ab87-11fd39619e2c/x1000"
+            },
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/1648503/2a0000018ef07864bc237d42abc6eebd278b/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/1648503/2a0000018ef07864bc237d42abc6eebd278b/x1000"
             },
             "videos": {
                 "trailers": [
                     {
-                        "url": "https://www.youtube.com/embed/0ri2biYLeaI",
-                        "name": "Official Trailer",
+                        "url": "https://www.youtube.com/embed/hymRlPXcba4",
+                        "name": "трейлер русских приключений ПОЕХАВШАЯ, в кино с 8 марта",
                         "site": "youtube",
                         "type": "TRAILER"
                     },
                     {
-                        "url": "https://www.youtube.com/embed/0ri2biYLeaI",
+                        "url": "https://www.youtube.com/embed/hymRlPXcba4",
+                        "name": "трейлер русских приключений ПОЕХАВШАЯ, в кино с 8 марта",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1348189,
+            "name": "Четыре души Койота",
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10768063/cf77b649-bc5d-417f-a913-1df5d98b6bbd/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10768063/cf77b649-bc5d-417f-a913-1df5d98b6bbd/x1000"
+            },
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/223007/2a0000019072994cb8e23a89de3c6069ff60/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/223007/2a0000019072994cb8e23a89de3c6069ff60/x1000"
+            },
+            "videos": {
+                "trailers": [
+                    {
+                        "url": "https://www.youtube.com/embed/d4GI2l8hCOI",
+                        "name": "FOUR SOULS OF COYOTE –  Final Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/d4GI2l8hCOI",
+                        "name": "FOUR SOULS OF COYOTE –  Final Trailer",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 5129278,
+            "name": "ГДР",
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4486454/b9b13f10-8eb0-4a23-b825-b3f90b662e48/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4486454/b9b13f10-8eb0-4a23-b825-b3f90b662e48/x1000"
+            },
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/200035/2a0000018f1fa0de87d7b2a0120878724e06/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/200035/2a0000018f1fa0de87d7b2a0120878724e06/x1000"
+            },
+            "videos": {
+                "trailers": [
+                    {
+                        "url": "https://www.youtube.com/embed/vi6WXkYxC6s",
+                        "name": "ГДР | Трейлер (2024) Wink | Александр Горбатов, Дарья Урсуляк",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/vi6WXkYxC6s",
+                        "name": "ГДР | Трейлер (2024) Wink | Александр Горбатов, Дарья Урсуляк",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4991138,
+            "name": "Меч короля",
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10835644/5f097d7b-8487-426e-9377-8d7acd6bfcb5/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10835644/5f097d7b-8487-426e-9377-8d7acd6bfcb5/x1000"
+            },
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/200035/2a0000018f59214a6410516798c628eb594f/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/200035/2a0000018f59214a6410516798c628eb594f/x1000"
+            },
+            "videos": {
+                "trailers": [
+                    {
+                        "url": "https://www.youtube.com/embed/c9U1E9cC5is",
+                        "name": "Official Trailer [Subtitled]",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/fRO5x4Kp7gU",
+                        "name": "Official Trailer [Subtitled]",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/c9U1E9cC5is",
+                        "name": "Official Trailer [Subtitled]",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/fRO5x4Kp7gU",
+                        "name": "Official Trailer [Subtitled]",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1044002,
+            "name": "Гран туризмо",
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10671298/eec1f557-cf1c-4a90-bce5-4fcd242132ba/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10671298/eec1f557-cf1c-4a90-bce5-4fcd242132ba/x1000"
+            },
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/212840/2a0000018c1f34741d0f79599973a622322d/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/212840/2a0000018c1f34741d0f79599973a622322d/x1000"
+            },
+            "videos": {
+                "trailers": [
+                    {
+                        "url": "https://www.youtube.com/embed/lZHtaJU-Gnw",
+                        "name": "Гран Туризмо | Официальный трейлер (дубляж) | Фильм 2023",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/lZHtaJU-Gnw",
+                        "name": "Гран Туризмо | Официальный трейлер (дубляж) | Фильм 2023",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/ZCYHn8mvyF8",
+                        "name": "Official UK Trailer #2",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/GgKmhDaVo48",
+                        "name": "Official Trailer 2",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/GVPzGBvPrzw",
                         "name": "Official Trailer",
                         "site": "youtube",
                         "type": "TRAILER"
@@ -621,29 +1970,27 @@
             }
         },
         {
-            "id": 1435343,
-            "name": "Джентльмены",
+            "id": 5148826,
+            "name": "Кибер Иван",
             "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/4483445/5b0baa32-c83d-454e-9f4e-a4214ee93509/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4483445/5b0baa32-c83d-454e-9f4e-a4214ee93509/x1000"
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/15643a6f-aa49-48f5-830b-506a3ac6f8d3/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/15643a6f-aa49-48f5-830b-506a3ac6f8d3/x1000"
+            },
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/1672343/2a0000018a3ce20cc6631e7ff108c97a971d/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/1672343/2a0000018a3ce20cc6631e7ff108c97a971d/x1000"
             },
             "videos": {
                 "trailers": [
                     {
-                        "url": "https://www.youtube.com/embed/Tds2g0cUQpg",
-                        "name": "Джентльмены (1 сезон) — Русский трейлер #2 (4К, 2024)",
+                        "url": "https://www.youtube.com/embed/pQ7p3tRHskE",
+                        "name": "Кибер Иван (2023)-русский трейлер сериала.",
                         "site": "youtube",
                         "type": "TRAILER"
                     },
                     {
-                        "url": "https://www.youtube.com/embed/Tds2g0cUQpg",
-                        "name": "Джентльмены (1 сезон) — Русский трейлер #2 (4К, 2024)",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    },
-                    {
-                        "url": "https://www.youtube.com/embed/wyEOwHrpZH4",
-                        "name": "Official Trailer",
+                        "url": "https://www.youtube.com/embed/pQ7p3tRHskE",
+                        "name": "Кибер Иван (2023)-русский трейлер сериала.",
                         "site": "youtube",
                         "type": "TRAILER"
                     }
@@ -651,149 +1998,27 @@
             }
         },
         {
-            "id": 4414587,
-            "name": "Министерство неджентльменских дел",
+            "id": 5364646,
+            "name": "Расплата",
             "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/10671298/72d3ef84-c785-46aa-8a8d-16e0f0847c56/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10671298/72d3ef84-c785-46aa-8a8d-16e0f0847c56/x1000"
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10835644/6bed3e5f-f658-447a-a418-e81565c2329f/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10835644/6bed3e5f-f658-447a-a418-e81565c2329f/x1000"
+            },
+            "backdrop": {
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/212840/2a0000018f585eeb84192d9acff67ce935df/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/212840/2a0000018f585eeb84192d9acff67ce935df/x1000"
             },
             "videos": {
                 "trailers": [
                     {
-                        "url": "https://www.youtube.com/embed/RDWYoEsLcLU",
-                        "name": "Министерство неджентльменских дел | Трейлер",
+                        "url": "https://www.youtube.com/embed/Kflqu9P1m-I",
+                        "name": "Сериал Расплата | Трейлер (2024) Wink | Леонид Бичевин, Анатолий Кот",
                         "site": "youtube",
                         "type": "TRAILER"
                     },
                     {
-                        "url": "https://www.youtube.com/embed/RDWYoEsLcLU",
-                        "name": "Министерство неджентльменских дел | Трейлер",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    },
-                    {
-                        "url": "https://www.youtube.com/embed/zvwDen1Wrx8",
-                        "name": "Official Trailer",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    }
-                ]
-            }
-        },
-        {
-            "id": 4549968,
-            "name": "Детективы с того света",
-            "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/10703959/6a34d4f5-e31d-44fa-bfc3-0190b14af090/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10703959/6a34d4f5-e31d-44fa-bfc3-0190b14af090/x1000"
-            },
-            "videos": {
-                "trailers": [
-                    {
-                        "url": "https://www.youtube.com/embed/hwJmZ2Ekfbc",
-                        "name": "Official Trailer",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    },
-                    {
-                        "url": "https://www.youtube.com/embed/hwJmZ2Ekfbc",
-                        "name": "Official Trailer",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    }
-                ]
-            }
-        },
-        {
-            "id": 4922886,
-            "name": "Обыкновенные ангелы",
-            "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/10893610/e6d3ba93-fcd7-4c87-a1f1-3ca0531fca90/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10893610/e6d3ba93-fcd7-4c87-a1f1-3ca0531fca90/x1000"
-            },
-            "videos": {
-                "trailers": [
-                    {
-                        "url": "https://www.youtube.com/embed/sNv-HpcGe0I",
-                        "name": "Official Trailer #2",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    },
-                    {
-                        "url": "https://www.youtube.com/embed/R1vn8kPgCYA",
-                        "name": "Official Trailer",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    },
-                    {
-                        "url": "https://www.youtube.com/embed/sNv-HpcGe0I",
-                        "name": "Official Trailer #2",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    },
-                    {
-                        "url": "https://www.youtube.com/embed/R1vn8kPgCYA",
-                        "name": "Official Trailer",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    }
-                ]
-            }
-        },
-        {
-            "id": 1388409,
-            "name": "Фуриоса: Хроники Безумного Макса",
-            "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/10671298/67682659-46ae-48db-865f-2ee993b9af4a/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10671298/67682659-46ae-48db-865f-2ee993b9af4a/x1000"
-            },
-            "videos": {
-                "trailers": [
-                    {
-                        "url": "https://www.youtube.com/embed/XJMuhwVlca4",
-                        "name": "Official Trailer #1",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    },
-                    {
-                        "url": "https://www.youtube.com/embed/XJMuhwVlca4",
-                        "name": "Official Trailer #1",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    }
-                ]
-            }
-        },
-        {
-            "id": 1199731,
-            "name": "Аватар: Легенда об Аанге",
-            "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/9784475/a9eda22b-5e9c-4166-b615-378a8c667b27/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/9784475/a9eda22b-5e9c-4166-b615-378a8c667b27/x1000"
-            },
-            "videos": {
-                "trailers": [
-                    {
-                        "url": "https://www.youtube.com/embed/qOSM0CpfRPI",
-                        "name": "АВАТАР: ЛЕГЕНДА ОБ ААНГЕ Сезон 1 - Финальный Русский трейлер (IndigoFilms, 2024) Netflix Сериал HD",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    },
-                    {
-                        "url": "https://www.youtube.com/embed/qOSM0CpfRPI",
-                        "name": "АВАТАР: ЛЕГЕНДА ОБ ААНГЕ Сезон 1 - Финальный Русский трейлер (IndigoFilms, 2024) Netflix Сериал HD",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    },
-                    {
-                        "url": "https://www.youtube.com/embed/xEmlE9Ianuo",
-                        "name": "Final Trailer",
-                        "site": "youtube",
-                        "type": "TRAILER"
-                    },
-                    {
-                        "url": "https://www.youtube.com/embed/ByAn8DF8Ykk",
-                        "name": "Official Trailer",
+                        "url": "https://www.youtube.com/embed/Kflqu9P1m-I",
+                        "name": "Сериал Расплата | Трейлер (2024) Wink | Леонид Бичевин, Анатолий Кот",
                         "site": "youtube",
                         "type": "TRAILER"
                     }

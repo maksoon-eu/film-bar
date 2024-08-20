@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { IGenres } from "./featureGenresTypes";
-import { getGenres } from "../../../service/genresService";
+import { IGenres } from './featureGenresTypes';
+import { getGenres } from '../../../service/genresService';
 
 const initialState: IGenres = {
     genres: [],

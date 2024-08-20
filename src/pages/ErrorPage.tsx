@@ -1,11 +1,11 @@
-import Error from "../components/error/Error";
+import Error from '../components/error/Error';
 
-const ErrorPage: React.FC = () => {
+const ErrorPage = () => {
     return (
         <>
             <Error />
         </>
-    )
-}
+    );
+};
 
 export default ErrorPage;

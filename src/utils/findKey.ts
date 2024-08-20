@@ -7,6 +7,7 @@ export const findKey = <T extends object, K extends keyof T>(
             if (key in object) {
                 return { name: key, value: object[key] };
             }
+            return null;
         })
-        .filter(Boolean) as Array<{ name: K; value: T[K] }>;
+        .filter((item): item is { name: K; value: T[K] } => item !== null);
 };

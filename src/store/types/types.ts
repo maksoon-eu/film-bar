@@ -1,5 +1,10 @@
 export type LoadingStatusType = 'idle' | 'loading' | 'error';
 
+export interface Poster {
+    url: string;
+    previewUrl?: string;
+}
+
 export interface Rating {
     kp: number;
     imdb: number;

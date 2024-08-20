@@ -1,0 +1,94 @@
+.filmsSliderItem {
+    &__slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item {
+        margin: 5px 0;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        cursor: pointer;
+        transition: transform 0.15s linear;
+
+        &_title {
+            font-size: var(--font-size-m);
+            font-weight: var(--font-weight-l);
+            color: var(--font-color-optional);
+            margin-top: 10px;
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+
+            .filmsSliderItem__item_fade {
+                opacity: 1;
+            }
+        }
+
+        &_name {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        &_rating {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-weight: var(--font-weight-l);
+            padding: 2px 10px;
+            border-radius: 10px;
+            font-size: var(--font-size-s);
+
+            &.green {
+                background-color: var(--background-color-green);
+            }
+
+            &.yellow {
+                background-color: var(--background-color-yellow);
+            }
+
+            &.red {
+                background-color: var(--background-color-red);
+            }
+        }
+
+        &_poster {
+            border-radius: 10px;
+            overflow: hidden;
+            height: 480px;
+            position: relative;
+            font-size: var(--font-size-s);
+
+            img {
+                width: 100%;
+                height: 480px;
+                object-fit: cover;
+            }
+        }
+
+        &_fade {
+            opacity: 0;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            left: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: var(--background-color-fade);
+            transition: opacity 0.15s linear;
+            font-size: var(--font-size-s);
+        }
+
+        &_group {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

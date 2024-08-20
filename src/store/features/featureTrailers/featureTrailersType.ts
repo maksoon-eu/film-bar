@@ -1,9 +1,4 @@
-import { LoadingStatusType } from '../../types/types';
-
-interface Poster {
-    url: string;
-    previewUrl?: string;
-}
+import { LoadingStatusType, Poster } from '../../types/types';
 
 interface Video {
     url: string;
@@ -20,6 +15,7 @@ export interface ITrailers {
     id: number;
     name: string;
     poster: Poster;
+    backdrop: Poster;
     videos: Videos;
 }
 

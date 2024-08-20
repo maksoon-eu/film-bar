@@ -1,10 +1,10 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { request } from '../utils/api';
-import { ITrailers } from "../store/features/featureTrailers/featureTrailersType";
+import { ITrailers } from '../store/features/featureTrailers/featureTrailersType';
 
 export const getTrailers = createAsyncThunk<ITrailers[], void, { rejectValue: string }>(
     'trailers/gerTrailers',
-    async (state, thunkAPI) => {
+    async (_, thunkAPI) => {
         try {
             const response = await request({
                 url: `${process.env.REACT_APP_TEST_API_BASE}trailers`,
@@ -18,7 +18,7 @@ export const getTrailers = createAsyncThunk<ITrailers[], void, { rejectValue: st
             return response;
         } catch (e) {
             if (e instanceof Error) {
-                thunkAPI.rejectWithValue(e.message);
+                return thunkAPI.rejectWithValue(e.message);
             }
         }
     }

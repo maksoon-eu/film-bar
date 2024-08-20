@@ -1,0 +1,22 @@
+.ratingItem {
+        display: flex;
+        align-items: center;
+
+    &__item {
+        &_name {
+            font-weight: var(--font-weight-xl);
+        }
+
+        &:not(:last-of-type) {
+            margin-right: 20px;
+        }
+    }
+
+    &__kp {
+        color: var(--font-color-kp);
+    }
+
+    &__imdb {
+        color: var(--font-color-imdb);
+    }
+}

@@ -7,8 +7,8 @@ const initialState: IFilmsSlice = {
     loadingStatus: 'idle',
 };
 
-const featuresMoviesSlice = createSlice({
-    name: 'featuresMovies',
+const featureFilmsSlice = createSlice({
+    name: 'featuresFilms',
     initialState,
     reducers: {},
     extraReducers: (builder) => {
@@ -26,5 +26,5 @@ const featuresMoviesSlice = createSlice({
     },
 });
 
-export const { reducer: moviesReducer } = featuresMoviesSlice;
-export const { actions: moviesActions } = featuresMoviesSlice;
+export const { reducer: filmsReducer } = featureFilmsSlice;
+export const { actions: filmsActions } = featureFilmsSlice;

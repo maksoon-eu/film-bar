@@ -1,13 +1,21 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { moviesReducer } from './features/featureFilms/featureFilmsSlice';
+import { filmsReducer } from './features/featureFilms/featureFilmsSlice';
 import { genresReducer } from './features/featureGenres/featureGenresSlice';
 import { trailersReducer } from './features/featureTrailers/featureTrailersSlice';
+import { filmsSliderNewReducer } from './features/featureFilmsSliderNew/featureFilmsSliderNewSlice';
+import { filmsSliderPopularReducer } from './features/featureFilmsSliderPopular/featureFilmsSliderPopularSlice';
+import { seriesReducer } from './features/featureSeries/featureSeriesSlice';
+import { filmsSearchReducer } from './features/featureFilmsSearch/featureFilmsSearchSlice';
 
 export const store = configureStore({
     reducer: {
-        moviesReducer,
+        filmsReducer,
+        filmsSliderNewReducer,
         genresReducer,
         trailersReducer,
+        filmsSliderPopularReducer,
+        seriesReducer,
+        filmsSearchReducer,
     },
 });
 

@@ -1,47 +1,38 @@
 import React, { useMemo } from 'react';
-import { IFilm } from "../../store/features/featureFilms/featureFilmsTypes";
-import { Rating } from '../../store/types/types';
+import { IFilm } from '../../store/features/featureFilms/featureFilmsTypes';
 import { findKey } from '../../utils/findKey';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import AssetsList from '../../shared/assetsList/AssetsList';
 import Button from '../../shared/button/Button';
+import RatingItem from '../../shared/ratingList/RatingItem';
 
-import styles from './sliderFilmItem.module.scss';
-import 'react-lazy-load-image-component/src/effects/opacity.css';
+import loader from '../../assets/loader/loader.svg';
+
+import styles from './mainSliderItem.module.scss';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 interface SliderFilmItemProps {
     film: IFilm;
 }
 
-const SliderFilmItem: React.FC<SliderFilmItemProps> = React.memo(({ film }) => {
-    const ratingList = useMemo(() => {
-        return findKey<Rating, 'imdb' | 'kp'>(film.rating, ['imdb', 'kp']).map((rating) => {
-            return (
-                <div
-                    key={rating.name}
-                    className={`${styles.sliderFilm__rating_item} ${
-                        styles[`sliderFilm__rating_${rating.name}`]
-                    }`}>
-                    <span className={styles.sliderFilm__rating_name}>
-                        {rating.name.toUpperCase()}:
-                    </span>{' '}
-                    {rating.value.toFixed(1)}
-                </div>
-            );
-        });
-    }, [film.rating]);
+const MainSliderItem = React.memo(({ film }: SliderFilmItemProps) => {
+    const ratingList = findKey(film.rating, ['imdb', 'kp']).map((rating) => {
+        return <RatingItem key={rating.name} rating={rating} />;
+    });
 
     return (
         <div className={styles.sliderFilm}>
+            <div className={styles.sliderFilm__fade}></div>
             <div className={styles.sliderFilm__backdrop}>
                 <LazyLoadImage
                     alt={film.name}
                     src={film.backdrop.url}
-                    effect="opacity"
+                    effect="blur"
                     width={'100%'}
                     height={'100%'}
                     threshold={0}
+                    placeholderSrc={loader}
                     className={styles.sliderFilm__backdrop_img}
                 />
             </div>
@@ -72,4 +63,4 @@ const SliderFilmItem: React.FC<SliderFilmItemProps> = React.memo(({ film }) => {
     );
 });
 
-export default SliderFilmItem;
+export default MainSliderItem;

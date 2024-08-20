@@ -1,4 +1,4 @@
-import { resolve } from "path";
+import { resolve } from 'path';
 
 type HttpRequestMethods = 'GET' | 'POST' | 'PATCH' | 'DElETE';
 
@@ -30,9 +30,9 @@ export const request = async ({
 
         await new Promise((resolve) => {
             setTimeout(() => {
-                resolve(1)
-            }, 2000)
-        })
+                resolve(1);
+            }, 2000);
+        });
 
         return data;
     } catch (e) {

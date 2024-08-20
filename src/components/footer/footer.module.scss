@@ -1,0 +1,16 @@
+.footer {
+    margin-top: 100px;
+    &__line {
+        height: 2px;
+        background-color: var(--background-color-widgets);
+    }
+
+    &__inner {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: var(--font-size-s);
+        font-weight: var(--font-weight-l);
+    }
+}
