@@ -5,9 +5,10 @@ import styles from './assetsList.module.scss';
 interface AssetsListProps {
     list: NameItem[];
     path: string;
+    style?: string;
 }
 
-const AssetsList = ({ list, path }: AssetsListProps) => {
+const AssetsList = ({ list, path, style }: AssetsListProps) => {
     const assetsList = list.map((item) => {
         const name = item.name;
 
@@ -28,7 +29,7 @@ const AssetsList = ({ list, path }: AssetsListProps) => {
         );
     });
 
-    return <div className={styles.assetsList}>{assetsList}</div>;
+    return <div className={`${styles.assetsList} ${style ? styles[style] : ''}`}>{assetsList}</div>;
 };
 
 export default AssetsList;

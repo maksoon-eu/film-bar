@@ -4,7 +4,7 @@ export const findKey = <T extends object, K extends keyof T>(
 ): Array<{ name: K; value: T[K] }> => {
     return needsKey
         .map((key) => {
-            if (key in object) {
+            if (object && key in object) {
                 return { name: key, value: object[key] };
             }
             return null;

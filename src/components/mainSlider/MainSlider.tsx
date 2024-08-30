@@ -20,10 +20,8 @@ const MainSlider = () => {
             dispatch(getFilms());
         }
     }, [dispatch, films.length]);
-    console.log(1, films)
 
     const filmList = useMemo(() => {
-        console.log(2)
         return films.map((film) => {
             return (
                 <div key={film.id}>

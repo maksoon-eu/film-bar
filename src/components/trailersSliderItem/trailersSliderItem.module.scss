@@ -15,7 +15,11 @@
         height: 260px;
         text-align: center;
         position: relative;
-        margin-top: 40px;
+        margin-top: 50px;
+
+        &:hover &_poster {
+            top: -50px;
+        }
 
         &_name {
             margin-top: 10px;
@@ -41,6 +45,7 @@
             width: 115px;
             height: 170px;
             border-radius: 10px;
+            transition: .1s linear;
 
             overflow: hidden;
 

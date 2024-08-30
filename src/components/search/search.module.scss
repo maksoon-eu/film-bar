@@ -2,7 +2,7 @@
     position: relative;
 
     &__inner {
-        max-width: 500px;
+        max-width: 650px;
         width: 100%;
         position: relative;
 
@@ -10,7 +10,7 @@
             background-color: var(--background-color-assets);
             border-radius: 999px;
             padding: 0 30px;
-            width: 500px;
+            width: 650px;
             height: 60px;
             border: 2px var(--background-color-widgets) solid;
         }
@@ -23,15 +23,5 @@
             top: 50%;
             transform: translateY(-50%);
         }
-    }
-
-    &__list {
-        position: absolute;
-        top: 75px;
-        right: 0;
-        left: 0;
-        background-color: var(--background-color-assets);
-        border-radius: 10px;
-        padding: 10px 20px;
     }
 }

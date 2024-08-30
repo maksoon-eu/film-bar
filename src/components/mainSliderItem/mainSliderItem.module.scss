@@ -20,6 +20,7 @@
 
     &__rating {
         display: flex;
+        margin-bottom: 20px;
     }
 
     &__backdrop {
@@ -76,18 +77,12 @@
         }
     }
 
-    &__info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 500px;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
     &__ageRating {
         font-size: var(--font-size-xl);
         color: var(--font-color-optional);
+        position: absolute;
+        right: 0;
+        top: -45px;
     }
 
     &__description {
@@ -105,6 +100,11 @@
 
     &__assets {
         margin-bottom: 20px;
+
+        &_ageRating {
+            position: relative;
+            display: inline-block;
+        }
 
         &_last {
             margin-bottom: 50px;

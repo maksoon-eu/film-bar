@@ -1,11 +1,11 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { IFilm } from '../../store/features/featureFilms/featureFilmsTypes';
 import { findKey } from '../../utils/findKey';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import AssetsList from '../../shared/assetsList/AssetsList';
 import Button from '../../shared/button/Button';
-import RatingItem from '../../shared/ratingList/RatingItem';
+import RatingItem from '../../shared/ratingItem/RatingItem';
 
 import loader from '../../assets/loader/loader.svg';
 
@@ -44,15 +44,15 @@ const MainSliderItem = React.memo(({ film }: SliderFilmItemProps) => {
                         className={styles.sliderFilm__logo_img}
                     />
                 </div>
-                <div className={styles.sliderFilm__info}>
-                    <div className={styles.sliderFilm__rating}>{ratingList}</div>
-                    <div className={styles.sliderFilm__ageRating}>{film.ageRating}+</div>
-                </div>
+                <div className={styles.sliderFilm__rating}>{ratingList}</div>
                 <div className={styles.sliderFilm__assets}>
-                    <AssetsList list={film.genres} path="genres" />
+                    <div className={styles.sliderFilm__assets_ageRating}>
+                        <div className={styles.sliderFilm__ageRating}>{film.ageRating}+</div>
+                        <AssetsList list={film.genres.slice(0, 5)} path="genres" />
+                    </div>
                 </div>
                 <div className={`${styles.sliderFilm__assets} ${styles.sliderFilm__assets_last}`}>
-                    <AssetsList list={film.countries} path="countries" />
+                    <AssetsList list={film.countries.slice(0, 5)} path="countries" />
                 </div>
                 <div className={styles.sliderFilm__description}>{film.description}</div>
                 <div className={styles.sliderFilm__btn}>

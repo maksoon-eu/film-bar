@@ -1,48 +1,25 @@
-import { useEffect, useState } from 'react';
-import { useAppDispatch } from '../../hooks/dispatch.hook';
-import { useAppSelector } from '../../hooks/selector.hook';
-import { selectFilmsSearch } from '../../store/features/featureFilmsSearch/featureFilmsSearchSelector';
-import { getFilmsSearch } from '../../service/filmsSearchService';
+import { useState } from 'react';
 
-import loader from '../../assets/loader/loader.svg';
+import SearchModal from '../searchModal/searchModal';
 
 import styles from './search.module.scss';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { findKey } from "../../utils/findKey";
-import { Rating } from "../../store/types/types";
 
 const Search = () => {
     const [inputSearch, setInputSearch] = useState<string>('');
+    const [open, setOpen] = useState<boolean>(true);
 
-    const dispatch = useAppDispatch();
-    const { filmsSearch, loadingStatus } = useAppSelector(selectFilmsSearch);
-
-    useEffect(() => {
-        dispatch(getFilmsSearch());
-    }, [inputSearch]);
-
-    const onInputSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setInputSearch(e.currentTarget.value);
+    const openHandler = () => {
+        setOpen(true);
     };
 
-    const filmsSearchList = filmsSearch.map((film) => {
-        const ratingKey = findKey<Rating, 'imdb' | 'kp'>(film.rating, ['imdb', 'kp'])
-        return (
-            <div key={film.id} className={styles.search__inner_item}>
-                <LazyLoadImage
-                    alt={film.name}
-                    effect="blur"
-                    src={film.poster.previewUrl || film.poster.url}
-                    placeholderSrc={loader}
-                />
-                <div className={styles.search__inner_right}>
-                <div className={styles.search__inner_name}>{film.name}</div>
-                <div className={styles.search__inner_name}>{film.rating.kp || film.rating.imdb}</div>
-                <div className={styles.search__inner_name}>{film.year}</div>
-                </div>
-            </div>
-        );
-    });
+    const closeHandler = () => {
+        setOpen(false);
+    };
+
+    const onInputSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+        openHandler();
+        setInputSearch(e.currentTarget.value);
+    };
 
     return (
         <div className={styles.search}>
@@ -62,9 +39,8 @@ const Search = () => {
                     </svg>
                 </div>
             </div>
-            <div className={styles.search__list}>
-                {loadingStatus === 'loading' ? <img src={loader} alt="loader" /> : filmsSearchList}
-            </div>
+
+            <SearchModal inputSearch={inputSearch} open={open} closeHandler={closeHandler} />
         </div>
     );
 };

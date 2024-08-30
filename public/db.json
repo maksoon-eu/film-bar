@@ -1043,164 +1043,267 @@
     ],
     "search": [
         {
-            "id": 1000048,
-            "name": "Мама.com",
-            "year": 2016,
-            "rating": {
-                "kp": 0,
-                "imdb": 5.4,
-                "filmCritics": 0,
-                "russianFilmCritics": 0,
-                "await": 0
-            },
-            "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/1898899/a92fe9b6-1848-4d56-9dad-01332a5f3712/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1898899/a92fe9b6-1848-4d56-9dad-01332a5f3712/x1000"
-            }
-        },
-        {
-            "id": 6059559,
-            "name": "Граница пустоты",
-            "year": 2007,
-            "rating": {
-                "kp": 0,
-                "imdb": 0,
-                "filmCritics": 0,
-                "russianFilmCritics": 0,
-                "await": 0
-            },
-            "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/1898899/f61fba8b-80a7-47c9-a09b-7b652d17ec92/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/1898899/f61fba8b-80a7-47c9-a09b-7b652d17ec92/x1000"
-            }
-        },
-        {
-            "id": 5927251,
-            "name": "Сладкая ловушка",
-            "year": 2024,
-            "rating": {
-                "kp": 0,
-                "imdb": 7.3,
-                "filmCritics": 0,
-                "russianFilmCritics": 0,
-                "await": 0
-            },
-            "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/4486362/5b319ce3-81a4-4d95-a3c7-3a3af7ca569e/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4486362/5b319ce3-81a4-4d95-a3c7-3a3af7ca569e/x1000"
-            }
-        },
-        {
-            "id": 5699080,
-            "name": "Наш переводчик",
-            "year": 2024,
-            "rating": {
-                "kp": 0,
-                "imdb": 6.7,
-                "filmCritics": 0,
-                "russianFilmCritics": 0,
-                "await": 0
-            },
-            "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/10809116/6870f56b-07d3-4700-88ff-87f9109d20b0/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10809116/6870f56b-07d3-4700-88ff-87f9109d20b0/x1000"
-            }
-        },
-        {
-            "id": 6000382,
-            "name": "Безграничный туман",
-            "year": 2024,
-            "rating": {
-                "kp": 0,
-                "imdb": 0,
-                "filmCritics": 0,
-                "russianFilmCritics": 0,
-                "await": 0
-            },
-            "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/10592371/b9e853a9-2d2d-4d31-851c-c41b5eef499a/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10592371/b9e853a9-2d2d-4d31-851c-c41b5eef499a/x1000"
-            }
-        },
-        {
-            "id": 5700607,
-            "name": "Чертаново Плаза",
+            "id": 5365205,
+            "name": "Хоримия: Фрагменты",
             "year": 2023,
-            "rating": {
-                "kp": 0,
-                "imdb": 0,
-                "filmCritics": 0,
-                "russianFilmCritics": 0,
-                "await": 0
-            },
             "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/10703959/2cd5899e-0dc4-4546-90ab-07264fdcc6fa/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10703959/2cd5899e-0dc4-4546-90ab-07264fdcc6fa/x1000"
-            }
+                "url": "https://image.openmoviedb.com/kinopoisk-images/6201401/87302dbb-8c03-4d80-8a64-b1938af36a74/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/6201401/87302dbb-8c03-4d80-8a64-b1938af36a74/x1000"
+            },
+            "genres": [
+                {
+                    "name": "аниме"
+                },
+                {
+                    "name": "мультфильм"
+                },
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "комедия"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Япония"
+                }
+            ],
+            "enName": "Horimiya -the missing pieces-"
         },
         {
-            "id": 5626370,
-            "name": "Парень с вещмешком",
-            "year": 2024,
-            "rating": {
-                "kp": 0,
-                "imdb": 7.3,
-                "filmCritics": 0,
-                "russianFilmCritics": 0,
-                "await": 0
-            },
+            "id": 5364433,
+            "name": "Из мрака прошлого",
+            "year": 2023,
             "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/4486362/5f26a2a4-cbb3-4b84-9a2f-1edbbadb6322/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4486362/5f26a2a4-cbb3-4b84-9a2f-1edbbadb6322/x1000"
-            }
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10671298/80a89bab-00c2-4f73-b464-fcc48a1fb579/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10671298/80a89bab-00c2-4f73-b464-fcc48a1fb579/x1000"
+            },
+            "genres": [
+                {
+                    "name": "триллер"
+                },
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "криминал"
+                },
+                {
+                    "name": "детектив"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Германия"
+                }
+            ],
+            "enName": "Sleeping Dogs"
         },
         {
-            "id": 6056506,
-            "name": "МУЛЬТ в кино. Выпуск № 172",
-            "year": 2024,
-            "rating": {
-                "kp": 0,
-                "imdb": 0,
-                "filmCritics": 0,
-                "russianFilmCritics": 0,
-                "await": 0
-            },
+            "id": 5364303,
+            "name": "Демоны и спасители",
+            "year": 2023,
             "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/4486362/56a0575c-c3e3-4b29-95d3-5a875c363605/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4486362/56a0575c-c3e3-4b29-95d3-5a875c363605/x1000"
-            }
+                "url": "https://image.openmoviedb.com/kinopoisk-images/6201401/e8e05e51-6a29-4abe-8e19-78bbecf0e57b/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/6201401/e8e05e51-6a29-4abe-8e19-78bbecf0e57b/x1000"
+            },
+            "genres": [
+                {
+                    "name": "документальный"
+                },
+                {
+                    "name": "криминал"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "enName": "Demons and Saviors"
         },
         {
-            "id": 6038775,
-            "name": "Игры: Экстра",
-            "year": 2024,
-            "rating": {
-                "kp": 7.961,
-                "imdb": 0,
-                "filmCritics": 0,
-                "russianFilmCritics": 0,
-                "await": null
-            },
+            "id": 4553901,
+            "name": "Американская история преступлений",
+            "year": 2016,
             "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/10835644/281424e6-2e1e-4e5d-842b-b6a976281313/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10835644/281424e6-2e1e-4e5d-842b-b6a976281313/x1000"
-            }
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4774061/2989ea71-45fd-4fdb-b71c-541d83de2acb/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4774061/2989ea71-45fd-4fdb-b71c-541d83de2acb/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "криминал"
+                },
+                {
+                    "name": "биография"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "enName": "American Crime Story: The People v. O.J. Simpson"
         },
         {
-            "id": 5198932,
-            "name": "Сторона защиты",
-            "year": 2021,
-            "rating": {
-                "kp": 0,
-                "imdb": 7.7,
-                "filmCritics": 0,
-                "russianFilmCritics": 0,
-                "await": 0
-            },
+            "id": 5354975,
+            "name": "Детективное агентство Ли",
+            "year": 2022,
             "poster": {
-                "url": "https://image.openmoviedb.com/kinopoisk-images/10703959/ad11c23b-a2c1-4fda-8e5c-a4ba2cd2fa8d/orig",
-                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10703959/ad11c23b-a2c1-4fda-8e5c-a4ba2cd2fa8d/x1000"
-            }
+                "url": "https://image.openmoviedb.com/kinopoisk-images/6201401/0ff0e951-9a98-4062-8c85-2463d9176371/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/6201401/0ff0e951-9a98-4062-8c85-2463d9176371/x1000"
+            },
+            "genres": [
+                {
+                    "name": "мультфильм"
+                },
+                {
+                    "name": "криминал"
+                },
+                {
+                    "name": "детектив"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Китай"
+                }
+            ],
+            "enName": "Arknights [Lee's Detective Agency]"
+        },
+        {
+            "id": 5357056,
+            "name": "Тысяча лет для тебя",
+            "year": 2022,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4774061/42a7d338-a11f-46e4-9e36-91d91c9351d2/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4774061/42a7d338-a11f-46e4-9e36-91d91c9351d2/x1000"
+            },
+            "genres": [
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "фэнтези"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Китай"
+                }
+            ],
+            "enName": "Please Your Lord"
+        },
+        {
+            "id": 5354966,
+            "name": "Провокация",
+            "year": 2023,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4483445/b4cc15fb-3449-4fe4-aa54-486ce304e0b3/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4483445/b4cc15fb-3449-4fe4-aa54-486ce304e0b3/x1000"
+            },
+            "genres": [
+                {
+                    "name": "триллер"
+                },
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "история"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Китай"
+                }
+            ],
+            "enName": "Provoke"
+        },
+        {
+            "id": 5354686,
+            "name": "Летняя песня",
+            "year": 2023,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/6201401/0eb5662a-9867-455b-be6d-bcac127cd7c0/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/6201401/0eb5662a-9867-455b-be6d-bcac127cd7c0/x1000"
+            },
+            "genres": [
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "комедия"
+                },
+                {
+                    "name": "музыка"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Турция"
+                }
+            ],
+            "enName": "Summer Song"
+        },
+        {
+            "id": 4999958,
+            "name": "Орвилл",
+            "year": 2017,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4303601/e958ed5f-5d43-4bbc-b174-009dc4e7276d/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4303601/e958ed5f-5d43-4bbc-b174-009dc4e7276d/x1000"
+            },
+            "genres": [
+                {
+                    "name": "фантастика"
+                },
+                {
+                    "name": "драма"
+                },
+                {
+                    "name": "комедия"
+                },
+                {
+                    "name": "приключения"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "США"
+                }
+            ],
+            "enName": "The Orville: New Horizons"
+        },
+        {
+            "id": 5351787,
+            "name": "Близкий человек",
+            "year": 2023,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/4483445/20ca1d1d-53c2-44f7-9d82-62ef77015410/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/4483445/20ca1d1d-53c2-44f7-9d82-62ef77015410/x1000"
+            },
+            "genres": [
+                {
+                    "name": "мелодрама"
+                },
+                {
+                    "name": "комедия"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Великобритания"
+                }
+            ],
+            "enName": "Significant Other (UK)"
         }
     ],
     "series": [
