@@ -1,12 +1,12 @@
-import { useState } from 'react';
-
-import SearchModal from '../searchModal/searchModal';
-
+import { useRef, useState } from 'react';
+import SearchModal from '../searchModal/SearchModal';
 import styles from './search.module.scss';
 
 const Search = () => {
     const [inputSearch, setInputSearch] = useState<string>('');
-    const [open, setOpen] = useState<boolean>(true);
+    const [open, setOpen] = useState<boolean>(false);
+    const refModal = useRef<HTMLDivElement>(null);
+    const refInput = useRef<HTMLInputElement>(null);
 
     const openHandler = () => {
         setOpen(true);
@@ -16,20 +16,30 @@ const Search = () => {
         setOpen(false);
     };
 
+    const clearHandler = () => {
+        setInputSearch('');
+        refInput.current?.focus();
+    };
+
     const onInputSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-        openHandler();
         setInputSearch(e.currentTarget.value);
     };
 
     return (
-        <div className={styles.search}>
+        <div className={styles.search} ref={refModal}>
             <div className={styles.search__inner}>
                 <input
+                    ref={refInput}
                     className={styles.search__inner_input}
                     value={inputSearch}
                     onChange={onInputSearch}
+                    onFocus={openHandler}
                 />
-                <div className={styles.search__inner_icon}>
+                <div
+                    className={`${styles.search__inner_icon} ${
+                        inputSearch.length > 0 ? styles.search__inner_active : ''
+                    }`}
+                    onClick={clearHandler}>
                     <svg viewBox="0 0 24 24">
                         <path
                             fill="#fff"
@@ -40,7 +50,12 @@ const Search = () => {
                 </div>
             </div>
 
-            <SearchModal inputSearch={inputSearch} open={open} closeHandler={closeHandler} />
+            <SearchModal
+                inputSearch={inputSearch}
+                open={open}
+                closeHandler={closeHandler}
+                refModal={refModal}
+            />
         </div>
     );
 };

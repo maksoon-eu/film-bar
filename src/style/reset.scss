@@ -12,7 +12,10 @@ select {
     font: inherit;
     outline: none;
     border: none;
-    cursor: pointer;
     color: inherit;
     background-color: transparent;
+}
+
+button {
+    cursor: pointer;
 }

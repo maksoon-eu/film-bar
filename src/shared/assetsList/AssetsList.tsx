@@ -24,7 +24,9 @@ const AssetsList = ({ list, path, style }: AssetsListProps) => {
                 {imagePath ? (
                     <img src={imagePath} alt="" className={styles.assetsList__item_img} />
                 ) : null}
-                <div className={styles.assetsList__item_name}>{name}</div>
+                <div className={styles.assetsList__item_name}>{`${name
+                    .charAt(0)
+                    .toUpperCase()}${name.slice(1)}`}</div>
             </div>
         );
     });

@@ -5,7 +5,12 @@ export interface IFilmSlider extends IFilm {
     poster: Poster;
     year: number;
     movieLength?: number;
-    seriesLength?: number;
+    seasonsInfo?: [
+        {
+            number: number;
+            episodesCount: number;
+        }
+    ];
 }
 
 export interface IFilmsSliderNewSlice {

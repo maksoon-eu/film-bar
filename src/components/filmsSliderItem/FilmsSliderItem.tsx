@@ -16,14 +16,39 @@ const FilmsSliderItem = ({ film }: FilmsSliderItemProps) => {
         return styles.red;
     };
 
-    const lengthOfWatch = (item: IFilmSlider) => {
-        if ('movieLength' in item) {
-            return item.movieLength;
-        } else if ('seriesLength' in item) {
-            return item.seriesLength;
+    const getSeasonLabel = (count: number) => {
+        const lastDigit = count % 10;
+        const lastTwoDigits = count % 100;
+
+        if (lastTwoDigits >= 11 && lastTwoDigits <= 19) {
+            return 'сезонов';
         }
-        return null;
+
+        if (lastDigit === 1) {
+            return 'сезон';
+        }
+
+        if (lastDigit >= 2 && lastDigit <= 4) {
+            return 'сезона';
+        }
+
+        return 'сезонов';
     };
+
+    const lengthOfWatch = (item: IFilmSlider) => {
+        let lengthResult;
+
+        if ('movieLength' in item) {
+            lengthResult = `${item.movieLength} мин`;
+        } else if ('seasonsInfo' in item) {
+            const seasonCount = item.seasonsInfo?.length;
+            lengthResult = seasonCount
+                ? `${seasonCount} ${getSeasonLabel(seasonCount)}`
+                : undefined;
+        }
+        return lengthResult || '...';
+    };
+
     return (
         <div className={styles.filmsSliderItem__slide}>
             <div className={styles.filmsSliderItem__item}>
@@ -62,7 +87,7 @@ const FilmsSliderItem = ({ film }: FilmsSliderItemProps) => {
                                 <div className={styles.filmsSliderItem__item_title}>
                                     Длительность
                                 </div>
-                                {lengthOfWatch(film)} мин
+                                {lengthOfWatch(film)}
                             </div>
                         </div>
                         <div className={styles.filmsSliderItem__item_ageRating}>

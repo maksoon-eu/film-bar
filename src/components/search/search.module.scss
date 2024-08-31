@@ -2,7 +2,7 @@
     position: relative;
 
     &__inner {
-        max-width: 650px;
+        max-width: 550px;
         width: 100%;
         position: relative;
 
@@ -10,7 +10,7 @@
             background-color: var(--background-color-assets);
             border-radius: 999px;
             padding: 0 30px;
-            width: 650px;
+            width: 550px;
             height: 60px;
             border: 2px var(--background-color-widgets) solid;
         }
@@ -22,6 +22,47 @@
             right: 20px;
             top: 50%;
             transform: translateY(-50%);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+
+            svg {
+                transition: transform 0.3s ease, fill 0.3s ease;
+            }
+
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                background: #fff;
+                transform: translate(-50%, -50%) rotate(0deg) scale(0);
+                transition: transform 0.3s ease;
+                border-radius: 999px;
+            }
+
+            &::before {
+                width: 3px;
+                height: 25px;
+            }
+
+            &::after {
+                width: 25px;
+                height: 3px;
+            }
+
+            &:hover {
+                transform: translateY(-50%) rotate(90deg);
+            }
+        }
+
+        &_active {
+            svg {
+                transform: scale(0);
+            }
+
+            &::before, &::after {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
         }
     }
 }

@@ -1348,6 +1348,12 @@
                 {
                     "name": "Великобритания"
                 }
+            ],
+            "seasonsInfo": [
+                {
+                    "number": 1,
+                    "episodesCount": 6
+                }
             ]
         },
         {
@@ -1385,6 +1391,12 @@
                 {
                     "name": "СССР"
                 }
+            ],
+            "seasonsInfo": [
+                {
+                    "number": 1,
+                    "episodesCount": 6
+                }
             ]
         },
         {
@@ -1419,7 +1431,13 @@
                 }
             ],
             "ageRating": 18,
-            "seriesLength": 47
+            "seriesLength": 47,
+            "seasonsInfo": [
+                {
+                    "number": 1,
+                    "episodesCount": 6
+                }
+            ]
         },
         {
             "id": 502838,
@@ -1459,7 +1477,13 @@
                 }
             ],
             "ageRating": 12,
-            "seriesLength": 90
+            "seriesLength": 90,
+            "seasonsInfo": [
+                {
+                    "number": 1,
+                    "episodesCount": 6
+                }
+            ]
         },
         {
             "id": 79848,
@@ -1489,6 +1513,12 @@
             "countries": [
                 {
                     "name": "США"
+                }
+            ],
+            "seasonsInfo": [
+                {
+                    "number": 1,
+                    "episodesCount": 6
                 }
             ]
         },
@@ -1521,7 +1551,13 @@
                 }
             ],
             "ageRating": 18,
-            "seriesLength": 43
+            "seriesLength": 43,
+            "seasonsInfo": [
+                {
+                    "number": 1,
+                    "episodesCount": 6
+                }
+            ]
         },
         {
             "id": 1227803,
@@ -1555,6 +1591,12 @@
                 {
                     "name": "Великобритания"
                 }
+            ],
+            "seasonsInfo": [
+                {
+                    "number": 1,
+                    "episodesCount": 6
+                }
             ]
         },
         {
@@ -1586,7 +1628,13 @@
                 }
             ],
             "ageRating": 18,
-            "seriesLength": 22
+            "seriesLength": 22,
+            "seasonsInfo": [
+                {
+                    "number": 1,
+                    "episodesCount": 6
+                }
+            ]
         },
         {
             "id": 1387213,
@@ -1616,6 +1664,12 @@
             "countries": [
                 {
                     "name": "Корея Южная"
+                }
+            ],
+            "seasonsInfo": [
+                {
+                    "number": 1,
+                    "episodesCount": 6
                 }
             ]
         },
@@ -1648,7 +1702,8 @@
                 {
                     "name": "США"
                 }
-            ]
+            ],
+            "seasonsInfo": []
         }
     ],
     "allGenres": [

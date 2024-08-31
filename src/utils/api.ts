@@ -1,5 +1,3 @@
-import { resolve } from 'path';
-
 type HttpRequestMethods = 'GET' | 'POST' | 'PATCH' | 'DElETE';
 
 interface HTTPHeaders {

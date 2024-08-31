@@ -2,4 +2,13 @@
     border-radius: 30px;
     padding: 20px 40px;
     background-color: var(--background-color-widgets);
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+    &:hover {
+        transform: scale(0.96);
+    }
+
+    &:active {
+        transform: scale(0.92);
+    }
 }

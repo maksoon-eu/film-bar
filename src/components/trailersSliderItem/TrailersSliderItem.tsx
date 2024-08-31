@@ -1,5 +1,5 @@
+import React from "react";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import React from 'react';
 import ReactPlayer from 'react-player';
 import loader from '../../assets/loader/loader.svg';
 import { ITrailers } from '../../store/features/featureTrailers/featureTrailersType';

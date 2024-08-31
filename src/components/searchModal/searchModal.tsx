@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { RefObject, useEffect, useMemo } from 'react';
 import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useAppSelector } from '../../hooks/selector.hook';
 import { selectFilmsSearch } from '../../store/features/featureFilmsSearch/featureFilmsSearchSelector';
@@ -6,6 +6,7 @@ import { getFilmsSearch } from '../../service/filmsSearchService';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { findKey } from '../../utils/findKey';
 import { Rating } from '../../store/types/types';
+import { useModal } from '../../hooks/modal.hook';
 
 import RatingItem from '../../shared/ratingItem/RatingItem';
 import AssetsList from '../../shared/assetsList/AssetsList';
@@ -13,47 +14,20 @@ import AssetsList from '../../shared/assetsList/AssetsList';
 import loader from '../../assets/loader/loader.svg';
 
 import styles from './searchModal.module.scss';
+import Loader from "../../shared/loader/Loader";
 
 interface SearchModalProps {
     inputSearch: string;
     open: boolean;
     closeHandler: () => void;
+    refModal: RefObject<HTMLDivElement>;
 }
 
-const SearchModal = ({ inputSearch, open, closeHandler }: SearchModalProps) => {
-    const refModal = useRef<HTMLDivElement>(null);
-
+const SearchModal = ({ inputSearch, open, closeHandler, refModal }: SearchModalProps) => {
     const dispatch = useAppDispatch();
     const { filmsSearch, loadingStatus } = useAppSelector(selectFilmsSearch);
 
-    const onKeyDown = useCallback(
-        (e: KeyboardEvent) => {
-            if (e.key === 'Escape') {
-                closeHandler();
-            }
-        },
-        [closeHandler]
-    );
-
-    const clickOutModal = useCallback(
-        (e: MouseEvent) => {
-            if (refModal.current && !refModal.current.contains(e.target as Node)) {
-                closeHandler();
-            }
-        },
-        [closeHandler, refModal]
-    );
-
-    useEffect(() => {
-        if (open) {
-            window.addEventListener('keydown', onKeyDown);
-            window.addEventListener('click', clickOutModal);
-        }
-        return () => {
-            window.removeEventListener('keydown', onKeyDown);
-            window.addEventListener('click', clickOutModal);
-        };
-    }, [open, onKeyDown, clickOutModal]);
+    useModal({ open, closeHandler, refModal });
 
     useEffect(() => {
         dispatch(getFilmsSearch());
@@ -73,14 +47,14 @@ const SearchModal = ({ inputSearch, open, closeHandler }: SearchModalProps) => {
                     <div key={film.id} className={styles.searchModal__list_item}>
                         <div className={styles.searchModal__list_left}>
                             <LazyLoadImage
-                                alt={film.name}
+                                alt={film.name || film.enName}
                                 effect="blur"
                                 src={film.poster.previewUrl || film.poster.url}
                                 placeholderSrc={loader}
                             />
                         </div>
                         <div className={styles.searchModal__list_right}>
-                            <div className={styles.searchModal__list_name}>{film.name}</div>
+                            <div className={styles.searchModal__list_name}>{film.name || film.enName}</div>
                             <div className={styles.searchModal__list_rating}>{ratingList}</div>
                             <div className={styles.searchModal__list_assets}>
                                 <AssetsList
@@ -106,10 +80,16 @@ const SearchModal = ({ inputSearch, open, closeHandler }: SearchModalProps) => {
     );
 
     return (
-        <div className={`${styles.searchModal} ${styles[open ? 'open' : 'close']}`} ref={refModal}>
-            <div className={styles.searchModal__list}>
-                {loadingStatus === 'loading' ? <img src={loader} alt="loader" /> : filmsSearchList}
-            </div>
+        <div className={styles.searchModal}>
+            {open && (
+                <div className={styles.searchModal__list}>
+                    {loadingStatus === 'loading' ? (
+                        <Loader />
+                    ) : (
+                        filmsSearchList
+                    )}
+                </div>
+            )}
         </div>
     );
 };

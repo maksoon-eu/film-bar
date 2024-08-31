@@ -6,6 +6,7 @@ import { getFilms } from '../../service/filmsService';
 import { useEffect, useMemo } from 'react';
 
 import MainSliderItem from "../mainSliderItem/MainSliderItem";
+import SkeletonMainSlider from "../../shared/skeleton/SkeletonMainSlider";
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -32,7 +33,7 @@ const MainSlider = () => {
     }, [films]);
 
     if (loadingStatus === 'loading') {
-        return <div>Loading...</div>;
+        return <SkeletonMainSlider />;
     } else if (loadingStatus === 'error') {
         return <div>Error</div>;
     }

@@ -17,10 +17,6 @@
         position: relative;
         margin-top: 50px;
 
-        &:hover &_poster {
-            top: -50px;
-        }
-
         &_name {
             margin-top: 10px;
         }
@@ -45,11 +41,11 @@
             width: 115px;
             height: 170px;
             border-radius: 10px;
-            transition: .1s linear;
-
+            transition: transform 0.15s linear;
             overflow: hidden;
 
             img {
+                transition: opacity 0.3s, transform 0.15s linear !important;
                 width: 115px;
                 height: 170px;
             }
@@ -64,6 +60,16 @@
 
             img {
                 margin-bottom: 30px;
+            }
+        }
+
+        &:hover {
+            .trailersSliderItem__item_poster {
+                transform: translateY(-5px);
+
+                img {
+                    transform: scale(1.05);
+                }
             }
         }
     }

@@ -11,15 +11,19 @@
     &__item {
         border-radius: 10px;
         padding: 10px 20px;
+        margin: 5px 0;
         background-color: var(--background-color-assets);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        cursor: pointer;
+        transition: transform 0.15s linear;
 
         &_img {
             width: 150px;
             margin: 0 30px;
+            transition: transform 0.15s linear;
         }
 
         &_name {
@@ -29,6 +33,14 @@
             text-align: center;
             border-radius: 10px;
             background-color: var(--background-color);
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+
+            .genresSlider__item_img {
+                transform: scale(1.1);
+            }
         }
     }
 }

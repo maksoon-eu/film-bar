@@ -1,4 +1,4 @@
-import { LoadingStatusType, Poster } from '../../types/types';
+import { LoadingStatusType } from '../../types/types';
 import { IFilmSlider } from "../featureFilmsSliderNew/featureFilmsSliderNewTypes";
 
 export interface ISeriesSlice {

@@ -5,7 +5,7 @@
         width: 40px;
         height: 40px;
 
-        &:before {
+        &::before {
             display: none;
         }
     }
@@ -15,7 +15,7 @@
         width: 40px;
         height: 40px;
 
-        &:before {
+        &::before {
             display: none;
         }
     }

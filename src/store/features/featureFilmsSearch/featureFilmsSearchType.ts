@@ -8,6 +8,7 @@ export interface IFilmsSearch {
     year: number;
     genres: NameItem[];
     countries: NameItem[];
+    enName: string;
 }
 
 export interface IFilmsSearchSlice {
