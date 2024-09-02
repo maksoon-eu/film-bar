@@ -6,9 +6,11 @@ import { NextArrow, PrevArrow } from '../arrows/Arrows';
 import { useEffect, useMemo } from 'react';
 import { getTrailers } from '../../service/trailersService';
 
+import TrailersSliderItem from '../trailersSliderItem/TrailersSliderItem';
+import SkeletonTrailersSlider from "../../shared/skeleton/SkeletonTrailersSlider";
+
 import styles from './trailersSlider.module.scss';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
-import TrailersSliderItem from '../trailersSliderItem/TrailersSliderItem';
 
 const TrailersSlider = () => {
     const dispatch = useAppDispatch();
@@ -27,7 +29,7 @@ const TrailersSlider = () => {
     }, [trailers]);
 
     if (loadingStatus === 'loading') {
-        return <div>Loading...</div>;
+        return <SkeletonTrailersSlider />;
     } else if (loadingStatus === 'error') {
         return <div>Error</div>;
     }

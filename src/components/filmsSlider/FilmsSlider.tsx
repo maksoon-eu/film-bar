@@ -8,6 +8,7 @@ import { AsyncThunk } from '@reduxjs/toolkit';
 import { IFilmSlider } from '../../store/features/featureFilmsSliderNew/featureFilmsSliderNewTypes';
 
 import FilmsSliderItem from '../filmsSliderItem/FilmsSliderItem';
+import SkeletonFilmsSlider from '../../shared/skeleton/SkeletonFilmsSlider';
 import { NextArrow, PrevArrow } from '../arrows/Arrows';
 
 import styles from './filmsSlider.module.scss';
@@ -33,7 +34,7 @@ const FilmsSlider = React.memo(({ title, selector, fetchData }: FilmsSliderProps
     }, [items]);
 
     if (loadingStatus === 'loading') {
-        return <div>Loading...</div>;
+        return <SkeletonFilmsSlider />;
     } else if (loadingStatus === 'error') {
         return <div>Error</div>;
     }

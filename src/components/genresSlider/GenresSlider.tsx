@@ -1,12 +1,14 @@
 import Slider from 'react-slick';
 import { useAppSelector } from '../../hooks/selector.hook';
 import { selectGenres } from '../../store/features/featureGenres/featureGenresSelectors';
-
-import styles from './genresSlider.module.scss';
 import { NextArrow, PrevArrow } from '../arrows/Arrows';
 import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useEffect } from 'react';
 import { getGenres } from '../../service/genresService';
+
+import SkeletonGenresSlider from '../../shared/skeleton/SkeletonGenresSlider';
+
+import styles from './genresSlider.module.scss';
 
 const GenresSlider = () => {
     const dispatch = useAppDispatch();
@@ -38,7 +40,7 @@ const GenresSlider = () => {
     });
 
     if (loadingStatus === 'loading') {
-        return <div>Loading...</div>;
+        return <SkeletonGenresSlider />;
     } else if (loadingStatus === 'error') {
         return <div>Error</div>;
     }
