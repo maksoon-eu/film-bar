@@ -1,5 +1,7 @@
 import { useRef, useState } from 'react';
-import SearchModal from '../searchModal/SearchModal';
+
+import ModalSearch from "../modalSearch/modalSearch";
+
 import styles from './search.module.scss';
 
 const Search = () => {
@@ -50,7 +52,7 @@ const Search = () => {
                 </div>
             </div>
 
-            <SearchModal
+            <ModalSearch
                 inputSearch={inputSearch}
                 open={open}
                 closeHandler={closeHandler}

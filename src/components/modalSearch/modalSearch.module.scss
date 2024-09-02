@@ -1,4 +1,4 @@
-.searchModal {
+.modalSearch {
     &__list {
         position: absolute;
         top: 75px;
@@ -34,7 +34,7 @@
             }
 
             &:hover {
-                .searchModal__list_left img {
+                .modalSearch__list_left img {
                     transform: scale(1.05);
                 }
             }

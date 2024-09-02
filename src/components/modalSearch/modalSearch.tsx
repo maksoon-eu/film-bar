@@ -10,20 +10,20 @@ import { useModal } from '../../hooks/modal.hook';
 
 import RatingItem from '../../shared/ratingItem/RatingItem';
 import AssetsList from '../../shared/assetsList/AssetsList';
+import Loader from '../../shared/loader/Loader';
 
 import loader from '../../assets/loader/loader.svg';
 
-import styles from './searchModal.module.scss';
-import Loader from "../../shared/loader/Loader";
+import styles from './modalSearch.module.scss';
 
-interface SearchModalProps {
+interface ModalSearchProps {
     inputSearch: string;
     open: boolean;
     closeHandler: () => void;
     refModal: RefObject<HTMLDivElement>;
 }
 
-const SearchModal = ({ inputSearch, open, closeHandler, refModal }: SearchModalProps) => {
+const ModalSearch = ({ inputSearch, open, closeHandler, refModal }: ModalSearchProps) => {
     const dispatch = useAppDispatch();
     const { filmsSearch, loadingStatus } = useAppSelector(selectFilmsSearch);
 
@@ -31,7 +31,7 @@ const SearchModal = ({ inputSearch, open, closeHandler, refModal }: SearchModalP
 
     useEffect(() => {
         dispatch(getFilmsSearch());
-    }, [inputSearch]);
+    }, [dispatch, inputSearch]);
 
     const filmsSearchList = useMemo(
         () =>
@@ -44,8 +44,8 @@ const SearchModal = ({ inputSearch, open, closeHandler, refModal }: SearchModalP
                     });
 
                 return (
-                    <div key={film.id} className={styles.searchModal__list_item}>
-                        <div className={styles.searchModal__list_left}>
+                    <div key={film.id} className={styles.modalSearch__list_item}>
+                        <div className={styles.modalSearch__list_left}>
                             <LazyLoadImage
                                 alt={film.name || film.enName}
                                 effect="blur"
@@ -53,25 +53,27 @@ const SearchModal = ({ inputSearch, open, closeHandler, refModal }: SearchModalP
                                 placeholderSrc={loader}
                             />
                         </div>
-                        <div className={styles.searchModal__list_right}>
-                            <div className={styles.searchModal__list_name}>{film.name || film.enName}</div>
-                            <div className={styles.searchModal__list_rating}>{ratingList}</div>
-                            <div className={styles.searchModal__list_assets}>
+                        <div className={styles.modalSearch__list_right}>
+                            <div className={styles.modalSearch__list_name}>
+                                {film.name || film.enName}
+                            </div>
+                            <div className={styles.modalSearch__list_rating}>{ratingList}</div>
+                            <div className={styles.modalSearch__list_assets}>
                                 <AssetsList
                                     list={film.genres.slice(0, 2)}
-                                    style={'search'}
+                                    style="search"
                                     path="genres"
                                 />
                             </div>
                             <div
-                                className={`${styles.searchModal__list_assets} ${styles.searchModal__list_assets_last}`}>
+                                className={`${styles.modalSearch__list_assets} ${styles.modalSearch__list_assets_last}`}>
                                 <AssetsList
                                     list={film.countries.slice(0, 2)}
-                                    style={'search'}
+                                    style="search"
                                     path="countries"
                                 />
                             </div>
-                            <div className={styles.searchModal__list_year}>{film.year}</div>
+                            <div className={styles.modalSearch__list_year}>{film.year}</div>
                         </div>
                     </div>
                 );
@@ -80,18 +82,14 @@ const SearchModal = ({ inputSearch, open, closeHandler, refModal }: SearchModalP
     );
 
     return (
-        <div className={styles.searchModal}>
+        <div className={styles.modalSearch}>
             {open && (
-                <div className={styles.searchModal__list}>
-                    {loadingStatus === 'loading' ? (
-                        <Loader />
-                    ) : (
-                        filmsSearchList
-                    )}
+                <div className={styles.modalSearch__list}>
+                    {loadingStatus === 'loading' ? <Loader /> : filmsSearchList}
                 </div>
             )}
         </div>
     );
 };
 
-export default SearchModal;
+export default ModalSearch;
