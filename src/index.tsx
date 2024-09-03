@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 import App from './components/app/App';
 
@@ -18,3 +19,5 @@ root.render(
     </Provider>
     // </React.StrictMode>
 );
+
+serviceWorkerRegistration.register();

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Search from '../search/Search';
 
 import logo from '../../assets/logo/logo.png';
@@ -8,9 +10,9 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.header__inner}>
-                <div className={styles.header__inner_logo}>
+                <Link to={'/'} className={styles.header__inner_logo}>
                     <img src={logo} alt="MovieBar logo" className="img" />
-                </div>
+                </Link>
                 <Search />
             </div>
         </header>

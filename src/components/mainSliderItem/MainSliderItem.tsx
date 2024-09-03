@@ -11,6 +11,7 @@ import loader from '../../assets/loader/loader.svg';
 
 import styles from './mainSliderItem.module.scss';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { Link } from "react-router-dom";
 
 interface SliderFilmItemProps {
     film: IFilm;
@@ -55,9 +56,9 @@ const MainSliderItem = React.memo(({ film }: SliderFilmItemProps) => {
                     <AssetsList list={film.countries.slice(0, 5)} path="countries" />
                 </div>
                 <div className={styles.sliderFilm__description}>{film.description}</div>
-                <div className={styles.sliderFilm__btn}>
+                <Link to={`/films/${film.id}`} className={styles.sliderFilm__btn}>
                     <Button>Страница фильма</Button>
-                </div>
+                </Link>
             </div>
         </div>
     );

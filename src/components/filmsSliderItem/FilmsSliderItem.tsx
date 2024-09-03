@@ -1,9 +1,10 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { IFilmSlider } from '../../store/features/featureFilmsSliderNew/featureFilmsSliderNewTypes';
+import { Link } from "react-router-dom";
 
 import loader from '../../assets/loader/loader.svg';
 
 import styles from './filmsSliderItem.module.scss';
-import { IFilmSlider } from '../../store/features/featureFilmsSliderNew/featureFilmsSliderNewTypes';
 
 interface FilmsSliderItemProps {
     film: IFilmSlider;
@@ -50,7 +51,7 @@ const FilmsSliderItem = ({ film }: FilmsSliderItemProps) => {
     };
 
     return (
-        <div className={styles.filmsSliderItem__slide}>
+        <Link to={`/films/${film.id}`} className={styles.filmsSliderItem__slide}>
             <div className={styles.filmsSliderItem__item}>
                 <div className={styles.filmsSliderItem__item_poster}>
                     <LazyLoadImage
@@ -103,7 +104,7 @@ const FilmsSliderItem = ({ film }: FilmsSliderItemProps) => {
                     {film.rating.kp.toFixed(1)}
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
