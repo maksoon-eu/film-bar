@@ -10,14 +10,9 @@ import GenreSlider from '../../components/genresSlider/GenresSlider';
 import TrailersSlider from '../../components/trailersSlider/TrailersSlider';
 import FilmsSlider from '../../components/filmsSlider/FilmsSlider';
 
-import sss from '../../assets/countries/Австралия.png';
-import { Link } from "react-router-dom";
-
 const MainPage = () => {
     return (
         <>
-            <img src={sss} alt="" />
-            <Link to={'/films/2323'}>itiitit</Link>
             <MainSlider />
             <div className="content-page">
                 <GenreSlider />

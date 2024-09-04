@@ -1,6 +1,11 @@
 import { RootState } from '../../store';
+import { createSelector } from 'reselect';
 
-export const selectFilmsSliderNew = (state: RootState) => ({
-    loadingStatus: state.filmsSliderNewReducer.loadingStatus,
-    data: state.filmsSliderNewReducer.filmsSliderNew,
-});
+export const selectFilmsSliderNew = createSelector(
+    (state: RootState) => state.filmsSliderNewReducer.loadingStatus,
+    (state: RootState) => state.filmsSliderNewReducer.filmsSliderNew,
+    (loadingStatus, filmsSliderNew) => ({
+        loadingStatus,
+        data: filmsSliderNew,
+    })
+);
