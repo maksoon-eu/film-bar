@@ -1,5 +1,5 @@
 import React from 'react';
-import { IFilm } from '../../store/features/featureFilms/featureFilmsTypes';
+import { IFilms } from '../../store/features/featureFilms/featureFilmsTypes';
 import { findKey } from '../../utils/findKey';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -14,7 +14,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link } from "react-router-dom";
 
 interface SliderFilmItemProps {
-    film: IFilm;
+    film: IFilms;
 }
 
 const MainSliderItem = React.memo(({ film }: SliderFilmItemProps) => {

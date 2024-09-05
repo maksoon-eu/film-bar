@@ -1706,6 +1706,186 @@
             "seasonsInfo": []
         }
     ],
+    "film": [
+        {
+            "id": "5451179",
+            "externalId": {
+                "kpHD": null
+            },
+            "name": "Подземелья Чикен Карри-24. Черный Геленбург",
+            "alternativeName": null,
+            "enName": null,
+            "names": [
+                {
+                    "name": "Подземелья Чикен Карри-24. «Черный Геленбург»",
+                    "language": "RU",
+                    "type": "Russian title on kinopoisk"
+                }
+            ],
+            "type": "movie",
+            "typeNumber": 1,
+            "year": 2024,
+            "description": "Продолжение приключений доблестного воина Сфинктериона Лёвенхарта и его верной соратницы крысы Ларисы. Они по ошибке исполнили дьявольский контракт и низвергли город Геленбург в Ад. К счастью, им на помощь пришёл разведотряд короля. Смогут ли они вместе спасти жителей города и одолеть демонов?",
+            "shortDescription": null,
+            "slogan": null,
+            "status": null,
+            "rating": {
+                "kp": 9.194,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": null
+            },
+            "votes": {
+                "kp": 400,
+                "imdb": 0,
+                "filmCritics": 0,
+                "russianFilmCritics": 0,
+                "await": 0
+            },
+            "movieLength": 105,
+            "totalSeriesLength": null,
+            "seriesLength": null,
+            "ratingMpaa": null,
+            "ageRating": 18,
+            "poster": {
+                "url": "https://image.openmoviedb.com/kinopoisk-images/10835644/93e96ede-2a35-48b8-a42d-36dd12212c37/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10835644/93e96ede-2a35-48b8-a42d-36dd12212c37/x1000"
+            },
+            "backdrop": {
+                "url": null,
+                "previewUrl": null
+            },
+            "genres": [
+                {
+                    "name": "комедия"
+                }
+            ],
+            "countries": [
+                {
+                    "name": "Россия"
+                }
+            ],
+            "sequelsAndPrequels": [
+                {
+                    "id": 5118741,
+                    "name": "Подземелья Чикен Карри. Бесагон — истребитель вампиров",
+                    "alternativeName": null,
+                    "enName": null,
+                    "type": "movie",
+                    "poster": {
+                        "url": "https://image.openmoviedb.com/kinopoisk-images/6201401/25f9e925-7c83-4755-a257-7b84e7466d81/orig",
+                        "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/6201401/25f9e925-7c83-4755-a257-7b84e7466d81/x1000"
+                    },
+                    "rating": {
+                        "kp": 8.416,
+                        "imdb": 0,
+                        "filmCritics": 0,
+                        "russianFilmCritics": 0,
+                        "await": null
+                    },
+                    "year": 2022
+                },
+                {
+                    "id": 5365955,
+                    "name": "Подземелья Чикен Карри. Вампирское возмездие",
+                    "alternativeName": null,
+                    "enName": null,
+                    "type": "movie",
+                    "poster": {
+                        "url": null,
+                        "previewUrl": null
+                    },
+                    "rating": {
+                        "kp": 0,
+                        "imdb": 0,
+                        "filmCritics": 0,
+                        "russianFilmCritics": 0,
+                        "await": 0
+                    },
+                    "year": 2023
+                },
+                {
+                    "id": 5420671,
+                    "name": "Подземелья Чикен Карри 22 «Отряд Солнца»",
+                    "alternativeName": null,
+                    "enName": null,
+                    "type": "movie",
+                    "poster": {
+                        "url": null,
+                        "previewUrl": null
+                    },
+                    "rating": {
+                        "kp": 0,
+                        "imdb": 0,
+                        "filmCritics": 0,
+                        "russianFilmCritics": 0,
+                        "await": 0
+                    },
+                    "year": 2023
+                }
+            ],
+            "watchability": {
+                "items": []
+            },
+            "top10": null,
+            "top250": null,
+            "isSeries": false,
+            "audience": [],
+            "ticketsOnSale": false,
+            "lists": [],
+            "networks": null,
+            "createdAt": "2024-02-10T00:13:35.450Z",
+            "updatedAt": "2024-09-04T20:21:08.018Z",
+            "persons": [
+                {
+                    "id": 6399558,
+                    "photo": "https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_6399558.jpg",
+                    "name": "Сергей Орлов",
+                    "enName": null,
+                    "description": null,
+                    "profession": "актеры",
+                    "enProfession": "actor"
+                },
+                {
+                    "id": 4536651,
+                    "photo": "https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_4536651.jpg",
+                    "name": "Филипп Воронин",
+                    "enName": null,
+                    "description": null,
+                    "profession": "актеры",
+                    "enProfession": "actor"
+                },
+                {
+                    "id": 2939230,
+                    "photo": "https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_2939230.jpg",
+                    "name": "Александр Гудков",
+                    "enName": null,
+                    "description": null,
+                    "profession": "актеры",
+                    "enProfession": "actor"
+                },
+                {
+                    "id": 5782654,
+                    "photo": "https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5782654.jpg",
+                    "name": null,
+                    "enName": "Big Russian Boss",
+                    "description": null,
+                    "profession": "актеры",
+                    "enProfession": "actor"
+                }
+            ],
+            "premiere": {
+                "bluray": null,
+                "cinema": null,
+                "country": null,
+                "digital": null,
+                "dvd": null,
+                "russia": null,
+                "world": null
+            }
+        }
+    ],
     "allGenres": [
         {
             "name": "аниме",

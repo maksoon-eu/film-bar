@@ -1,4 +1,4 @@
-import { LoadingStatusType, Poster } from '../../types/types';
+import { LoadingStatusType, Poster } from '../../../types/types';
 
 interface Video {
     url: string;

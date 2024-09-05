@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo } from 'react';
 import Slider from 'react-slick';
-import { LoadingStatusType } from '../../store/types/types';
+import { LoadingStatusType } from '../../types/types';
 import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useAppSelector } from '../../hooks/selector.hook';
 import { RootState } from '../../store/store';

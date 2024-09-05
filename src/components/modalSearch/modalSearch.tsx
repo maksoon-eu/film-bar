@@ -5,9 +5,9 @@ import { selectFilmsSearch } from '../../store/features/featureFilmsSearch/featu
 import { getFilmsSearch } from '../../service/filmsSearchService';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { findKey } from '../../utils/findKey';
-import { Rating } from '../../store/types/types';
+import { Rating } from '../../types/types';
 import { useModal } from '../../hooks/modal.hook';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 import RatingItem from '../../shared/ratingItem/RatingItem';
 import AssetsList from '../../shared/assetsList/AssetsList';
@@ -45,7 +45,10 @@ const ModalSearch = ({ inputSearch, open, closeHandler, refModal }: ModalSearchP
                     });
 
                 return (
-                    <Link to={`/films/${film.id}`} key={film.id} className={styles.modalSearch__list_item}>
+                    <Link
+                        to={`/films/${film.id}`}
+                        key={film.id}
+                        className={styles.modalSearch__list_item}>
                         <div className={styles.modalSearch__list_left}>
                             <LazyLoadImage
                                 alt={film.name || film.enName}

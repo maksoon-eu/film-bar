@@ -6,6 +6,7 @@ import { filmsSliderNewReducer } from './features/featureFilmsSliderNew/featureF
 import { filmsSliderPopularReducer } from './features/featureFilmsSliderPopular/featureFilmsSliderPopularSlice';
 import { seriesReducer } from './features/featureSeries/featureSeriesSlice';
 import { filmsSearchReducer } from './features/featureFilmsSearch/featureFilmsSearchSlice';
+import { filmReducer } from './features/featureFilm/featureFilmSlice';
 
 export const store = configureStore({
     reducer: {
@@ -16,6 +17,7 @@ export const store = configureStore({
         filmsSliderPopularReducer,
         seriesReducer,
         filmsSearchReducer,
+        filmReducer,
     },
 });
 

@@ -1,4 +1,4 @@
-import { LoadingStatusType, NameItem, Poster, Rating } from '../../types/types';
+import { LoadingStatusType, NameItem, Poster, Rating } from '../../../types/types';
 
 export interface IFilmsSearch {
     id: number;

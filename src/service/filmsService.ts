@@ -1,8 +1,8 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { IFilm } from '../store/features/featureFilms/featureFilmsTypes';
+import { IFilms } from '../store/features/featureFilms/featureFilmsTypes';
 import { request } from '../utils/api';
 
-export const getFilms = createAsyncThunk<IFilm[], void, { rejectValue: string }>(
+export const getFilms = createAsyncThunk<IFilms[], void, { rejectValue: string }>(
     'films/getFilms',
     async (_, thunkAPI) => {
         try {

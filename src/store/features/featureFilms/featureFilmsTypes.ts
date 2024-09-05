@@ -1,11 +1,11 @@
-import { LoadingStatusType, NameItem, Rating } from '../../types/types';
+import { LoadingStatusType, NameItem, Rating } from '../../../types/types';
 
 interface Image {
     url: string;
     previewUrl?: string;
 }
 
-export interface IFilm {
+export interface IFilms {
     rating: Rating;
     backdrop: Image;
     id: number;
@@ -18,6 +18,6 @@ export interface IFilm {
 }
 
 export interface IFilmsSlice {
-    films: IFilm[] | [];
+    films: IFilms[] | [];
     loadingStatus: LoadingStatusType;
 }

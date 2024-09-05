@@ -1,7 +1,7 @@
-import { LoadingStatusType, Poster } from '../../types/types';
-import { IFilm } from '../featureFilms/featureFilmsTypes';
+import { LoadingStatusType, Poster } from '../../../types/types';
+import { IFilms } from '../featureFilms/featureFilmsTypes';
 
-export interface IFilmSlider extends IFilm {
+export interface IFilmSlider extends IFilms {
     poster: Poster;
     year: number;
     movieLength?: number;

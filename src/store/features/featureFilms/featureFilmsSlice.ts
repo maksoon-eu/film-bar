@@ -8,7 +8,7 @@ const initialState: IFilmsSlice = {
 };
 
 const featureFilmsSlice = createSlice({
-    name: 'featuresFilms',
+    name: 'featureFilms',
     initialState,
     reducers: {},
     extraReducers: (builder) => {

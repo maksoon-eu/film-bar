@@ -1,4 +1,4 @@
-import { NameItem } from '../../store/types/types';
+import { NameItem } from '../../types/types';
 
 import styles from './assetsList.module.scss';
 
