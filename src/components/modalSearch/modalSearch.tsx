@@ -53,7 +53,7 @@ const ModalSearch = ({ inputSearch, open, closeHandler, refModal }: ModalSearchP
                             <LazyLoadImage
                                 alt={film.name || film.enName}
                                 effect="blur"
-                                src={film.poster.previewUrl || film.poster.url}
+                                src={film.poster.previewUrl || film.poster.url || loader}
                                 placeholderSrc={loader}
                             />
                         </div>

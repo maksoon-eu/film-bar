@@ -1,11 +1,16 @@
 import { useParams } from 'react-router-dom';
-import ChooseFilm from '../../components/chooseFilm/ChooseFilm';
-import FilmPlayer from '../../components/filmPlayer/FilmPlayer';
 import { useAppSelector } from '../../hooks/selector.hook';
 import { selectFilm } from '../../store/features/featureFilm/featureFilmSelector';
 import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useEffect } from 'react';
 import { getFilm } from '../../service/filmService';
+
+import ChooseFilm from '../../components/chooseFilm/ChooseFilm';
+import FilmPlayer from '../../components/filmPlayer/FilmPlayer';
+import FilmInfo from '../../components/filmInfo/FilmInfo';
+import FilmPreview from '../../components/filmPreview/FilmPreview';
+import ActorsSlider from '../../components/actorsSlider/ActorsSlider';
+import SequelAndPrequelSlider from '../../components/sequelAndPrequelSlider/SequelAndPrequelSlider';
 
 const FilmPage = () => {
     const { id } = useParams();
@@ -14,8 +19,10 @@ const FilmPage = () => {
     const { loadingStatus, film } = useAppSelector(selectFilm);
 
     useEffect(() => {
-        dispatch(getFilm(Number(id)));
-    }, [id]);
+        if (id && id !== film[0]?.id) {
+            dispatch(getFilm(id));
+        }
+    }, [id, film, dispatch]);
 
     useEffect(() => {
         if (film.length) {
@@ -28,14 +35,20 @@ const FilmPage = () => {
     }, [film]);
 
     return (
-        <div className="content-page">
+        <>
             <ChooseFilm loadingStatus={loadingStatus} film={film} />
-            <FilmPlayer
-                loadingStatus={loadingStatus}
-                filmId={film[0]?.id}
-                backdropSrc={film[0]?.backdrop.url}
-            />
-        </div>
+            <div className="content-page">
+                <FilmPreview film={film} loadingStatus={loadingStatus} />
+                <FilmInfo film={film} loadingStatus={loadingStatus} />
+                <FilmPlayer
+                    loadingStatus={loadingStatus}
+                    filmId={film[0]?.id}
+                    backdropSrc={film[0]?.backdrop.url}
+                />
+                <ActorsSlider film={film} loadingStatus={loadingStatus} />
+                <SequelAndPrequelSlider film={film} loadingStatus={loadingStatus} />
+            </div>
+        </>
     );
 };
 

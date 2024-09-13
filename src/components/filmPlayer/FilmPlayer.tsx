@@ -1,8 +1,12 @@
 import { useEffect } from 'react';
 import { LoadingStatusType } from '../../types/types';
 
+import SkeletonFilmPlayer from '../../shared/skeleton/SkeletonFilmPlayer';
+
+import styles from './filmPlayer.module.scss';
+
 interface IFilmPlayer {
-    filmId: number;
+    filmId: string;
     backdropSrc: string | undefined;
     loadingStatus: LoadingStatusType;
 }
@@ -31,15 +35,19 @@ const FilmPlayer = ({ filmId, backdropSrc, loadingStatus }: IFilmPlayer) => {
                 document.body.removeChild(script);
             };
         }
-    }, [filmId]);
+    }, [filmId, backdropSrc]);
 
     if (loadingStatus === 'loading') {
-        return <div>Loading...</div>;
+        return <SkeletonFilmPlayer />;
     } else if (loadingStatus === 'error') {
         return <div>Error</div>;
     }
 
-    return <div className="kinobox_player" />;
+    return (
+        <div className={styles.filmPlayer}>
+            <div className="kinobox_player" />
+        </div>
+    );
 };
 
 export default FilmPlayer;

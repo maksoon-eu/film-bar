@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react';
+import { useModal } from '../../hooks/modal.hook';
 
 import Portal from '../Portal/Portal';
 
 import styles from './modal.module.scss';
-import { useModal } from '../../hooks/modal.hook';
 
 interface ModalProps {
     children: React.ReactNode;

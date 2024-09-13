@@ -1,4 +1,3 @@
-import Slider from 'react-slick';
 import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useAppSelector } from '../../hooks/selector.hook';
 import { selectTrailers } from '../../store/features/featureTrailers/featureTrailersSelectors';
@@ -6,11 +5,11 @@ import { NextArrow, PrevArrow } from '../arrows/Arrows';
 import { useEffect, useMemo } from 'react';
 import { getTrailers } from '../../service/trailersService';
 
+import Slider from 'react-slick';
 import TrailersSliderItem from '../trailersSliderItem/TrailersSliderItem';
 import SkeletonTrailersSlider from "../../shared/skeleton/SkeletonTrailersSlider";
 
 import styles from './trailersSlider.module.scss';
-import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 const TrailersSlider = () => {
     const dispatch = useAppDispatch();

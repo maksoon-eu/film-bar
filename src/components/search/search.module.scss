@@ -13,6 +13,7 @@
             width: 550px;
             height: 60px;
             border: 2px var(--background-color-widgets) solid;
+            box-shadow: 0 0 70px 40px #000;
         }
 
         &_icon {
@@ -29,7 +30,8 @@
                 transition: transform 0.3s ease, fill 0.3s ease;
             }
 
-            &::before, &::after {
+            &::before,
+            &::after {
                 content: '';
                 position: absolute;
                 top: 50%;
@@ -60,7 +62,8 @@
                 transform: scale(0);
             }
 
-            &::before, &::after {
+            &::before,
+            &::after {
                 transform: translate(-50%, -50%) rotate(45deg);
             }
         }

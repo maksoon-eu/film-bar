@@ -1,7 +1,7 @@
 import { LoadingStatusType } from '../../../types/types';
 
 export interface IFilm {
-    id: number;
+    id: string;
     externalId: {
         kpHD: string;
         imdb: string;

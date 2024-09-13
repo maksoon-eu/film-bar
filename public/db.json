@@ -1714,7 +1714,7 @@
             },
             "name": "Подземелья Чикен Карри-24. Черный Геленбург",
             "alternativeName": null,
-            "enName": null,
+            "enName": "Подземелья Чикен Карри-24. Черный Геленбург",
             "names": [
                 {
                     "name": "Подземелья Чикен Карри-24. «Черный Геленбург»",
@@ -1730,8 +1730,8 @@
             "slogan": null,
             "status": null,
             "rating": {
-                "kp": 9.194,
-                "imdb": 0,
+                "kp": 9.294,
+                "imdb": 8.567,
                 "filmCritics": 0,
                 "russianFilmCritics": 0,
                 "await": null
@@ -1753,8 +1753,24 @@
                 "previewUrl": "https://image.openmoviedb.com/kinopoisk-images/10835644/93e96ede-2a35-48b8-a42d-36dd12212c37/x1000"
             },
             "backdrop": {
-                "url": null,
-                "previewUrl": null
+                "url": "https://image.openmoviedb.com/kinopoisk-ott-images/236744/2a0000018ae27db581167489caa54b7dbb60/orig",
+                "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/236744/2a0000018ae27db581167489caa54b7dbb60/x1000"
+            },
+            "videos": {
+                "trailers": [
+                    {
+                        "url": "https://www.youtube.com/embed/Kflqu9P1m-I",
+                        "name": "Сериал Расплата | Трейлер (2024) Wink | Леонид Бичевин, Анатолий Кот",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    },
+                    {
+                        "url": "https://www.youtube.com/embed/Kflqu9P1m-I",
+                        "name": "Сериал Расплата | Трейлер (2024) Wink | Леонид Бичевин, Анатолий Кот",
+                        "site": "youtube",
+                        "type": "TRAILER"
+                    }
+                ]
             },
             "genres": [
                 {
@@ -1817,7 +1833,7 @@
                     },
                     "rating": {
                         "kp": 0,
-                        "imdb": 0,
+                        "imdb": 5.67,
                         "filmCritics": 0,
                         "russianFilmCritics": 0,
                         "await": 0

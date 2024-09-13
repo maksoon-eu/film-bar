@@ -1,15 +1,14 @@
-import Slider from 'react-slick';
 import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useAppSelector } from '../../hooks/selector.hook';
 import { selectFilms } from '../../store/features/featureFilms/featureFilmsSelectors';
 import { getFilms } from '../../service/filmsService';
 import { useEffect, useMemo } from 'react';
 
+import Slider from 'react-slick';
 import MainSliderItem from "../mainSliderItem/MainSliderItem";
 import SkeletonMainSlider from "../../shared/skeleton/SkeletonMainSlider";
 
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+
 import styles from './mainSlider.module.scss';
 
 const MainSlider = () => {

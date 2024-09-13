@@ -25,13 +25,12 @@
         &_image {
             width: 100%;
             height: auto;
+            border-radius: 10px;
         }
 
         &_reactPlayer {
             position: relative;
             z-index: 1;
-            border-radius: 10px;
-            overflow: hidden;
         }
 
         &_poster {

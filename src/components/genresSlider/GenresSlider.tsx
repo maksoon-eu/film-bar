@@ -1,4 +1,3 @@
-import Slider from 'react-slick';
 import { useAppSelector } from '../../hooks/selector.hook';
 import { selectGenres } from '../../store/features/featureGenres/featureGenresSelectors';
 import { NextArrow, PrevArrow } from '../arrows/Arrows';
@@ -6,6 +5,7 @@ import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useEffect } from 'react';
 import { getGenres } from '../../service/genresService';
 
+import Slider from 'react-slick';
 import SkeletonGenresSlider from '../../shared/skeleton/SkeletonGenresSlider';
 
 import styles from './genresSlider.module.scss';

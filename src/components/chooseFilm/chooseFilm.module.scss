@@ -1,3 +1,120 @@
 .chooseFilm {
-    display: block;
+    position: relative;
+    height: 1200px;
+    max-height: 100vh;
+
+    &__fade {
+        position: absolute;
+        z-index: 1;
+        background: linear-gradient(
+            0deg,
+            rgb(0 0 0 / 100%) 6%,
+            rgb(0 0 0 / 30%) 42%,
+            rgb(0 0 0 / 0%) 60%,
+            rgb(0 0 0 / 0%) 84%
+        );
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 1500px;
+    }
+
+    &__rating {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &__backdrop {
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+
+        &_img {
+            object-fit: cover;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        max-width: 1710px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    &__left {
+        max-width: 460px;
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    &__poster {
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    &__right {
+        position: relative;
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    &__logo {
+        margin-bottom: 30px;
+
+        &_text {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-l);
+        }
+
+        &_subtext {
+            margin-top: 10px;
+            color: var(--font-color-optional);
+            font-weight: var(--font-weight-l);
+        }
+
+        &_img {
+            max-width: 500px;
+            display: flex;
+            align-items: center;
+            height: 300px;
+        }
+    }
+
+    &__ageRating {
+        font-size: var(--font-size-xl);
+        color: var(--font-color-optional);
+        position: absolute;
+        right: 0;
+        top: -45px;
+    }
+
+    &__description {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 8;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+
+    &__assets {
+        margin-bottom: 15px;
+
+        &_ageRating {
+            position: relative;
+            display: inline-block;
+        }
+
+        &_last {
+            margin-bottom: 30px;
+        }
+    }
 }

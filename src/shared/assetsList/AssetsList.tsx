@@ -1,4 +1,5 @@
 import { NameItem } from '../../types/types';
+import { capitalizeFirstLetter } from "../../utils/capitalizeFirstLetter";
 
 import styles from './assetsList.module.scss';
 
@@ -24,9 +25,7 @@ const AssetsList = ({ list, path, style }: AssetsListProps) => {
                 {imagePath ? (
                     <img src={imagePath} alt="" className={styles.assetsList__item_img} />
                 ) : null}
-                <div className={styles.assetsList__item_name}>{`${name
-                    .charAt(0)
-                    .toUpperCase()}${name.slice(1)}`}</div>
+                <div className={styles.assetsList__item_name}>{capitalizeFirstLetter(name)}</div>
             </div>
         );
     });

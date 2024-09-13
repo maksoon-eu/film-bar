@@ -4,7 +4,7 @@ const SkeletonTrailers = () => {
     return (
         <div className={`${styles.skeletonTrailers} ${styles.skeleton} ${styles.skeleton__slider}`}>
             <div className={styles.skeleton__colum}>
-                <div className={`${styles.skeletonTrailers__item} ${styles.skeleton__item}`}>
+                <div className={`${styles.skeletonTrailers__trailer} ${styles.skeleton__item}`}>
                     <div className={styles.skeletonWave} />
                 </div>
                 <div className={styles.skeleton__item_name}>
@@ -12,7 +12,7 @@ const SkeletonTrailers = () => {
                 </div>
             </div>
             <div className={styles.skeleton__colum}>
-                <div className={`${styles.skeletonTrailers__item} ${styles.skeleton__item}`}>
+                <div className={`${styles.skeletonTrailers__trailer} ${styles.skeleton__item}`}>
                     <div className={styles.skeletonWave} />
                 </div>
                 <div className={styles.skeleton__item_name}>
@@ -20,7 +20,7 @@ const SkeletonTrailers = () => {
                 </div>
             </div>
             <div className={styles.skeleton__colum}>
-                <div className={`${styles.skeletonTrailers__item} ${styles.skeleton__item}`}>
+                <div className={`${styles.skeletonTrailers__trailer} ${styles.skeleton__item}`}>
                     <div className={styles.skeletonWave} />
                 </div>
                 <div className={styles.skeleton__item_name}>

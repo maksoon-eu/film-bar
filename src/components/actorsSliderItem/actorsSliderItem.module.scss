@@ -1,0 +1,31 @@
+.actorsSliderItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__inner {
+        display: inline-flex;
+        align-items: center;
+        min-width: 350px;
+        background-color: var(--background-color-assets);
+        border-radius: 70px;
+        padding: 10px;
+    }
+
+    &__img {
+        overflow: hidden;
+
+        img {
+            border-radius: 999px;
+            height: 80px;
+            width: 80px;
+            object-fit: cover;
+        }
+    }
+
+    &__name {
+        font-size: var(--font-size-l);
+        font-weight: var(--font-weight-l);
+        margin: 0 auto;
+    }
+}

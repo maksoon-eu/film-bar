@@ -1,21 +1,21 @@
-import { ITrailers } from '../store/features/featureTrailers/featureTrailersType';
+import { Video } from "../types/types";
 
-export const getFilteredTrailer = (trailers: ITrailers) => {
-    let filteredTrailer = trailers.videos.trailers.find((trailer) =>
+export const getFilteredTrailer = (trailers: Video[]) => {
+    let filteredTrailer = trailers.find((trailer) =>
         /[А-Яа-яЁё]/.test(trailer.name)
     );
 
     if (!filteredTrailer) {
         filteredTrailer =
-            trailers.videos.trailers.find(
+            trailers.find(
                 (trailer) =>
                     trailer.name.toLowerCase().includes('official trailer') &&
                     !/\d/.test(trailer.name)
             ) ||
-            trailers.videos.trailers.find((trailer) =>
+            trailers.find((trailer) =>
                 trailer.name.toLowerCase().includes('official trailer')
             );
     }
 
-    return filteredTrailer || trailers.videos.trailers[0];
+    return filteredTrailer || trailers[0];
 };

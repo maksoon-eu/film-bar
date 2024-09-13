@@ -1,5 +1,12 @@
 export type LoadingStatusType = 'idle' | 'loading' | 'error';
 
+export interface Video {
+    url: string;
+    name: string;
+    site: string;
+    type: string;
+}
+
 export interface Poster {
     url: string;
     previewUrl?: string;

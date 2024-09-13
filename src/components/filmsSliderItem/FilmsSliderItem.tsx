@@ -1,6 +1,7 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { IFilmSlider } from '../../store/features/featureFilmsSliderNew/featureFilmsSliderNewTypes';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import { getRatingBg } from '../../utils/ratingBg';
 
 import loader from '../../assets/loader/loader.svg';
 
@@ -11,12 +12,6 @@ interface FilmsSliderItemProps {
 }
 
 const FilmsSliderItem = ({ film }: FilmsSliderItemProps) => {
-    const getRatingBg = (rating: number) => {
-        if (rating > 7) return styles.green;
-        if (rating > 5) return styles.yellow;
-        return styles.red;
-    };
-
     const getSeasonLabel = (count: number) => {
         const lastDigit = count % 10;
         const lastTwoDigits = count % 100;
@@ -99,7 +94,8 @@ const FilmsSliderItem = ({ film }: FilmsSliderItemProps) => {
                 <div className={styles.filmsSliderItem__item_name}>{film.name}</div>
                 <div
                     className={`${styles.filmsSliderItem__item_rating} ${getRatingBg(
-                        film.rating.kp
+                        film.rating.kp,
+                        styles
                     )}`}>
                     {film.rating.kp.toFixed(1)}
                 </div>

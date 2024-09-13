@@ -1,9 +1,11 @@
-import React from "react";
+import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import ReactPlayer from 'react-player';
-import loader from '../../assets/loader/loader.svg';
 import { ITrailers } from '../../store/features/featureTrailers/featureTrailersType';
 import { getFilteredTrailer } from '../../utils/getFilteredTrailer';
+
+import ReactPlayer from 'react-player';
+
+import loader from '../../assets/loader/loader.svg';
 
 import styles from './trailersSliderItem.module.scss';
 
@@ -12,7 +14,7 @@ interface TrailerSliderItemProps {
 }
 
 const TrailersSliderItem = React.memo(({ trailer }: TrailerSliderItemProps) => {
-    const trailerUrl = getFilteredTrailer(trailer);
+    const trailerUrl = getFilteredTrailer(trailer.videos.trailers);
 
     return (
         <div className={styles.trailersSliderItem__slide}>
@@ -25,7 +27,7 @@ const TrailersSliderItem = React.memo(({ trailer }: TrailerSliderItemProps) => {
                     light={
                         <LazyLoadImage
                             alt={trailer.name}
-                            effect="opacity"
+                            effect="blur"
                             src={trailer.backdrop.url}
                             className={styles.trailersSliderItem__item_image}
                         />
