@@ -18,12 +18,6 @@ interface IFilmPreview {
 }
 
 const FilmPreview = ({ film, loadingStatus }: IFilmPreview) => {
-    if (loadingStatus === 'loading') {
-        return <SkeletonFilmPreview />;
-    } else if (loadingStatus === 'error') {
-        return <div>Error</div>;
-    }
-
     const ratingStars = (ratingCount: number) => {
         const totalStars = 10;
 
@@ -127,6 +121,12 @@ const FilmPreview = ({ film, loadingStatus }: IFilmPreview) => {
             }),
         [film]
     );
+
+    if (loadingStatus === 'loading') {
+        return <SkeletonFilmPreview />;
+    } else if (loadingStatus === 'error') {
+        return <div>Error</div>;
+    }
 
     return <div className={styles.filmPreview}>{filmPreviewList}</div>;
 };
