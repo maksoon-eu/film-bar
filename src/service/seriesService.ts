@@ -1,23 +1,26 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { request } from '../utils/api';
-import { IFilmSlider } from "../store/features/featureFilmsSliderNew/featureFilmsSliderNewTypes";
+import { IFilmSlider } from '../store/features/featureFilmsSliderNew/featureFilmsSliderNewTypes';
 
 export const getSeries = createAsyncThunk<IFilmSlider[], void, { rejectValue: string }>(
     'series/getSeries',
     async (_, thunkAPI) => {
         try {
-            const response = request({ url: `${process.env.REACT_APP_TEST_API_BASE}series` });
-            // https://api.kinopoisk.dev/v1.4/movie?page=1&limit=10&selectFields=id&selectFields=name&selectFields=year&selectFields=rating&selectFields=ageRating&selectFields=seasonInfo&selectFields=genres&selectFields=countries&selectFields=poster&notNullFields=id&notNullFields=name&notNullFields=year&notNullFields=rating.kp&notNullFields=genres.name&notNullFields=countries.name&notNullFields=poster.url&notNullFields=top250&sortField=rating.kp&sortType=-1&typeNumber=2
+            const response = await request({
+                url: `${process.env.REACT_APP_API_BASE_V1_4}movie?page=1&limit=10&selectFields=id&selectFields=name&selectFields=year&selectFields=rating&selectFields=ageRating&selectFields=seasonsInfo&selectFields=genres&selectFields=countries&selectFields=poster&notNullFields=id&notNullFields=name&notNullFields=year&notNullFields=rating.kp&notNullFields=genres.name&notNullFields=countries.name&notNullFields=poster.url&notNullFields=top250&sortField=rating.kp&sortType=-1&typeNumber=2`,
+            });
 
-            if (!response) {
-                throw new Error();
+            if (!response.docs || response.docs.length === 0) {
+                return thunkAPI.rejectWithValue('Film not found');
             }
 
-            return response;
+            return response.docs;
         } catch (e) {
             if (e instanceof Error) {
                 return thunkAPI.rejectWithValue(e.message);
             }
+
+            return thunkAPI.rejectWithValue('An unknown error occurred');
         }
     }
 );

@@ -1,4 +1,3 @@
-import React from 'react';
 import { IFilms } from '../../store/features/featureFilms/featureFilmsTypes';
 import { findKey } from '../../utils/findKey';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -16,7 +15,7 @@ interface SliderFilmItemProps {
     film: IFilms;
 }
 
-const MainSliderItem = React.memo(({ film }: SliderFilmItemProps) => {
+const MainSliderItem = ({ film }: SliderFilmItemProps) => {
     const ratingList = findKey(film.rating, ['imdb', 'kp']).map((rating) => {
         return <RatingItem key={rating.name} rating={rating} />;
     });
@@ -64,6 +63,6 @@ const MainSliderItem = React.memo(({ film }: SliderFilmItemProps) => {
             </div>
         </div>
     );
-});
+};
 
 export default MainSliderItem;

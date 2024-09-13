@@ -5,9 +5,8 @@ import { getFilms } from '../../service/filmsService';
 import { useEffect, useMemo } from 'react';
 
 import Slider from 'react-slick';
-import MainSliderItem from "../mainSliderItem/MainSliderItem";
-import SkeletonMainSlider from "../../shared/skeleton/SkeletonMainSlider";
-
+import MainSliderItem from '../mainSliderItem/MainSliderItem';
+import SkeletonMainSlider from '../../shared/skeleton/SkeletonMainSlider';
 
 import styles from './mainSlider.module.scss';
 
@@ -45,7 +44,7 @@ const MainSlider = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        // autoplay: true,
+        autoplay: true,
         swipe: true,
         pauseOnHover: false,
     };

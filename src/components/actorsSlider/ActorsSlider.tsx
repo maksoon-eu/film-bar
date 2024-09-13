@@ -1,5 +1,6 @@
 import { IFilm } from '../../store/features/featureFilm/featureFilmType';
 import { LoadingStatusType } from '../../types/types';
+import { useMemo } from 'react';
 
 import { NextArrow, PrevArrow } from '../arrows/Arrows';
 import Slider from 'react-slick';
@@ -14,6 +15,27 @@ interface IActorsSlider {
 }
 
 const ActorsSlider = ({ film, loadingStatus }: IActorsSlider) => {
+    const actorSliderList = useMemo(
+        () =>
+            film[0]?.persons?.map((person) => (
+                <div key={person.id}>
+                    <ActorsSliderItem name={person.name || person.enName} photoSrc={person.photo} />
+                </div>
+            )),
+        [film]
+    );
+
+    const actorsList = useMemo(
+        () =>
+            film[0]?.persons && (
+                <div className={styles.actorsSlider}>
+                    <div className="title">Актеры</div>
+                    <Slider {...settings}>{actorSliderList}</Slider>
+                </div>
+            ),
+        [film]
+    );
+
     if (loadingStatus === 'loading') {
         return <SkeletonActorsSlider />;
     } else if (loadingStatus === 'error') {
@@ -33,25 +55,7 @@ const ActorsSlider = ({ film, loadingStatus }: IActorsSlider) => {
         prevArrow: <PrevArrow />,
     };
 
-    return (
-        <>
-            {film[0]?.persons && (
-                <div className={styles.actorsSlider}>
-                    <div className="title">Актеры</div>
-                    <Slider {...settings}>
-                        {film[0]?.persons?.map((person) => (
-                            <div key={person.id}>
-                                <ActorsSliderItem
-                                    name={person.name || person.enName}
-                                    photoSrc={person.photo}
-                                />
-                            </div>
-                        ))}
-                    </Slider>
-                </div>
-            )}
-        </>
-    );
+    return <>{actorsList}</>;
 };
 
 export default ActorsSlider;

@@ -31,7 +31,7 @@ const ModalSearch = ({ inputSearch, open, closeHandler, refModal }: ModalSearchP
     useModal({ open, closeHandler, refModal });
 
     useEffect(() => {
-        dispatch(getFilmsSearch());
+        dispatch(getFilmsSearch(inputSearch));
     }, [dispatch, inputSearch]);
 
     const filmsSearchList = useMemo(
@@ -65,16 +65,16 @@ const ModalSearch = ({ inputSearch, open, closeHandler, refModal }: ModalSearchP
                             <div className={styles.modalSearch__list_assets}>
                                 <AssetsList
                                     list={film.genres.slice(0, 2)}
-                                    style="search"
-                                    path="genres"
+                                    style={'search'}
+                                    path={'genres'}
                                 />
                             </div>
                             <div
                                 className={`${styles.modalSearch__list_assets} ${styles.modalSearch__list_assets_last}`}>
                                 <AssetsList
                                     list={film.countries.slice(0, 2)}
-                                    style="search"
-                                    path="countries"
+                                    style={'search'}
+                                    path={'countries'}
                                 />
                             </div>
                             <div className={styles.modalSearch__list_year}>{film.year}</div>

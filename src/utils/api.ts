@@ -17,23 +17,21 @@ export const request = async ({
     body = null,
     headers = {
         'Content-Type': 'application/json',
-        // 'X-API-KEY': process.env.REACT_APP_API_KEY as string,
+        'X-API-KEY': process.env.REACT_APP_API_KEY as string,
         Accept: 'application/json',
     },
 }: useHttpProps): Promise<any> => {
     try {
         const response = await fetch(url, { method, body, headers });
 
-        const data = await response.json();
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
 
-        await new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(1);
-            }, 2000);
-        });
+        const data = await response.json();
 
         return data;
     } catch (e) {
-        throw new Error();
+        throw new Error('Failed to fetch data');
     }
 };

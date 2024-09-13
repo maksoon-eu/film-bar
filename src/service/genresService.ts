@@ -6,13 +6,12 @@ export const getGenres = createAsyncThunk<IGenre[], void, { rejectValue: string 
     'genres/getGenres',
     async (_, thunkAPI) => {
         try {
-            // https://api.kinopoisk.dev/v1/movie/possible-values-by-field?field=genres.name
             const response = await request({
-                url: `${process.env.REACT_APP_TEST_API_BASE}allGenres`,
+                url: `${process.env.REACT_APP_API_BASE_V1}movie/possible-values-by-field?field=genres.name`,
             });
 
-            if (!response) {
-                throw new Error();
+            if (!response || response.length === 0) {
+                return thunkAPI.rejectWithValue('Film not found');
             }
 
             return response;
@@ -20,6 +19,8 @@ export const getGenres = createAsyncThunk<IGenre[], void, { rejectValue: string 
             if (e instanceof Error) {
                 return thunkAPI.rejectWithValue(e.message);
             }
+
+            return thunkAPI.rejectWithValue('An unknown error occurred');
         }
     }
 );

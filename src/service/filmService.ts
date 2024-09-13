@@ -6,17 +6,20 @@ export const getFilm = createAsyncThunk<IFilm, string, { rejectValue: string }>(
     'films/getFilm',
     async (id, thunkAPI) => {
         try {
-            const response = request({ url: `${process.env.REACT_APP_TEST_API_BASE}film/${id}` });
+            const response = await request({ url: `${process.env.REACT_APP_API_BASE_V1_4}movie/${id}` });
 
-            if (!response) {
-                throw new Error();
+            if (!response || response.length === 0) {
+                return thunkAPI.rejectWithValue('Film not found');
             }
 
             return response;
         } catch (e) {
             if (e instanceof Error) {
-                thunkAPI.rejectWithValue(e.message);
+                return thunkAPI.rejectWithValue(e.message);
             }
+
+            return thunkAPI.rejectWithValue('An unknown error occurred');
         }
     }
 );
+

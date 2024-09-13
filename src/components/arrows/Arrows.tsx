@@ -2,8 +2,7 @@ import { CustomArrowProps } from 'react-slick';
 
 import styles from './arrows.module.scss';
 
-export function NextArrow(props: CustomArrowProps) {
-    const { className, onClick } = props;
+export function NextArrow({ className, onClick }: CustomArrowProps) {
     return (
         <div className={`${className} ${styles.arrows__next}`} onClick={onClick}>
             <svg viewBox="0 0 25 25">
@@ -17,8 +16,7 @@ export function NextArrow(props: CustomArrowProps) {
     );
 }
 
-export function PrevArrow(props: CustomArrowProps) {
-    const { className, onClick } = props;
+export function PrevArrow({ className, onClick }: CustomArrowProps) {
     return (
         <div className={`${className} ${styles.arrows__prev}`} onClick={onClick}>
             <svg viewBox="0 0 25 25">

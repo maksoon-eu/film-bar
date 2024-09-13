@@ -2,7 +2,7 @@ import { useAppSelector } from '../../hooks/selector.hook';
 import { selectGenres } from '../../store/features/featureGenres/featureGenresSelectors';
 import { NextArrow, PrevArrow } from '../arrows/Arrows';
 import { useAppDispatch } from '../../hooks/dispatch.hook';
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { getGenres } from '../../service/genresService';
 
 import Slider from 'react-slick';
@@ -20,24 +20,32 @@ const GenresSlider = () => {
         }
     }, [dispatch, genres.length]);
 
-    const genresList = genres.map((genre) => {
-        const name = genre.name;
+    const genresList = useMemo(
+        () =>
+            genres.map((genre) => {
+                const name = genre.name;
 
-        const imagePath = require(`../../assets/genres/${name}.png`);
+                const imagePath = require(`../../assets/genres/${name}.png`);
 
-        return (
-            <div key={name}>
-                <div className={styles.genresSlider__group}>
-                    <div className={styles.genresSlider__item}>
-                        <img src={imagePath} alt={name} className={styles.genresSlider__item_img} />
-                        <div className={styles.genresSlider__item_name}>{`${name
-                            .charAt(0)
-                            .toUpperCase()}${name.slice(1)}`}</div>
+                return (
+                    <div key={name}>
+                        <div className={styles.genresSlider__group}>
+                            <div className={styles.genresSlider__item}>
+                                <img
+                                    src={imagePath}
+                                    alt={name}
+                                    className={styles.genresSlider__item_img}
+                                />
+                                <div className={styles.genresSlider__item_name}>{`${name
+                                    .charAt(0)
+                                    .toUpperCase()}${name.slice(1)}`}</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        );
-    });
+                );
+            }),
+        [genres]
+    );
 
     if (loadingStatus === 'loading') {
         return <SkeletonGenresSlider />;

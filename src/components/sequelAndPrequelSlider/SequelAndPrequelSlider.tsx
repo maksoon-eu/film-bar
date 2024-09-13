@@ -1,5 +1,6 @@
 import { LoadingStatusType } from '../../types/types';
 import { IFilm } from '../../store/features/featureFilm/featureFilmType';
+import { useMemo } from 'react';
 
 import { NextArrow, PrevArrow } from '../arrows/Arrows';
 import Slider from 'react-slick';
@@ -14,9 +15,24 @@ interface ISequelAndPrequelSlider {
 }
 
 const SequelAndPrequelSlider = ({ film, loadingStatus }: ISequelAndPrequelSlider) => {
-    const sequelAndPrequelSliderList = film[0]?.sequelsAndPrequels?.map((item) => {
-        return <SequelAndPrequelSliderItem key={item.id} film={item} />;
-    });
+    const sequelAndPrequelSliderList = useMemo(
+        () =>
+            film[0]?.sequelsAndPrequels?.map((item) => {
+                return <SequelAndPrequelSliderItem key={item.id} film={item} />;
+            }),
+        [film]
+    );
+
+    const sequelAndPrequelList = useMemo(
+        () =>
+            film[0]?.sequelsAndPrequels && (
+                <div className={styles.sequelAndPrequelSlider}>
+                    <div className="title">Сиквелы и приквелы</div>
+                    <Slider {...settings}>{sequelAndPrequelSliderList}</Slider>
+                </div>
+            ),
+        [film]
+    );
 
     if (loadingStatus === 'loading') {
         return <SkeletonFilmsSlider />;
@@ -37,16 +53,7 @@ const SequelAndPrequelSlider = ({ film, loadingStatus }: ISequelAndPrequelSlider
         prevArrow: <PrevArrow />,
     };
 
-    return (
-        <>
-            {film[0]?.sequelsAndPrequels && (
-                <div className={styles.sequelAndPrequelSlider}>
-                    <div className="title">Сиквелы и приквелы</div>
-                    <Slider {...settings}>{sequelAndPrequelSliderList}</Slider>
-                </div>
-            )}
-        </>
-    );
+    return <>{sequelAndPrequelList}</>;
 };
 
 export default SequelAndPrequelSlider;

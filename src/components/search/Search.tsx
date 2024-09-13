@@ -1,12 +1,13 @@
-import { useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 
-import ModalSearch from "../modalSearch/modalSearch";
+import ModalSearch from '../modalSearch/modalSearch';
 
 import styles from './search.module.scss';
 
 const Search = () => {
     const [inputSearch, setInputSearch] = useState<string>('');
     const [open, setOpen] = useState<boolean>(false);
+
     const refModal = useRef<HTMLDivElement>(null);
     const refInput = useRef<HTMLInputElement>(null);
 
@@ -14,9 +15,9 @@ const Search = () => {
         setOpen(true);
     };
 
-    const closeHandler = () => {
+    const closeHandler = useCallback(() => {
         setOpen(false);
-    };
+    }, []);
 
     const clearHandler = () => {
         setInputSearch('');

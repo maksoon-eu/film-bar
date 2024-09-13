@@ -25,12 +25,14 @@ const TrailersSliderItem = React.memo(({ trailer }: TrailerSliderItemProps) => {
                     height="100%"
                     controls
                     light={
-                        <LazyLoadImage
-                            alt={trailer.name}
-                            effect="blur"
-                            src={trailer.backdrop.url}
-                            className={styles.trailersSliderItem__item_image}
-                        />
+                        trailer.backdrop.url && (
+                            <LazyLoadImage
+                                alt={trailer.name}
+                                effect="blur"
+                                src={trailer.backdrop.url}
+                                className={styles.trailersSliderItem__item_image}
+                            />
+                        )
                     }
                     className={styles.trailersSliderItem__item_reactPlayer}
                 />

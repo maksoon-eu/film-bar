@@ -1,3 +1,4 @@
+import React, { useCallback, useMemo } from 'react';
 import { IFilm } from '../../store/features/featureFilm/featureFilmType';
 import { LoadingStatusType } from '../../types/types';
 import { capitalizeFirstLetter } from '../../utils/capitalizeFirstLetter';
@@ -12,60 +13,67 @@ interface IFilmInfo {
 }
 
 const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
-    const renderProfession = (profession: string) => {
-        const professionList = film[0]?.persons
-            ?.filter((item) => item.profession === profession)
-            .map((item) => item.name || item.enName)
-            .join(', ');
+    const renderProfession = useCallback(
+        (profession: string) => {
+            const professionList = film[0]?.persons
+                ?.filter((item) => item.profession === profession)
+                .map((item) => item.name || item.enName)
+                .join(', ');
 
-        return professionList?.length ? professionList : '...';
-    };
+            return professionList?.length ? professionList : '...';
+        },
+        [film]
+    );
 
-    const renderFilmTable = (filmItem: IFilm) => (
-        <table className={styles.filmInfo__table} key={filmItem.id}>
-            <tbody>
-                <TableRow label="Год" value={filmItem.year ? `${filmItem.year} г.` : '...'} />
-                <TableRow
-                    label="Страны"
-                    value={filmItem.countries?.map((country) => country.name) || '...'}
-                />
-                <TableRow
-                    label="Жанры"
-                    value={
-                        filmItem.genres?.map((genre) => capitalizeFirstLetter(genre.name)) || '...'
-                    }
-                />
-                <TableRow
-                    label={filmItem.typeNumber === 2 ? 'Длительность серии' : 'Длительность'}
-                    value={
-                        filmItem.movieLength
-                            ? `${filmItem.movieLength} мин / ${Math.floor(
-                                  filmItem.movieLength / 60
-                              )} ч ${filmItem.movieLength % 60} мин`
-                            : '...'
-                    }
-                />
-                <TableRow
-                    label={filmItem.typeNumber === 2 ? 'Конец' : 'Бюджет'}
-                    value={
-                        filmItem.typeNumber === 2
-                            ? filmItem.status
-                            : filmItem.budget
-                            ? `${filmItem.budget.value} ${filmItem.budget.currency}`
-                            : '...'
-                    }
-                />
-                <TableRow
-                    label="Сборы в мире"
-                    value={
-                        filmItem.fees
-                            ? `${filmItem.fees.world.value} ${filmItem.fees.world.currency}`
-                            : '...'
-                    }
-                />
-                <TableRow label="Премьера в мире" value={filmItem.premiere.world || '...'} />
-            </tbody>
-        </table>
+    const renderFilmTable = useCallback(
+        (filmItem: IFilm) => (
+            <table className={styles.filmInfo__table} key={filmItem.id}>
+                <tbody>
+                    <TableRow label="Год" value={filmItem.year ? `${filmItem.year} г.` : '...'} />
+                    <TableRow
+                        label="Страны"
+                        value={filmItem.countries?.map((country) => country.name) || '...'}
+                    />
+                    <TableRow
+                        label="Жанры"
+                        value={
+                            filmItem.genres?.map((genre) => capitalizeFirstLetter(genre.name)) ||
+                            '...'
+                        }
+                    />
+                    <TableRow
+                        label={filmItem.typeNumber === 2 ? 'Длительность серии' : 'Длительность'}
+                        value={
+                            filmItem.movieLength
+                                ? `${filmItem.movieLength} мин / ${Math.floor(
+                                      filmItem.movieLength / 60
+                                  )} ч ${filmItem.movieLength % 60} мин`
+                                : '...'
+                        }
+                    />
+                    <TableRow
+                        label={filmItem.typeNumber === 2 ? 'Конец' : 'Бюджет'}
+                        value={
+                            filmItem.typeNumber === 2
+                                ? filmItem.status
+                                : filmItem.budget
+                                ? `${filmItem.budget.value} ${filmItem.budget.currency}`
+                                : '...'
+                        }
+                    />
+                    <TableRow
+                        label="Сборы в мире"
+                        value={
+                            filmItem.fees
+                                ? `${filmItem.fees.world.value} ${filmItem.fees.world.currency}`
+                                : '...'
+                        }
+                    />
+                    <TableRow label="Премьера в мире" value={filmItem.premiere.world || '...'} />
+                </tbody>
+            </table>
+        ),
+        []
     );
 
     const renderPeopleTable = (personList: Array<string>) => (
@@ -82,22 +90,16 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
         </table>
     );
 
-    const TableRow = ({ label, value }: { label: string; value: React.ReactNode }) => (
+    const TableRow = React.memo(({ label, value }: { label: string; value: React.ReactNode }) => (
         <tr className={styles.filmInfo__row}>
             <th className={styles.filmInfo__title}>{label}</th>
             <td className={styles.filmInfo__text}>{value}</td>
         </tr>
-    );
+    ));
 
-    if (loadingStatus === 'loading') {
-        return <SkeletonFilmInfo />;
-    } else if (loadingStatus === 'error') {
-        return <div>Error</div>;
-    }
-
-    return (
-        <div className={styles.filmInfo}>
-            {film.map((filmItem) => (
+    const filmInfoList = useMemo(
+        () =>
+            film.map((filmItem) => (
                 <div key={filmItem.id}>
                     <div className="title">О фильме</div>
                     <div className={styles.filmInfo__tables}>
@@ -113,9 +115,17 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                         ])}
                     </div>
                 </div>
-            ))}
-        </div>
+            )),
+        [film]
     );
+
+    if (loadingStatus === 'loading') {
+        return <SkeletonFilmInfo />;
+    } else if (loadingStatus === 'error') {
+        return <div>Error</div>;
+    }
+
+    return <div className={styles.filmInfo}>{filmInfoList}</div>;
 };
 
 export default FilmInfo;
