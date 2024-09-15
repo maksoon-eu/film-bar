@@ -6,7 +6,9 @@ export const getFilm = createAsyncThunk<IFilm, string, { rejectValue: string }>(
     'films/getFilm',
     async (id, thunkAPI) => {
         try {
-            const response = await request({ url: `${process.env.REACT_APP_API_BASE_V1_4}movie/${id}` });
+            const response = await request({
+                url: `${process.env.REACT_APP_API_BASE_V1_4}movie/${id}`,
+            });
 
             if (!response || response.length === 0) {
                 return thunkAPI.rejectWithValue('Film not found');
@@ -22,4 +24,3 @@ export const getFilm = createAsyncThunk<IFilm, string, { rejectValue: string }>(
         }
     }
 );
-

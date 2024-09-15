@@ -9,6 +9,10 @@
 
     &__table {
         width: 100%;
+
+        &_left {
+            margin-right: 20px;
+        }
     }
 
     &__tables {

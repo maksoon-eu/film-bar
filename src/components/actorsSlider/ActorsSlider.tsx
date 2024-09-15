@@ -25,6 +25,19 @@ const ActorsSlider = ({ film, loadingStatus }: IActorsSlider) => {
         [film]
     );
 
+    const settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        swipe: true,
+        swipeToSlide: true,
+        touchThreshold: 50,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+    };
+
     const actorsList = useMemo(
         () =>
             film[0]?.persons && (
@@ -41,19 +54,6 @@ const ActorsSlider = ({ film, loadingStatus }: IActorsSlider) => {
     } else if (loadingStatus === 'error') {
         return <div>Error</div>;
     }
-
-    const settings = {
-        dots: false,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: true,
-        swipe: true,
-        swipeToSlide: true,
-        touchThreshold: 50,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
-    };
 
     return <>{actorsList}</>;
 };

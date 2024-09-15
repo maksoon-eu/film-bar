@@ -19,95 +19,100 @@ interface IChooseFilm {
 }
 
 const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
-    const chooseFilmList = useMemo(() => {
-        film.map((item) => {
-            const ratingKey = findKey<Rating, 'imdb' | 'kp'>(item.rating, ['imdb', 'kp']);
-            const ratingList = ratingKey
-                .filter((rating) => rating.value)
-                .map((rating) => <RatingItem key={rating.name} rating={rating} />);
+    const chooseFilmList = useMemo(
+        () =>
+            film.map((item) => {
+                const ratingKey = findKey<Rating, 'imdb' | 'kp'>(item.rating, ['imdb', 'kp']);
+                const ratingList = ratingKey
+                    .filter((rating) => rating.value)
+                    .map((rating) => <RatingItem key={rating.name} rating={rating} />);
 
-            return (
-                <div key={item.id} className={styles.chooseFilm}>
-                    <div className={styles.chooseFilm__backdrop}>
-                        <div className={styles.chooseFilm__fade} />
-                        {item.backdrop.url && (
-                            <LazyLoadImage
-                                alt={item.name}
-                                src={item.backdrop.url}
-                                effect="blur"
-                                width={'100%'}
-                                height={'100%'}
-                                threshold={0}
-                                placeholderSrc={loader}
-                                className={styles.chooseFilm__backdrop_img}
-                            />
-                        )}
-                    </div>
-                    <div className={styles.chooseFilm__inner}>
-                        <div className={styles.chooseFilm__left}>
-                            <div className={styles.chooseFilm__poster}>
-                                {item.poster.url ? (
-                                    <LazyLoadImage
-                                        alt={item.name}
-                                        src={item.poster.url}
-                                        effect="blur"
-                                        width={'100%'}
-                                        height={'100%'}
-                                        threshold={0}
-                                        placeholderSrc={loader}
-                                        className={styles.chooseFilm__backdrop_img}
-                                    />
-                                ) : (
-                                    <PlaceholderImg />
-                                )}
-                            </div>
+                return (
+                    <div key={item.id} className={styles.chooseFilm}>
+                        <div className={styles.chooseFilm__backdrop}>
+                            <div className={styles.chooseFilm__fade} />
+                            {item.backdrop?.url && (
+                                <LazyLoadImage
+                                    alt={item.name}
+                                    src={item.backdrop.url}
+                                    effect="blur"
+                                    width={'100%'}
+                                    height={'100%'}
+                                    threshold={0}
+                                    placeholderSrc={loader}
+                                    className={styles.chooseFilm__backdrop_img}
+                                />
+                            )}
                         </div>
-                        <div className={styles.chooseFilm__right}>
-                            <div className={styles.chooseFilm__content}>
-                                <div className={styles.chooseFilm__logo}>
-                                    {item.logo ? (
-                                        <img
-                                            src={item.logo.url}
+                        <div className={styles.chooseFilm__inner}>
+                            <div className={styles.chooseFilm__left}>
+                                <div className={styles.chooseFilm__poster}>
+                                    {item.poster.url ? (
+                                        <LazyLoadImage
                                             alt={item.name}
-                                            className={styles.chooseFilm__logo_img}
+                                            src={item.poster.url}
+                                            effect="blur"
+                                            width={'100%'}
+                                            height={'100%'}
+                                            threshold={0}
+                                            placeholderSrc={loader}
+                                            className={styles.chooseFilm__backdrop_img}
                                         />
                                     ) : (
-                                        <>
-                                            <div className={styles.chooseFilm__logo_text}>
-                                                {item.name}
-                                            </div>
-                                            <div className={styles.chooseFilm__logo_subtext}>
-                                                {item.enName}
-                                            </div>
-                                        </>
+                                        <PlaceholderImg />
                                     )}
                                 </div>
-                                <div className={styles.chooseFilm__rating}>{ratingList}</div>
-                                <div className={styles.chooseFilm__assets}>
-                                    <div className={styles.chooseFilm__assets_ageRating}>
-                                        <div className={styles.chooseFilm__ageRating}>
-                                            {item.ageRating}+
-                                        </div>
-                                        <AssetsList list={item.genres.slice(0, 5)} path="genres" />
+                            </div>
+                            <div className={styles.chooseFilm__right}>
+                                <div className={styles.chooseFilm__content}>
+                                    <div className={styles.chooseFilm__logo}>
+                                        {item.logo ? (
+                                            <img
+                                                src={item.logo.url}
+                                                alt={item.name}
+                                                className={styles.chooseFilm__logo_img}
+                                            />
+                                        ) : (
+                                            <>
+                                                <div className={styles.chooseFilm__logo_text}>
+                                                    {item.name}
+                                                </div>
+                                                <div className={styles.chooseFilm__logo_subtext}>
+                                                    {item.enName}
+                                                </div>
+                                            </>
+                                        )}
                                     </div>
-                                </div>
-                                <div
-                                    className={`${styles.chooseFilm__assets} ${styles.chooseFilm__assets_last}`}>
-                                    <AssetsList
-                                        list={item.countries.slice(0, 5)}
-                                        path="countries"
-                                    />
-                                </div>
-                                <div className={styles.chooseFilm__description}>
-                                    {item.description}
+                                    <div className={styles.chooseFilm__rating}>{ratingList}</div>
+                                    <div className={styles.chooseFilm__assets}>
+                                        <div className={styles.chooseFilm__assets_ageRating}>
+                                            <div className={styles.chooseFilm__ageRating}>
+                                                {item.ageRating}+
+                                            </div>
+                                            <AssetsList
+                                                list={item.genres.slice(0, 5)}
+                                                path="genres"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div
+                                        className={`${styles.chooseFilm__assets} ${styles.chooseFilm__assets_last}`}>
+                                        <AssetsList
+                                            list={item.countries.slice(0, 5)}
+                                            path="countries"
+                                        />
+                                    </div>
+                                    <div className={styles.chooseFilm__description}>
+                                        {item.description}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            );
-        });
-    }, [film]);
+                );
+            }),
+        [film]
+    );
 
     if (loadingStatus === 'loading') {
         return <SkeletonMainSlider />;

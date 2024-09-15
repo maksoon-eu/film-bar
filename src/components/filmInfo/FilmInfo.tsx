@@ -27,17 +27,17 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
 
     const renderFilmTable = useCallback(
         (filmItem: IFilm) => (
-            <table className={styles.filmInfo__table} key={filmItem.id}>
+            <table className={`${styles.filmInfo__table} ${styles.filmInfo__table_left}`} key={filmItem.id}>
                 <tbody>
                     <TableRow label="Год" value={filmItem.year ? `${filmItem.year} г.` : '...'} />
                     <TableRow
                         label="Страны"
-                        value={filmItem.countries?.map((country) => country.name) || '...'}
+                        value={filmItem.countries?.map((country) => country.name).join(', ') || '...'}
                     />
                     <TableRow
                         label="Жанры"
                         value={
-                            filmItem.genres?.map((genre) => capitalizeFirstLetter(genre.name)) ||
+                            filmItem.genres?.map((genre) => capitalizeFirstLetter(genre.name)).join(', ') ||
                             '...'
                         }
                     />

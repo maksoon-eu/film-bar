@@ -19,10 +19,8 @@ const FilmPage = () => {
     const { loadingStatus, film } = useAppSelector(selectFilm);
 
     useEffect(() => {
-        if (id && id !== film[0]?.id) {
-            dispatch(getFilm(id));
-        }
-    }, [id, film, dispatch]);
+        dispatch(getFilm(id as string));
+    }, [id]);
 
     useEffect(() => {
         if (film.length) {
@@ -43,7 +41,7 @@ const FilmPage = () => {
                 <FilmPlayer
                     loadingStatus={loadingStatus}
                     filmId={film[0]?.id}
-                    backdropSrc={film[0]?.backdrop.url}
+                    backdropSrc={film[0]?.backdrop?.url}
                 />
                 <ActorsSlider film={film} loadingStatus={loadingStatus} />
                 <SequelAndPrequelSlider film={film} loadingStatus={loadingStatus} />

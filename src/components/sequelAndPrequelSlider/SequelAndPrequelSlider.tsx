@@ -23,6 +23,19 @@ const SequelAndPrequelSlider = ({ film, loadingStatus }: ISequelAndPrequelSlider
         [film]
     );
 
+    const settings = {
+        dots: false,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        swipe: true,
+        swipeToSlide: true,
+        touchThreshold: 50,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+    };
+
     const sequelAndPrequelList = useMemo(
         () =>
             film[0]?.sequelsAndPrequels && (
@@ -39,19 +52,6 @@ const SequelAndPrequelSlider = ({ film, loadingStatus }: ISequelAndPrequelSlider
     } else if (loadingStatus === 'error') {
         return <div>Error</div>;
     }
-
-    const settings = {
-        dots: false,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: true,
-        swipe: true,
-        swipeToSlide: true,
-        touchThreshold: 50,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
-    };
 
     return <>{sequelAndPrequelList}</>;
 };

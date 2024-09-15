@@ -89,7 +89,7 @@ const FilmPreview = ({ film, loadingStatus }: IFilmPreview) => {
                             <div className={styles.filmPreview__trailer}>
                                 <div className={styles.filmPreview__trailer_video}>
                                     <ReactPlayer
-                                        url={getFilteredTrailer(item.videos.trailers).url}
+                                        url={getFilteredTrailer(item.videos.trailers)?.url}
                                         width="100%"
                                         height="100%"
                                         controls

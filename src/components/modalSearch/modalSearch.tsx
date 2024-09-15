@@ -65,7 +65,7 @@ const ModalSearch = ({ inputSearch, open, closeHandler, refModal }: ModalSearchP
                             <div className={styles.modalSearch__list_assets}>
                                 <AssetsList
                                     list={film.genres.slice(0, 2)}
-                                    style={'search'}
+                                    styleAsset={'search'}
                                     path={'genres'}
                                 />
                             </div>
@@ -73,7 +73,7 @@ const ModalSearch = ({ inputSearch, open, closeHandler, refModal }: ModalSearchP
                                 className={`${styles.modalSearch__list_assets} ${styles.modalSearch__list_assets_last}`}>
                                 <AssetsList
                                     list={film.countries.slice(0, 2)}
-                                    style={'search'}
+                                    styleAsset={'search'}
                                     path={'countries'}
                                 />
                             </div>

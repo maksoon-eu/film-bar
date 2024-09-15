@@ -7,7 +7,7 @@ export const getFilmsSearch = createAsyncThunk<IFilmsSearch[], string, { rejectV
     async (filmName, thunkAPI) => {
         try {
             const response = await request({
-                url: `${process.env.REACT_APP_API_BASE_V1_4}search?page=1&limit=10&query=${filmName}`,
+                url: `${process.env.REACT_APP_API_BASE_V1_4}movie/search?page=1&limit=10&query=${filmName}`,
             });
 
             if (!response.docs || response.docs.length === 0) {
