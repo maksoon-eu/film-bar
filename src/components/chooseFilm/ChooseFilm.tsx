@@ -31,7 +31,7 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
                     <div key={item.id} className={styles.chooseFilm}>
                         <div className={styles.chooseFilm__backdrop}>
                             <div className={styles.chooseFilm__fade} />
-                            {item.backdrop?.url && (
+                            {item.backdrop?.url ? (
                                 <LazyLoadImage
                                     alt={item.name}
                                     src={item.backdrop.url}
@@ -42,18 +42,19 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
                                     placeholderSrc={loader}
                                     className={styles.chooseFilm__backdrop_img}
                                 />
-                            )}
-                            {item.poster?.url && (
-                                <LazyLoadImage
-                                    alt={item.name}
-                                    src={item.poster.url}
-                                    effect="blur"
-                                    width={'100%'}
-                                    height={'100%'}
-                                    threshold={0}
-                                    placeholderSrc={loader}
-                                    className={styles.chooseFilm__backdrop_poster}
-                                />
+                            ) : (
+                                item.poster?.url && (
+                                    <LazyLoadImage
+                                        alt={item.name}
+                                        src={item.poster.url}
+                                        effect="blur"
+                                        width={'100%'}
+                                        height={'100%'}
+                                        threshold={0}
+                                        placeholderSrc={loader}
+                                        className={styles.chooseFilm__backdrop_poster}
+                                    />
+                                )
                             )}
                         </div>
                         <div className={styles.chooseFilm__inner}>
