@@ -32,6 +32,10 @@
         &_img {
             object-fit: cover;
         }
+
+        &_poster {
+            object-fit: contain;
+        }
     }
 
     &__inner {
@@ -51,7 +55,7 @@
     }
 
     &__poster {
-        img {
+        &_img {
             border-radius: 10px;
         }
     }

@@ -1,9 +1,7 @@
-import Error from "../../components/error/Error";
-
 const ErrorPage = () => {
     return (
         <>
-            <Error />
+            Error
         </>
     );
 };

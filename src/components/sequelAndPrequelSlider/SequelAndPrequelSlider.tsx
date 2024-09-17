@@ -38,7 +38,7 @@ const SequelAndPrequelSlider = ({ film, loadingStatus }: ISequelAndPrequelSlider
 
     const sequelAndPrequelList = useMemo(
         () =>
-            film[0]?.sequelsAndPrequels && (
+            film[0]?.sequelsAndPrequels?.length > 0 && (
                 <div className={styles.sequelAndPrequelSlider}>
                     <div className="title">Сиквелы и приквелы</div>
                     <Slider {...settings}>{sequelAndPrequelSliderList}</Slider>

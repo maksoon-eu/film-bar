@@ -6,6 +6,7 @@ import { store } from './store/store';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 import App from './components/app/App';
+import ErrorBoundary from './components/errorBoundary/ErrorBoundary';
 
 import './style/index.scss';
 
@@ -14,7 +15,9 @@ root.render(
     // <React.StrictMode>
     <Provider store={store}>
         <BrowserRouter>
-            <App />
+            <ErrorBoundary>
+                <App />
+            </ErrorBoundary>
         </BrowserRouter>
     </Provider>
     // </React.StrictMode>

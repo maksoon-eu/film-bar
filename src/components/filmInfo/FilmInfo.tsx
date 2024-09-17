@@ -25,20 +25,50 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
         [film]
     );
 
+    const formatDate = (isoTime: string) => {
+        const date = new Date(isoTime);
+
+        const months = [
+            'января',
+            'февраля',
+            'марта',
+            'апреля',
+            'мая',
+            'июня',
+            'июля',
+            'августа',
+            'сентября',
+            'октября',
+            'ноября',
+            'декабря',
+        ];
+
+        const day = date.getDate();
+        const month = months[date.getMonth()];
+        const year = date.getFullYear();
+
+        return `${day} ${month} ${year}`;
+    };
+
     const renderFilmTable = useCallback(
         (filmItem: IFilm) => (
-            <table className={`${styles.filmInfo__table} ${styles.filmInfo__table_left}`} key={filmItem.id}>
+            <table
+                className={`${styles.filmInfo__table} ${styles.filmInfo__table_left}`}
+                key={filmItem.id}>
                 <tbody>
                     <TableRow label="Год" value={filmItem.year ? `${filmItem.year} г.` : '...'} />
                     <TableRow
                         label="Страны"
-                        value={filmItem.countries?.map((country) => country.name).join(', ') || '...'}
+                        value={
+                            filmItem.countries?.map((country) => country.name).join(', ') || '...'
+                        }
                     />
                     <TableRow
                         label="Жанры"
                         value={
-                            filmItem.genres?.map((genre) => capitalizeFirstLetter(genre.name)).join(', ') ||
-                            '...'
+                            filmItem.genres
+                                ?.map((genre) => capitalizeFirstLetter(genre.name))
+                                .join(', ') || '...'
                         }
                     />
                     <TableRow
@@ -69,7 +99,10 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                                 : '...'
                         }
                     />
-                    <TableRow label="Премьера в мире" value={filmItem.premiere.world || '...'} />
+                    <TableRow
+                        label="Премьера в мире"
+                        value={filmItem.premiere ? formatDate(filmItem.premiere.world) : '...'}
+                    />
                 </tbody>
             </table>
         ),

@@ -43,6 +43,18 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
                                     className={styles.chooseFilm__backdrop_img}
                                 />
                             )}
+                            {item.poster?.url && (
+                                <LazyLoadImage
+                                    alt={item.name}
+                                    src={item.poster.url}
+                                    effect="blur"
+                                    width={'100%'}
+                                    height={'100%'}
+                                    threshold={0}
+                                    placeholderSrc={loader}
+                                    className={styles.chooseFilm__backdrop_poster}
+                                />
+                            )}
                         </div>
                         <div className={styles.chooseFilm__inner}>
                             <div className={styles.chooseFilm__left}>
@@ -56,7 +68,7 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
                                             height={'100%'}
                                             threshold={0}
                                             placeholderSrc={loader}
-                                            className={styles.chooseFilm__backdrop_img}
+                                            className={styles.chooseFilm__poster_img}
                                         />
                                     ) : (
                                         <PlaceholderImg />
