@@ -1,6 +1,6 @@
 import { useCallback, useRef, useState } from 'react';
 
-import ModalSearch from '../modalSearch/ModalSearch';
+import ModalSearch from '../modalSearch/modalSearch';
 
 import styles from './search.module.scss';
 
