@@ -13,7 +13,10 @@ interface ISequelAndPrequelSliderItem {
 
 const SequelAndPrequelSliderItem = ({ film }: ISequelAndPrequelSliderItem) => {
     return (
-        <Link to={`/films/${film.id}`} key={film.id} className={styles.sequelAndPrequelSliderItem__slide}>
+        <Link
+            to={`/films/${film.id}`}
+            key={film.id}
+            className={styles.sequelAndPrequelSliderItem__slide}>
             <div className={styles.sequelAndPrequelSliderItem__item}>
                 <div className={styles.sequelAndPrequelSliderItem__item_poster}>
                     <LazyLoadImage
@@ -25,20 +28,26 @@ const SequelAndPrequelSliderItem = ({ film }: ISequelAndPrequelSliderItem) => {
                     <div className={styles.sequelAndPrequelSliderItem__item_fade}>
                         <div className={styles.sequelAndPrequelSliderItem__item_group}>
                             <div className={styles.sequelAndPrequelSliderItem__item_year}>
-                                <div className={styles.sequelAndPrequelSliderItem__item_title}>Год</div>
+                                <div className={styles.sequelAndPrequelSliderItem__item_title}>
+                                    Год
+                                </div>
                                 {film.year}
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className={styles.sequelAndPrequelSliderItem__item_name}>{film.name}</div>
-                <div
-                    className={`${styles.sequelAndPrequelSliderItem__item_rating} ${getRatingBg(
-                        film.rating.kp || film.rating.imdb,
-                        styles
-                    )}`}>
-                    {film.rating.kp ? film.rating.kp.toFixed(1) : film.rating.imdb.toFixed(1)}
-                </div>
+                {film.rating?.kp ||
+                    (film.rating?.imdb && (
+                        <div
+                            className={`${
+                                styles.sequelAndPrequelSliderItem__item_rating
+                            } ${getRatingBg(film.rating.kp || film.rating.imdb, styles)}`}>
+                            {film.rating.kp
+                                ? film.rating.kp.toFixed(1)
+                                : film.rating.imdb.toFixed(1)}
+                        </div>
+                    ))}
             </div>
         </Link>
     );

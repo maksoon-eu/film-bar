@@ -2,6 +2,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { IFilmSlider } from '../../store/features/featureFilmsSliderNew/featureFilmsSliderNewTypes';
 import { Link } from 'react-router-dom';
 import { getRatingBg } from '../../utils/ratingBg';
+import { lengthOfWatch } from '../../utils/lengthOfWatch';
 
 import loader from '../../assets/loader/loader.svg';
 
@@ -12,39 +13,6 @@ interface FilmsSliderItemProps {
 }
 
 const FilmsSliderItem = ({ film }: FilmsSliderItemProps) => {
-    const getSeasonLabel = (count: number) => {
-        const lastDigit = count % 10;
-        const lastTwoDigits = count % 100;
-
-        if (lastTwoDigits >= 11 && lastTwoDigits <= 19) {
-            return 'сезонов';
-        }
-
-        if (lastDigit === 1) {
-            return 'сезон';
-        }
-
-        if (lastDigit >= 2 && lastDigit <= 4) {
-            return 'сезона';
-        }
-
-        return 'сезонов';
-    };
-
-    const lengthOfWatch = (item: IFilmSlider) => {
-        let lengthResult;
-
-        if ('movieLength' in item) {
-            lengthResult = `${item.movieLength} мин`;
-        } else if ('seasonsInfo' in item) {
-            const seasonCount = item.seasonsInfo?.length;
-            lengthResult = seasonCount
-                ? `${seasonCount} ${getSeasonLabel(seasonCount)}`
-                : undefined;
-        }
-        return lengthResult || '...';
-    };
-
     return (
         <Link to={`/films/${film.id}`} className={styles.filmsSliderItem__slide}>
             <div className={styles.filmsSliderItem__item}>

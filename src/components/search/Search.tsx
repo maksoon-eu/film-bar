@@ -1,26 +1,29 @@
 import { useCallback, useRef, useState } from 'react';
 
-import ModalSearch from '../modalSearch/modalSearch';
+import ModalSearch from '../modalSearch/ModalSearch';
 
 import styles from './search.module.scss';
 
 const Search = () => {
     const [inputSearch, setInputSearch] = useState<string>('');
-    const [open, setOpen] = useState<boolean>(false);
+    const [isOpenModal, setIsOpenModal] = useState<boolean>(false);
 
     const refModal = useRef<HTMLDivElement>(null);
     const refInput = useRef<HTMLInputElement>(null);
 
     const openHandler = () => {
-        setOpen(true);
+        setIsOpenModal(true);
     };
 
     const closeHandler = useCallback(() => {
-        setOpen(false);
+        setIsOpenModal(false);
     }, []);
 
-    const clearHandler = () => {
+    const clearHandler = useCallback(() => {
         setInputSearch('');
+    }, []);
+
+    const focusOnInput = () => {
         refInput.current?.focus();
     };
 
@@ -42,7 +45,10 @@ const Search = () => {
                     className={`${styles.search__inner_icon} ${
                         inputSearch.length > 0 ? styles.search__inner_active : ''
                     }`}
-                    onClick={clearHandler}>
+                    onClick={() => {
+                        clearHandler();
+                        focusOnInput();
+                    }}>
                     <svg viewBox="0 0 24 24">
                         <path
                             fill="#fff"
@@ -55,8 +61,9 @@ const Search = () => {
 
             <ModalSearch
                 inputSearch={inputSearch}
-                open={open}
+                isOpenModal={isOpenModal}
                 closeHandler={closeHandler}
+                clearHandler={clearHandler}
                 refModal={refModal}
             />
         </div>

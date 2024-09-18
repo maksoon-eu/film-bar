@@ -60,7 +60,7 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
                         <div className={styles.chooseFilm__inner}>
                             <div className={styles.chooseFilm__left}>
                                 <div className={styles.chooseFilm__poster}>
-                                    {item.poster.url ? (
+                                    {item.poster?.url ? (
                                         <LazyLoadImage
                                             alt={item.name}
                                             src={item.poster.url}

@@ -2,6 +2,7 @@ import React, { useCallback, useMemo } from 'react';
 import { IFilm } from '../../store/features/featureFilm/featureFilmType';
 import { LoadingStatusType } from '../../types/types';
 import { capitalizeFirstLetter } from '../../utils/capitalizeFirstLetter';
+import { formatDate } from '../../utils/transformDate';
 
 import SkeletonFilmInfo from '../../shared/skeleton/SkeletonFilmInfo';
 
@@ -25,38 +26,13 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
         [film]
     );
 
-    const formatDate = (isoTime: string) => {
-        const date = new Date(isoTime);
-
-        const months = [
-            'января',
-            'февраля',
-            'марта',
-            'апреля',
-            'мая',
-            'июня',
-            'июля',
-            'августа',
-            'сентября',
-            'октября',
-            'ноября',
-            'декабря',
-        ];
-
-        const day = date.getDate();
-        const month = months[date.getMonth()];
-        const year = date.getFullYear();
-
-        return `${day} ${month} ${year}`;
-    };
-
     const renderFilmTable = useCallback(
         (filmItem: IFilm) => (
             <table
                 className={`${styles.filmInfo__table} ${styles.filmInfo__table_left}`}
                 key={filmItem.id}>
                 <tbody>
-                    <TableRow label="Год" value={filmItem.year ? `${filmItem.year} г.` : '...'} />
+                    <TableRow label="Год" value={filmItem.year ? `${filmItem.year}г.` : '...'} />
                     <TableRow
                         label="Страны"
                         value={
@@ -94,7 +70,7 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                     <TableRow
                         label="Сборы в мире"
                         value={
-                            filmItem.fees
+                            filmItem.fees.world.value
                                 ? `${filmItem.fees.world.value} ${filmItem.fees.world.currency}`
                                 : '...'
                         }
@@ -138,13 +114,13 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                     <div className={styles.filmInfo__tables}>
                         {renderFilmTable(filmItem)}
                         {renderPeopleTable([
-                            'актеры',
                             'режиссеры',
                             'продюсеры',
                             'операторы',
                             'композиторы',
                             'художники',
                             'монтажеры',
+                            'редакторы',
                         ])}
                     </div>
                 </div>

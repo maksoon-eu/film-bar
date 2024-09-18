@@ -19,16 +19,23 @@ import styles from './modalSearch.module.scss';
 
 interface ModalSearchProps {
     inputSearch: string;
-    open: boolean;
+    isOpenModal: boolean;
     closeHandler: () => void;
+    clearHandler: () => void;
     refModal: RefObject<HTMLDivElement>;
 }
 
-const ModalSearch = ({ inputSearch, open, closeHandler, refModal }: ModalSearchProps) => {
+const ModalSearch = ({
+    inputSearch,
+    isOpenModal,
+    closeHandler,
+    clearHandler,
+    refModal,
+}: ModalSearchProps) => {
     const dispatch = useAppDispatch();
     const { filmsSearch, loadingStatus } = useAppSelector(selectFilmsSearch);
 
-    useModal({ open, closeHandler, refModal });
+    useModal({ isOpenModal, closeHandler, refModal });
 
     useEffect(() => {
         dispatch(getFilmsSearch(inputSearch));
@@ -48,7 +55,11 @@ const ModalSearch = ({ inputSearch, open, closeHandler, refModal }: ModalSearchP
                     <Link
                         to={`/films/${film.id}`}
                         key={film.id}
-                        className={styles.modalSearch__list_item}>
+                        className={styles.modalSearch__list_item}
+                        onClick={() => {
+                            closeHandler();
+                            clearHandler();
+                        }}>
                         <div className={styles.modalSearch__list_left}>
                             <LazyLoadImage
                                 alt={film.name || film.enName}
@@ -87,7 +98,7 @@ const ModalSearch = ({ inputSearch, open, closeHandler, refModal }: ModalSearchP
 
     return (
         <div className={styles.modalSearch}>
-            {open && (
+            {isOpenModal && (
                 <div className={styles.modalSearch__list}>
                     {loadingStatus === 'loading' ? <Loader /> : filmsSearchList}
                 </div>

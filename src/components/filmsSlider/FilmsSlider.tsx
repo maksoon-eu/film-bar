@@ -6,10 +6,10 @@ import { useAppSelector } from '../../hooks/selector.hook';
 import { RootState } from '../../store/store';
 import { AsyncThunk } from '@reduxjs/toolkit';
 import { IFilmSlider } from '../../store/features/featureFilmsSliderNew/featureFilmsSliderNewTypes';
+import { sliderSettingsAssets } from "../../settings/sliderSettings";
 
 import FilmsSliderItem from '../filmsSliderItem/FilmsSliderItem';
 import SkeletonFilmsSlider from '../../shared/skeleton/SkeletonFilmsSlider';
-import { NextArrow, PrevArrow } from '../arrows/Arrows';
 
 import styles from './filmsSlider.module.scss';
 
@@ -39,23 +39,10 @@ const FilmsSlider = React.memo(({ title, selector, fetchData }: FilmsSliderProps
         return <div>Error</div>;
     }
 
-    const settings = {
-        dots: false,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: true,
-        swipe: true,
-        swipeToSlide: true,
-        touchThreshold: 50,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
-    };
-
     return (
         <div className={styles.filmsSlider}>
             <div className="title">{title}</div>
-            <Slider {...settings}>{itemsList}</Slider>
+            <Slider {...sliderSettingsAssets}>{itemsList}</Slider>
         </div>
     );
 });

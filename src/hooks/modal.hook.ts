@@ -1,12 +1,12 @@
 import { useEffect, useCallback } from 'react';
 
 interface UseModalProps {
-    open: boolean;
+    isOpenModal: boolean;
     closeHandler: () => void;
     refModal: React.RefObject<HTMLElement>;
 }
 
-export const useModal = ({ open, closeHandler, refModal }: UseModalProps) => {
+export const useModal = ({ isOpenModal, closeHandler, refModal }: UseModalProps) => {
     const onKeyDown = useCallback(
         (e: KeyboardEvent) => {
             if (e.key === 'Escape') {
@@ -18,15 +18,15 @@ export const useModal = ({ open, closeHandler, refModal }: UseModalProps) => {
 
     const clickOutModal = useCallback(
         (e: MouseEvent) => {
-            if (open && refModal?.current && !refModal.current.contains(e.target as Node)) {
+            if (isOpenModal && refModal?.current && !refModal.current.contains(e.target as Node)) {
                 closeHandler();
             }
         },
-        [closeHandler, open, refModal]
+        [closeHandler, isOpenModal, refModal]
     );
 
     useEffect(() => {
-        if (open) {
+        if (isOpenModal) {
             window.addEventListener('keydown', onKeyDown);
             window.addEventListener('click', clickOutModal);
         }
@@ -34,5 +34,5 @@ export const useModal = ({ open, closeHandler, refModal }: UseModalProps) => {
             window.removeEventListener('keydown', onKeyDown);
             window.removeEventListener('click', clickOutModal);
         };
-    }, [open, onKeyDown, clickOutModal]);
+    }, [isOpenModal, onKeyDown, clickOutModal]);
 };

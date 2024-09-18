@@ -1,8 +1,8 @@
 import { IFilm } from '../../store/features/featureFilm/featureFilmType';
 import { LoadingStatusType } from '../../types/types';
 import { useMemo } from 'react';
+import { sliderSettingsAssets } from "../../settings/sliderSettings";
 
-import { NextArrow, PrevArrow } from '../arrows/Arrows';
 import Slider from 'react-slick';
 import ActorsSliderItem from '../actorsSliderItem/ActorsSliderItem';
 import SkeletonActorsSlider from '../../shared/skeleton/SkeletonActorsSlider';
@@ -25,25 +25,12 @@ const ActorsSlider = ({ film, loadingStatus }: IActorsSlider) => {
         [film]
     );
 
-    const settings = {
-        dots: false,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: true,
-        swipe: true,
-        swipeToSlide: true,
-        touchThreshold: 50,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
-    };
-
     const actorsList = useMemo(
         () =>
             film[0]?.persons && (
                 <div className={styles.actorsSlider}>
                     <div className="title">Актеры</div>
-                    <Slider {...settings}>{actorSliderList}</Slider>
+                    <Slider {...sliderSettingsAssets}>{actorSliderList}</Slider>
                 </div>
             ),
         [film]

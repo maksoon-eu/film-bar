@@ -1,8 +1,8 @@
 import { LoadingStatusType } from '../../types/types';
 import { IFilm } from '../../store/features/featureFilm/featureFilmType';
 import { useMemo } from 'react';
+import { sliderSettingsAssets } from "../../settings/sliderSettings";
 
-import { NextArrow, PrevArrow } from '../arrows/Arrows';
 import Slider from 'react-slick';
 import SequelAndPrequelSliderItem from '../sequelAndPrequelSliderItem/SequelAndPrequelSliderItem';
 import SkeletonFilmsSlider from '../../shared/skeleton/SkeletonFilmsSlider';
@@ -23,25 +23,12 @@ const SequelAndPrequelSlider = ({ film, loadingStatus }: ISequelAndPrequelSlider
         [film]
     );
 
-    const settings = {
-        dots: false,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: true,
-        swipe: true,
-        swipeToSlide: true,
-        touchThreshold: 50,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
-    };
-
     const sequelAndPrequelList = useMemo(
         () =>
             film[0]?.sequelsAndPrequels?.length > 0 && (
                 <div className={styles.sequelAndPrequelSlider}>
                     <div className="title">Сиквелы и приквелы</div>
-                    <Slider {...settings}>{sequelAndPrequelSliderList}</Slider>
+                    <Slider {...sliderSettingsAssets}>{sequelAndPrequelSliderList}</Slider>
                 </div>
             ),
         [film]

@@ -1,5 +1,5 @@
 import { NameItem } from '../../types/types';
-import { capitalizeFirstLetter } from "../../utils/capitalizeFirstLetter";
+import { capitalizeFirstLetter } from '../../utils/capitalizeFirstLetter';
 
 import styles from './assetsList.module.scss';
 
@@ -30,7 +30,11 @@ const AssetsList = ({ list, path, styleAsset }: AssetsListProps) => {
         );
     });
 
-    return <div className={`${styles.assetsList} ${styleAsset ? styles[styleAsset] : ''}`}>{assetsList}</div>;
+    return (
+        <div className={`${styles.assetsList} ${styleAsset ? styles[styleAsset] : ''}`}>
+            {assetsList}
+        </div>
+    );
 };
 
 export default AssetsList;

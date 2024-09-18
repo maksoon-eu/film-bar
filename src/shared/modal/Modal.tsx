@@ -10,18 +10,18 @@ interface ModalProps {
 }
 
 const Modal = ({ children }: ModalProps) => {
-    const [open, setOpen] = useState<boolean>(false);
+    const [isOpenModal, setIsOpenModal] = useState<boolean>(false);
 
     const refModal = useRef<HTMLDivElement>(null);
 
-    const openHandler = () => setOpen(true);
-    const closeHandler = () => setOpen(false);
+    const openHandler = () => setIsOpenModal(true);
+    const closeHandler = () => setIsOpenModal(false);
 
-    useModal({ open, closeHandler, refModal });
+    useModal({ isOpenModal, closeHandler, refModal });
 
     return (
         <Portal>
-            {open && (
+            {isOpenModal && (
                 <div className={styles.modal} ref={refModal}>
                     <div className={styles.modal__inner}>{children}</div>
                 </div>

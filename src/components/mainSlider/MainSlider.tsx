@@ -3,6 +3,7 @@ import { useAppSelector } from '../../hooks/selector.hook';
 import { selectFilms } from '../../store/features/featureFilms/featureFilmsSelectors';
 import { getFilms } from '../../service/filmsService';
 import { useEffect, useMemo } from 'react';
+import { sliderSettingsMain } from "../../settings/sliderSettings";
 
 import Slider from 'react-slick';
 import MainSliderItem from '../mainSliderItem/MainSliderItem';
@@ -36,22 +37,9 @@ const MainSlider = () => {
         return <div>Error</div>;
     }
 
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 3000,
-        autoplaySpeed: 10000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        autoplay: true,
-        swipe: true,
-        pauseOnHover: false,
-    };
-
     return (
         <div className={styles.mainSlider}>
-            <Slider {...settings}>{filmList}</Slider>
+            <Slider {...sliderSettingsMain}>{filmList}</Slider>
         </div>
     );
 };
