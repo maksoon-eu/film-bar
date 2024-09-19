@@ -10,14 +10,15 @@
         background-color: var(--background-color-assets);
         border-radius: 70px;
         padding: 10px;
+        height: 105px;
     }
 
     &__img {
-        overflow: hidden;
         margin-right: 15px;
+        border-radius: 50%;
+        overflow: hidden;
 
         img {
-            border-radius: 999px;
             height: 80px;
             width: 80px;
             object-fit: cover;

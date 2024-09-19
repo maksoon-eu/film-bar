@@ -24,7 +24,7 @@ const FilmPage = () => {
 
     useEffect(() => {
         if (film.length) {
-            document.title = film[0].name;
+            document.title = film[0].name || film[0].enName || film[0].alternativeName || 'FilmBar';
 
             return () => {
                 document.title = 'FilmBar';

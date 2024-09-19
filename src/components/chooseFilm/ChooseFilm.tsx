@@ -8,6 +8,7 @@ import AssetsList from '../../shared/assetsList/AssetsList';
 import PlaceholderImg from '../../shared/placeholderImg/PlaceholderImg';
 import RatingItem from '../../shared/ratingItem/RatingItem';
 import SkeletonMainSlider from '../../shared/skeleton/SkeletonMainSlider';
+import ConditionalComponent from '../../shared/conditionalComponent/ConditionalComponent';
 
 import loader from '../../assets/loader/loader.svg';
 
@@ -22,9 +23,11 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
     const chooseFilmList = useMemo(
         () =>
             film.map((item) => {
-                const ratingKey = findKey<Rating, 'imdb' | 'kp'>(item.rating, ['imdb', 'kp']);
+                console.log(item)
+                const ratingKey =
+                    item.rating && findKey<Rating, 'imdb' | 'kp'>(item.rating, ['imdb', 'kp']);
                 const ratingList = ratingKey
-                    .filter((rating) => rating.value)
+                    ?.filter((rating) => rating.value)
                     .map((rating) => <RatingItem key={rating.name} rating={rating} />);
 
                 return (
@@ -79,7 +82,7 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
                             <div className={styles.chooseFilm__right}>
                                 <div className={styles.chooseFilm__content}>
                                     <div className={styles.chooseFilm__logo}>
-                                        {item.logo ? (
+                                        {item.logo?.url ? (
                                             <img
                                                 src={item.logo.url}
                                                 alt={item.name}
@@ -90,34 +93,45 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
                                                 <div className={styles.chooseFilm__logo_text}>
                                                     {item.name}
                                                 </div>
-                                                <div className={styles.chooseFilm__logo_subtext}>
-                                                    {item.enName}
-                                                </div>
                                             </>
                                         )}
-                                    </div>
-                                    <div className={styles.chooseFilm__rating}>{ratingList}</div>
-                                    <div className={styles.chooseFilm__assets}>
-                                        <div className={styles.chooseFilm__assets_ageRating}>
-                                            <div className={styles.chooseFilm__ageRating}>
-                                                {item.ageRating}+
-                                            </div>
-                                            <AssetsList
-                                                list={item.genres.slice(0, 5)}
-                                                path="genres"
-                                            />
+                                        <div className={styles.chooseFilm__logo_subtext}>
+                                            {item.enName || item.alternativeName}
                                         </div>
                                     </div>
-                                    <div
-                                        className={`${styles.chooseFilm__assets} ${styles.chooseFilm__assets_last}`}>
-                                        <AssetsList
-                                            list={item.countries.slice(0, 5)}
-                                            path="countries"
-                                        />
+                                    <div className={styles.chooseFilm__rating}>{ratingList}</div>
+
+                                    <div className={styles.chooseFilm__assets}>
+                                        <div className={styles.chooseFilm__assets_ageRating}>
+                                            <ConditionalComponent value={item.ageRating}>
+                                                <div className={styles.chooseFilm__ageRating}>
+                                                    {item.ageRating}+
+                                                </div>
+                                            </ConditionalComponent>
+                                            <ConditionalComponent value={item.genres}>
+                                                <AssetsList
+                                                    list={item.genres!.slice(0, 5)}
+                                                    path="genres"
+                                                />
+                                            </ConditionalComponent>
+                                        </div>
                                     </div>
-                                    <div className={styles.chooseFilm__description}>
-                                        {item.description}
-                                    </div>
+
+                                    <ConditionalComponent value={item.countries}>
+                                        <div
+                                            className={`${styles.chooseFilm__assets} ${styles.chooseFilm__assets_last}`}>
+                                            <AssetsList
+                                                list={item.countries!.slice(0, 5)}
+                                                path="countries"
+                                            />
+                                        </div>
+                                    </ConditionalComponent>
+
+                                    <ConditionalComponent value={item.description}>
+                                        <div className={styles.chooseFilm__description}>
+                                            {item.description}
+                                        </div>
+                                    </ConditionalComponent>
                                 </div>
                             </div>
                         </div>

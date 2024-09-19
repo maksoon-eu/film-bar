@@ -2,13 +2,14 @@ import { LoadingStatusType, NameItem, Poster, Rating } from '../../../types/type
 
 export interface IFilmsSearch {
     id: number;
-    name: string;
-    poster: Poster;
-    rating: Rating;
-    year: number;
-    genres: NameItem[];
-    countries: NameItem[];
-    enName: string;
+    name?: string;
+    poster?: Poster;
+    rating?: Rating;
+    year?: number;
+    genres?: NameItem[];
+    countries?: NameItem[];
+    enName?: string;
+    alternativeName?: string;
 }
 
 export interface IFilmsSearchSlice {

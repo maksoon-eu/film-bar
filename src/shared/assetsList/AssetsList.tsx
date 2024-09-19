@@ -1,6 +1,8 @@
 import { NameItem } from '../../types/types';
 import { capitalizeFirstLetter } from '../../utils/capitalizeFirstLetter';
 
+import ConditionalComponent from '../conditionalComponent/ConditionalComponent';
+
 import styles from './assetsList.module.scss';
 
 interface AssetsListProps {
@@ -22,9 +24,9 @@ const AssetsList = ({ list, path, styleAsset }: AssetsListProps) => {
 
         return (
             <div key={name} className={styles.assetsList__item}>
-                {imagePath ? (
+                <ConditionalComponent value={imagePath}>
                     <img src={imagePath} alt="" className={styles.assetsList__item_img} />
-                ) : null}
+                </ConditionalComponent>
                 <div className={styles.assetsList__item_name}>{capitalizeFirstLetter(name)}</div>
             </div>
         );

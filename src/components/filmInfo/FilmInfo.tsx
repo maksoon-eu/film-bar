@@ -62,7 +62,7 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                         value={
                             filmItem.typeNumber === 2
                                 ? filmItem.status
-                                : filmItem.budget
+                                : (filmItem.budget && filmItem.budget.value && filmItem.budget.currency)
                                 ? `${filmItem.budget.value} ${filmItem.budget.currency}`
                                 : '...'
                         }
@@ -70,7 +70,7 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                     <TableRow
                         label="Сборы в мире"
                         value={
-                            filmItem.fees.world.value
+                            filmItem.fees?.world?.value
                                 ? `${filmItem.fees.world.value} ${filmItem.fees.world.currency}`
                                 : '...'
                         }

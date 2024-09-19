@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom';
 import RatingItem from '../../shared/ratingItem/RatingItem';
 import AssetsList from '../../shared/assetsList/AssetsList';
 import Loader from '../../shared/loader/Loader';
+import ConditionalComponent from '../../shared/conditionalComponent/ConditionalComponent';
 
 import loader from '../../assets/loader/loader.svg';
 
@@ -38,63 +39,68 @@ const ModalSearch = ({
     useModal({ isOpenModal, closeHandler, refModal });
 
     useEffect(() => {
-        dispatch(getFilmsSearch(inputSearch));
+        if (inputSearch.trim()) {
+            dispatch(getFilmsSearch(inputSearch));
+        }
     }, [dispatch, inputSearch]);
 
-    const filmsSearchList = useMemo(
-        () =>
-            filmsSearch.map((film) => {
-                const ratingKey = findKey<Rating, 'imdb' | 'kp'>(film.rating, ['imdb', 'kp']);
-                const ratingList = ratingKey
-                    .filter((rating) => rating.value)
-                    .map((rating) => {
-                        return <RatingItem key={rating.name} rating={rating} />;
-                    });
+    const filmsSearchList = useMemo(() => {
+        return filmsSearch.map((film) => {
+            const ratingKey =
+                film.rating && findKey<Rating, 'imdb' | 'kp'>(film.rating, ['imdb', 'kp']);
+            const ratingList = ratingKey
+                ?.filter((rating) => rating.value)
+                .map((rating) => <RatingItem key={rating.name} rating={rating} />);
 
-                return (
-                    <Link
-                        to={`/films/${film.id}`}
-                        key={film.id}
-                        className={styles.modalSearch__list_item}
-                        onClick={() => {
-                            closeHandler();
-                            clearHandler();
-                        }}>
-                        <div className={styles.modalSearch__list_left}>
-                            <LazyLoadImage
-                                alt={film.name || film.enName}
-                                effect="blur"
-                                src={film.poster.previewUrl || film.poster.url || loader}
-                                placeholderSrc={loader}
-                            />
+            return (
+                <Link
+                    to={`/films/${film.id}`}
+                    key={film.id}
+                    className={styles.modalSearch__list_item}
+                    onClick={() => {
+                        closeHandler();
+                        clearHandler();
+                    }}>
+                    <div className={styles.modalSearch__list_left}>
+                        <LazyLoadImage
+                            alt={film.name || film.enName}
+                            effect="blur"
+                            src={film.poster?.previewUrl || film.poster?.url || loader}
+                            placeholderSrc={loader}
+                        />
+                    </div>
+                    <div className={styles.modalSearch__list_right}>
+                        <div className={styles.modalSearch__list_name}>
+                            {film.name || film.enName || film.alternativeName}
                         </div>
-                        <div className={styles.modalSearch__list_right}>
-                            <div className={styles.modalSearch__list_name}>
-                                {film.name || film.enName}
-                            </div>
+                        <ConditionalComponent value={ratingList}>
                             <div className={styles.modalSearch__list_rating}>{ratingList}</div>
+                        </ConditionalComponent>
+                        <ConditionalComponent value={film.genres}>
                             <div className={styles.modalSearch__list_assets}>
                                 <AssetsList
-                                    list={film.genres.slice(0, 2)}
+                                    list={film.genres!.slice(0, 2)}
                                     styleAsset={'search'}
                                     path={'genres'}
                                 />
                             </div>
+                        </ConditionalComponent>
+                        <ConditionalComponent value={film.countries}>
                             <div
                                 className={`${styles.modalSearch__list_assets} ${styles.modalSearch__list_assets_last}`}>
                                 <AssetsList
-                                    list={film.countries.slice(0, 2)}
+                                    list={film.countries!.slice(0, 2)}
                                     styleAsset={'search'}
                                     path={'countries'}
                                 />
                             </div>
-                            <div className={styles.modalSearch__list_year}>{film.year}</div>
-                        </div>
-                    </Link>
-                );
-            }),
-        [filmsSearch]
-    );
+                        </ConditionalComponent>
+                        <div className={styles.modalSearch__list_year}>{film.year}</div>
+                    </div>
+                </Link>
+            );
+        });
+    }, [filmsSearch]);
 
     return (
         <div className={styles.modalSearch}>

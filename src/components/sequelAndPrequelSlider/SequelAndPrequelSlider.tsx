@@ -1,11 +1,12 @@
 import { LoadingStatusType } from '../../types/types';
 import { IFilm } from '../../store/features/featureFilm/featureFilmType';
 import { useMemo } from 'react';
-import { sliderSettingsAssets } from "../../settings/sliderSettings";
+import { sliderSettingsAssets } from '../../settings/sliderSettings';
 
 import Slider from 'react-slick';
 import SequelAndPrequelSliderItem from '../sequelAndPrequelSliderItem/SequelAndPrequelSliderItem';
 import SkeletonFilmsSlider from '../../shared/skeleton/SkeletonFilmsSlider';
+import ConditionalComponent from "../../shared/conditionalComponent/ConditionalComponent";
 
 import styles from './sequelAndPrequelSlider.module.scss';
 
@@ -24,13 +25,14 @@ const SequelAndPrequelSlider = ({ film, loadingStatus }: ISequelAndPrequelSlider
     );
 
     const sequelAndPrequelList = useMemo(
-        () =>
-            film[0]?.sequelsAndPrequels?.length > 0 && (
+        () => (
+            <ConditionalComponent value={sequelAndPrequelSliderList}>
                 <div className={styles.sequelAndPrequelSlider}>
                     <div className="title">Сиквелы и приквелы</div>
                     <Slider {...sliderSettingsAssets}>{sequelAndPrequelSliderList}</Slider>
                 </div>
-            ),
+            </ConditionalComponent>
+        ),
         [film]
     );
 
