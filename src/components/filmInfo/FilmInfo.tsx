@@ -3,6 +3,7 @@ import { IFilm } from '../../store/features/featureFilm/featureFilmType';
 import { LoadingStatusType } from '../../types/types';
 import { capitalizeFirstLetter } from '../../utils/capitalizeFirstLetter';
 import { formatDate } from '../../utils/transformDate';
+import { statusTranslation } from '../../utils/statusTranslation';
 
 import SkeletonFilmInfo from '../../shared/skeleton/SkeletonFilmInfo';
 
@@ -32,7 +33,7 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                 className={`${styles.filmInfo__table} ${styles.filmInfo__table_left}`}
                 key={filmItem.id}>
                 <tbody>
-                    <TableRow label="Год" value={filmItem.year ? `${filmItem.year}г.` : '...'} />
+                    <TableRow label="Год" value={filmItem.year ? `${filmItem.year} г.` : '...'} />
                     <TableRow
                         label="Страны"
                         value={
@@ -41,11 +42,7 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                     />
                     <TableRow
                         label="Жанры"
-                        value={
-                            filmItem.genres
-                                ?.map((genre) => capitalizeFirstLetter(genre.name))
-                                .join(', ') || '...'
-                        }
+                        value={filmItem.genres?.map((genre) => genre.name).join(', ') || '...'}
                     />
                     <TableRow
                         label={filmItem.typeNumber === 2 ? 'Длительность серии' : 'Длительность'}
@@ -58,11 +55,13 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                         }
                     />
                     <TableRow
-                        label={filmItem.typeNumber === 2 ? 'Конец' : 'Бюджет'}
+                        label={filmItem.typeNumber === 2 ? 'Завершенность' : 'Бюджет'}
                         value={
                             filmItem.typeNumber === 2
-                                ? filmItem.status
-                                : (filmItem.budget && filmItem.budget.value && filmItem.budget.currency)
+                                ? filmItem.status && statusTranslation(filmItem.status)
+                                : filmItem.budget &&
+                                  filmItem.budget.value &&
+                                  filmItem.budget.currency
                                 ? `${filmItem.budget.value} ${filmItem.budget.currency}`
                                 : '...'
                         }

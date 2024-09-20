@@ -52,7 +52,13 @@
         &_name {
             font-size: var(--font-size-l);
             font-weight: var(--font-weight-l);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal;
         }
 
         &_assets {
@@ -68,6 +74,10 @@
             font-weight: var(--font-weight-l);
             text-align: right;
             margin-top: auto;
+        }
+
+        &_rating {
+            margin-bottom: 5px;
         }
     }
 }

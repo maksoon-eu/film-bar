@@ -3,8 +3,6 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { getRatingBg } from '../../utils/ratingBg';
 import { IFilm } from '../../store/features/featureFilm/featureFilmType';
 
-import ConditionalComponent from '../../shared/conditionalComponent/ConditionalComponent';
-
 import loader from '../../assets/loader/loader.svg';
 
 import styles from './sequelAndPrequelSliderItem.module.scss';
@@ -27,7 +25,7 @@ const SequelAndPrequelSliderItem = ({ film }: ISequelAndPrequelSliderItem) => {
                         src={film.poster?.previewUrl || film.poster?.url || loader}
                         placeholderSrc={loader}
                     />
-                    <ConditionalComponent value={film.year}>
+                    {film.year && (
                         <div className={styles.sequelAndPrequelSliderItem__item_fade}>
                             <div className={styles.sequelAndPrequelSliderItem__item_group}>
                                 <div className={styles.sequelAndPrequelSliderItem__item_year}>
@@ -38,20 +36,20 @@ const SequelAndPrequelSliderItem = ({ film }: ISequelAndPrequelSliderItem) => {
                                 </div>
                             </div>
                         </div>
-                    </ConditionalComponent>
+                    )}
                 </div>
                 <div className={styles.sequelAndPrequelSliderItem__item_name}>
                     {film.name || film.enName || film.alternativeName}
                 </div>
-                <ConditionalComponent value={film.rating?.kp || film.rating?.imdb}>
+                {film.rating?.kp || film.rating?.imdb ? (
                     <div
                         className={`${styles.sequelAndPrequelSliderItem__item_rating} ${getRatingBg(
-                            film.rating!.kp || film.rating!.imdb,
+                            film.rating.kp || film.rating.imdb,
                             styles
                         )}`}>
-                        {film.rating!.kp ? film.rating!.kp.toFixed(1) : film.rating!.imdb.toFixed(1)}
+                        {(film.rating.kp || film.rating.imdb).toFixed(1)}
                     </div>
-                </ConditionalComponent>
+                ) : null}
             </div>
         </Link>
     );

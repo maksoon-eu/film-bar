@@ -7,7 +7,6 @@ import { useMemo } from 'react';
 
 import ReactPlayer from 'react-player';
 import SkeletonFilmPreview from '../../shared/skeleton/SkeletonFilmPreview';
-import ConditionalComponent from '../../shared/conditionalComponent/ConditionalComponent';
 
 import loader from '../../assets/loader/loader.svg';
 
@@ -87,41 +86,45 @@ const FilmPreview = ({ film, loadingStatus }: IFilmPreview) => {
                 return (
                     <div key={item.id} className={styles.filmPreview__inner}>
                         <div className={styles.filmPreview__trailer}>
-                            <ConditionalComponent value={item.videos?.trailers}>
-                                <div className={styles.filmPreview__trailer_video}>
-                                    <ReactPlayer
-                                        url={getFilteredTrailer(item.videos?.trailers || [])?.url}
-                                        width="100%"
-                                        height="100%"
-                                        controls
-                                        light={
-                                            item.backdrop?.url && (
-                                                <LazyLoadImage
-                                                    alt={item.name}
-                                                    effect="blur"
-                                                    src={item.backdrop.url}
-                                                    className={styles.filmPreview__trailer_image}
-                                                />
-                                            )
-                                        }
-                                        className={styles.filmPreview__trailer_reactPlayer}
-                                    />
-                                </div>
-                                <div className={styles.filmPreview__trailer_loader}>
-                                    <img src={loader} alt="" />
-                                </div>
-                                <div className={styles.filmPreview__trailer_name}>
-                                    {item.name || item.enName || item.alternativeName}
-                                    <div className={styles.filmPreview__trailer_text}>
-                                        Официальный трейлер
+                            {item.videos?.trailers?.length ? (
+                                <>
+                                    <div className={styles.filmPreview__trailer_video}>
+                                        <ReactPlayer
+                                            url={getFilteredTrailer(item.videos.trailers).url}
+                                            width="100%"
+                                            height="100%"
+                                            controls
+                                            light={
+                                                item.backdrop?.url && (
+                                                    <LazyLoadImage
+                                                        alt={item.name}
+                                                        effect="blur"
+                                                        src={item.backdrop.url}
+                                                        className={
+                                                            styles.filmPreview__trailer_image
+                                                        }
+                                                    />
+                                                )
+                                            }
+                                            className={styles.filmPreview__trailer_reactPlayer}
+                                        />
                                     </div>
-                                </div>
-                            </ConditionalComponent>
+                                    <div className={styles.filmPreview__trailer_loader}>
+                                        <img src={loader} alt="" />
+                                    </div>
+                                    <div className={styles.filmPreview__trailer_name}>
+                                        {item.name || item.enName || item.alternativeName}
+                                        <div className={styles.filmPreview__trailer_text}>
+                                            Официальный трейлер
+                                        </div>
+                                    </div>
+                                </>
+                            ): null}
                         </div>
 
-                        <ConditionalComponent value={ratingList}>
+                        {ratingList?.length && (
                             <div className={styles.filmPreview__rating}>{ratingList}</div>
-                        </ConditionalComponent>
+                        )}
                     </div>
                 );
             }),

@@ -20,5 +20,5 @@ export const formatDate = (dateToTransform: string) => {
     const month = months[date.getMonth()];
     const year = date.getFullYear();
 
-    return `${day} ${month} ${year}г.`;
+    return `${day} ${month} ${year} г.`;
 };

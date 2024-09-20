@@ -18,12 +18,12 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin-bottom: 20px;
         }
 
         &_title {
             font-weight: var(--font-weight-l);
             font-size: var(--font-size-xl);
+            margin-bottom: 50px;
         }
 
         &_btn {

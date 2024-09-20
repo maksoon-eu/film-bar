@@ -12,7 +12,6 @@ import { Link } from 'react-router-dom';
 import RatingItem from '../../shared/ratingItem/RatingItem';
 import AssetsList from '../../shared/assetsList/AssetsList';
 import Loader from '../../shared/loader/Loader';
-import ConditionalComponent from '../../shared/conditionalComponent/ConditionalComponent';
 
 import loader from '../../assets/loader/loader.svg';
 
@@ -39,7 +38,7 @@ const ModalSearch = ({
     useModal({ isOpenModal, closeHandler, refModal });
 
     useEffect(() => {
-        if (inputSearch.trim()) {
+        if (inputSearch.trim() || inputSearch.length === 0) {
             dispatch(getFilmsSearch(inputSearch));
         }
     }, [dispatch, inputSearch]);
@@ -73,29 +72,31 @@ const ModalSearch = ({
                         <div className={styles.modalSearch__list_name}>
                             {film.name || film.enName || film.alternativeName}
                         </div>
-                        <ConditionalComponent value={ratingList}>
+                        {ratingList?.length && (
                             <div className={styles.modalSearch__list_rating}>{ratingList}</div>
-                        </ConditionalComponent>
-                        <ConditionalComponent value={film.genres}>
+                        )}
+                        {film.genres?.length && (
                             <div className={styles.modalSearch__list_assets}>
                                 <AssetsList
-                                    list={film.genres!.slice(0, 2)}
+                                    list={film.genres.slice(0, 2)}
                                     styleAsset={'search'}
                                     path={'genres'}
                                 />
                             </div>
-                        </ConditionalComponent>
-                        <ConditionalComponent value={film.countries}>
+                        )}
+                        {film.countries?.length && (
                             <div
                                 className={`${styles.modalSearch__list_assets} ${styles.modalSearch__list_assets_last}`}>
                                 <AssetsList
-                                    list={film.countries!.slice(0, 2)}
+                                    list={film.countries.slice(0, 2)}
                                     styleAsset={'search'}
                                     path={'countries'}
                                 />
                             </div>
-                        </ConditionalComponent>
-                        <div className={styles.modalSearch__list_year}>{film.year}</div>
+                        )}
+                        {film.year && (
+                            <div className={styles.modalSearch__list_year}>{film.year}</div>
+                        )}
                     </div>
                 </Link>
             );

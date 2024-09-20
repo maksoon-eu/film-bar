@@ -8,7 +8,6 @@ import AssetsList from '../../shared/assetsList/AssetsList';
 import PlaceholderImg from '../../shared/placeholderImg/PlaceholderImg';
 import RatingItem from '../../shared/ratingItem/RatingItem';
 import SkeletonMainSlider from '../../shared/skeleton/SkeletonMainSlider';
-import ConditionalComponent from '../../shared/conditionalComponent/ConditionalComponent';
 
 import loader from '../../assets/loader/loader.svg';
 
@@ -23,7 +22,6 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
     const chooseFilmList = useMemo(
         () =>
             film.map((item) => {
-                console.log(item)
                 const ratingKey =
                     item.rating && findKey<Rating, 'imdb' | 'kp'>(item.rating, ['imdb', 'kp']);
                 const ratingList = ratingKey
@@ -103,35 +101,35 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
 
                                     <div className={styles.chooseFilm__assets}>
                                         <div className={styles.chooseFilm__assets_ageRating}>
-                                            <ConditionalComponent value={item.ageRating}>
+                                            {item.ageRating && (
                                                 <div className={styles.chooseFilm__ageRating}>
                                                     {item.ageRating}+
                                                 </div>
-                                            </ConditionalComponent>
-                                            <ConditionalComponent value={item.genres}>
+                                            )}
+                                            {item.genres?.length && (
                                                 <AssetsList
-                                                    list={item.genres!.slice(0, 5)}
+                                                    list={item.genres.slice(0, 5)}
                                                     path="genres"
                                                 />
-                                            </ConditionalComponent>
+                                            )}
                                         </div>
                                     </div>
 
-                                    <ConditionalComponent value={item.countries}>
+                                    {item.countries?.length && (
                                         <div
                                             className={`${styles.chooseFilm__assets} ${styles.chooseFilm__assets_last}`}>
                                             <AssetsList
-                                                list={item.countries!.slice(0, 5)}
+                                                list={item.countries.slice(0, 5)}
                                                 path="countries"
                                             />
                                         </div>
-                                    </ConditionalComponent>
+                                    )}
 
-                                    <ConditionalComponent value={item.description}>
+                                    {item.description && (
                                         <div className={styles.chooseFilm__description}>
                                             {item.description}
                                         </div>
-                                    </ConditionalComponent>
+                                    )}
                                 </div>
                             </div>
                         </div>

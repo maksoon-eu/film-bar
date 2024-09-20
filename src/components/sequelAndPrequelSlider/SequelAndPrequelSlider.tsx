@@ -6,7 +6,6 @@ import { sliderSettingsAssets } from '../../settings/sliderSettings';
 import Slider from 'react-slick';
 import SequelAndPrequelSliderItem from '../sequelAndPrequelSliderItem/SequelAndPrequelSliderItem';
 import SkeletonFilmsSlider from '../../shared/skeleton/SkeletonFilmsSlider';
-import ConditionalComponent from "../../shared/conditionalComponent/ConditionalComponent";
 
 import styles from './sequelAndPrequelSlider.module.scss';
 
@@ -24,14 +23,27 @@ const SequelAndPrequelSlider = ({ film, loadingStatus }: ISequelAndPrequelSlider
         [film]
     );
 
+    const settings = {
+        ...sliderSettingsAssets,
+        slidesToShow:
+            (sequelAndPrequelSliderList?.length ?? 0) > 4 ? 4 : sequelAndPrequelSliderList?.length,
+    };
+
     const sequelAndPrequelList = useMemo(
         () => (
-            <ConditionalComponent value={sequelAndPrequelSliderList}>
-                <div className={styles.sequelAndPrequelSlider}>
-                    <div className="title">Сиквелы и приквелы</div>
-                    <Slider {...sliderSettingsAssets}>{sequelAndPrequelSliderList}</Slider>
-                </div>
-            </ConditionalComponent>
+            <>
+                {sequelAndPrequelSliderList?.length === 1 ? (
+                    <div className={styles.sequelAndPrequelSlider}>
+                        <div className="title">Сиквелы и приквелы</div>
+                        {sequelAndPrequelSliderList}
+                    </div>
+                ) : (
+                    <div className={styles.sequelAndPrequelSlider}>
+                        <div className="title">Сиквелы и приквелы</div>
+                        <Slider {...settings}>{sequelAndPrequelSliderList}</Slider>
+                    </div>
+                )}
+            </>
         ),
         [film]
     );
