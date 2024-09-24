@@ -107,7 +107,15 @@ const ModalSearch = ({
         <div className={styles.modalSearch}>
             {isOpenModal && (
                 <div className={styles.modalSearch__list}>
-                    {loadingStatus === 'loading' ? <Loader /> : filmsSearchList}
+                    {loadingStatus === 'loading' ? (
+                        <Loader />
+                    ) : loadingStatus === 'error' ? (
+                        <div className={styles.modalSearch__info}>Ошибка сервера</div>
+                    ) : !filmsSearchList.length ? (
+                        <div className={styles.modalSearch__info}>Ничего не найдено</div>
+                    ) : (
+                        filmsSearchList
+                    )}
                 </div>
             )}
         </div>

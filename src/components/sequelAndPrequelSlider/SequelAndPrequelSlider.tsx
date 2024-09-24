@@ -37,12 +37,12 @@ const SequelAndPrequelSlider = ({ film, loadingStatus }: ISequelAndPrequelSlider
                         <div className="title">Сиквелы и приквелы</div>
                         {sequelAndPrequelSliderList}
                     </div>
-                ) : (
+                ) : sequelAndPrequelSliderList?.length ? (
                     <div className={styles.sequelAndPrequelSlider}>
                         <div className="title">Сиквелы и приквелы</div>
                         <Slider {...settings}>{sequelAndPrequelSliderList}</Slider>
                     </div>
-                )}
+                ) : null}
             </>
         ),
         [film]

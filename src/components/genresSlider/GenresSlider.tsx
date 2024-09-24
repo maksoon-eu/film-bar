@@ -50,7 +50,7 @@ const GenresSlider = () => {
     if (loadingStatus === 'loading') {
         return <SkeletonGenresSlider />;
     } else if (loadingStatus === 'error') {
-        return <div>Error</div>;
+        return <SkeletonGenresSlider />;
     }
 
     return (

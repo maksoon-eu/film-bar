@@ -30,7 +30,7 @@ const TrailersSlider = () => {
     if (loadingStatus === 'loading') {
         return <SkeletonTrailersSlider />;
     } else if (loadingStatus === 'error') {
-        return <div>Error</div>;
+        return <SkeletonTrailersSlider />;
     }
 
     return (

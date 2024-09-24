@@ -1,9 +1,11 @@
 import React, { ErrorInfo, ReactNode, Suspense } from 'react';
-
+import { connect } from 'react-redux';
+import { RootState } from '../../store/store';
 import ErrorPageAsync from '../../pages/errorPage/ErrorPage.async';
 
 interface ErrorBoundaryProps {
     children: ReactNode;
+    has403Error: boolean;
 }
 
 interface ErrorBoundaryState {
@@ -26,7 +28,15 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
 
     render() {
         const { hasError } = this.state;
-        const { children } = this.props;
+        const { children, has403Error } = this.props;
+
+        if (has403Error) {
+            return (
+                <Suspense fallback="">
+                    <ErrorPageAsync type="forbidden" />
+                </Suspense>
+            );
+        }
 
         if (hasError) {
             return (
@@ -40,4 +50,8 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
     }
 }
 
-export default ErrorBoundary;
+const mapStateToProps = (state: RootState) => ({
+    has403Error: state.globalReducer.forbiddenError,
+});
+
+export default connect(mapStateToProps)(ErrorBoundary);

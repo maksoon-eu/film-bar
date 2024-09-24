@@ -60,13 +60,15 @@ const FilmsSliderItem = ({ film }: FilmsSliderItemProps) => {
                     </div>
                 </div>
                 <div className={styles.filmsSliderItem__item_name}>{film.name}</div>
-                <div
-                    className={`${styles.filmsSliderItem__item_rating} ${getRatingBg(
-                        film.rating.kp,
-                        styles
-                    )}`}>
-                    {film.rating.kp.toFixed(1)}
-                </div>
+                {film.rating.kp || film.rating.imdb ? (
+                    <div
+                        className={`${styles.filmsSliderItem__item_rating} ${getRatingBg(
+                            film.rating.kp || film.rating.imdb,
+                            styles
+                        )}`}>
+                        {(film.rating.kp || film.rating.imdb).toFixed(1)}
+                    </div>
+                ) : null}
             </div>
         </Link>
     );

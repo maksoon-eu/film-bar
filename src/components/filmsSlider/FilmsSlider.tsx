@@ -36,7 +36,7 @@ const FilmsSlider = React.memo(({ title, selector, fetchData }: FilmsSliderProps
     if (loadingStatus === 'loading') {
         return <SkeletonFilmsSlider />;
     } else if (loadingStatus === 'error') {
-        return <div>Error</div>;
+        return <SkeletonFilmsSlider />;
     }
 
     return (

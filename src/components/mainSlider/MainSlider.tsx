@@ -34,7 +34,7 @@ const MainSlider = () => {
     if (loadingStatus === 'loading') {
         return <SkeletonMainSlider />;
     } else if (loadingStatus === 'error') {
-        return <div>Error</div>;
+        return <SkeletonMainSlider />;
     }
 
     return (

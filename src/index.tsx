@@ -6,7 +6,7 @@ import { store } from './store/store';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 import App from './components/app/App';
-import ErrorBoundary from './components/errorBoundary/ErrorBoundary';
+import ErrorBoundary from "./shared/errorBoundary/ErrorBoundary";
 
 import './style/index.scss';
 

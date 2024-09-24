@@ -1,9 +1,14 @@
-import Error from '../../components/error/Error';
+import Error from '../../shared/error/Error';
+import ErrorForbidden from "../../shared/error/ErrorForbidden";
 
-const ErrorPage = () => {
+interface IErrorPage {
+    type?: string;
+}
+
+const ErrorPage = ({ type }: IErrorPage) => {
     return (
         <>
-            <Error />
+            {type === 'forbidden' ? <ErrorForbidden /> : <Error />}
         </>
     );
 };
