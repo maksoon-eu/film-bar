@@ -3,11 +3,10 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { ITrailers } from '../../store/features/featureTrailers/featureTrailersType';
 import { getFilteredTrailer } from '../../utils/getFilteredTrailer';
 
-import ReactPlayer from 'react-player';
-
 import loader from '../../assets/loader/loader.svg';
 
 import styles from './trailersSliderItem.module.scss';
+import TrailerPlayer from '../../shared/trailerPlayer/TrailerPlayer';
 
 interface TrailerSliderItemProps {
     trailer: ITrailers;
@@ -19,23 +18,7 @@ const TrailersSliderItem = React.memo(({ trailer }: TrailerSliderItemProps) => {
     return (
         <div className={styles.trailersSliderItem__slide}>
             <div className={styles.trailersSliderItem__item}>
-                <ReactPlayer
-                    url={trailerUrl.url}
-                    width="100%"
-                    height="100%"
-                    controls
-                    light={
-                        trailer.backdrop.url && (
-                            <LazyLoadImage
-                                alt={trailer.name}
-                                effect="blur"
-                                src={trailer.backdrop.url}
-                                className={styles.trailersSliderItem__item_image}
-                            />
-                        )
-                    }
-                    className={styles.trailersSliderItem__item_reactPlayer}
-                />
+                <TrailerPlayer trailerUrl={trailerUrl} />
                 <div className={styles.trailersSliderItem__item_poster}>
                     <LazyLoadImage
                         alt={trailer.name}

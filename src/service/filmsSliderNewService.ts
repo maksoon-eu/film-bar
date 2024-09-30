@@ -14,7 +14,7 @@ export const getFilmsSliderNew = createAsyncThunk<
             dispatch,
         });
 
-        if (!response.docs?.сфе) {
+        if (!response.docs?.length) {
             return rejectWithValue('Film not found');
         }
 

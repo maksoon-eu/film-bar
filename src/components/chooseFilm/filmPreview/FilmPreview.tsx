@@ -1,16 +1,15 @@
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { LoadingStatusType, Rating } from '../../types/types';
-import { getFilteredTrailer } from '../../utils/getFilteredTrailer';
-import { IFilm } from '../../store/features/featureFilm/featureFilmType';
-import { findKey } from '../../utils/findKey';
+import { LoadingStatusType, Rating } from '../../../types/types';
+import { getFilteredTrailer } from '../../../utils/getFilteredTrailer';
+import { IFilm } from '../../../store/features/featureFilm/featureFilmType';
+import { findKey } from '../../../utils/findKey';
 import { useMemo } from 'react';
 
-import ReactPlayer from 'react-player';
-import SkeletonFilmPreview from '../../shared/skeleton/SkeletonFilmPreview';
+import SkeletonFilmPreview from '../../../shared/skeleton/SkeletonFilmPreview';
 
-import loader from '../../assets/loader/loader.svg';
+import loader from '../../../assets/loader/loader.svg';
 
 import styles from './filmPreview.module.scss';
+import TrailerPlayer from '../../../shared/trailerPlayer/TrailerPlayer';
 
 interface IFilmPreview {
     film: IFilm[] | [];
@@ -89,24 +88,8 @@ const FilmPreview = ({ film, loadingStatus }: IFilmPreview) => {
                             {item.videos?.trailers?.length ? (
                                 <>
                                     <div className={styles.filmPreview__trailer_video}>
-                                        <ReactPlayer
-                                            url={getFilteredTrailer(item.videos.trailers).url}
-                                            width="100%"
-                                            height="100%"
-                                            controls
-                                            light={
-                                                item.backdrop?.url && (
-                                                    <LazyLoadImage
-                                                        alt={item.name}
-                                                        effect="blur"
-                                                        src={item.backdrop.url}
-                                                        className={
-                                                            styles.filmPreview__trailer_image
-                                                        }
-                                                    />
-                                                )
-                                            }
-                                            className={styles.filmPreview__trailer_reactPlayer}
+                                        <TrailerPlayer
+                                            trailerUrl={getFilteredTrailer(item.videos.trailers)}
                                         />
                                     </div>
                                     <div className={styles.filmPreview__trailer_loader}>
@@ -119,7 +102,7 @@ const FilmPreview = ({ film, loadingStatus }: IFilmPreview) => {
                                         </div>
                                     </div>
                                 </>
-                            ): null}
+                            ) : null}
                         </div>
 
                         {ratingList?.length && (

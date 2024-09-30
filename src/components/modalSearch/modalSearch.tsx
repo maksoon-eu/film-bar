@@ -38,10 +38,10 @@ const ModalSearch = ({
     useModal({ isOpenModal, closeHandler, refModal });
 
     useEffect(() => {
-        if (inputSearch.trim() || inputSearch.length === 0) {
+        if ((inputSearch.trim() || inputSearch.length === 0) && isOpenModal) {
             dispatch(getFilmsSearch(inputSearch));
         }
-    }, [dispatch, inputSearch]);
+    }, [dispatch, inputSearch, isOpenModal]);
 
     const filmsSearchList = useMemo(() => {
         return filmsSearch.map((film) => {
@@ -72,7 +72,7 @@ const ModalSearch = ({
                         <div className={styles.modalSearch__list_name}>
                             {film.name || film.enName || film.alternativeName}
                         </div>
-                        {ratingList?.length && (
+                        {ratingList && (
                             <div className={styles.modalSearch__list_rating}>{ratingList}</div>
                         )}
                         {film.genres?.length && (

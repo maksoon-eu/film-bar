@@ -33,7 +33,7 @@ const SequelAndPrequelSlider = ({ film, loadingStatus }: ISequelAndPrequelSlider
         () => (
             <>
                 {sequelAndPrequelSliderList?.length === 1 ? (
-                    <div className={styles.sequelAndPrequelSlider}>
+                    <div className={`${styles.sequelAndPrequelSlider} ${styles.sequelAndPrequelSlider__one}`}>
                         <div className="title">Сиквелы и приквелы</div>
                         {sequelAndPrequelSliderList}
                     </div>

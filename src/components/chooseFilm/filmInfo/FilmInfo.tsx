@@ -1,11 +1,11 @@
 import React, { useCallback, useMemo } from 'react';
-import { IFilm } from '../../store/features/featureFilm/featureFilmType';
-import { LoadingStatusType } from '../../types/types';
-import { capitalizeFirstLetter } from '../../utils/capitalizeFirstLetter';
-import { formatDate } from '../../utils/transformDate';
-import { statusTranslation } from '../../utils/statusTranslation';
+import { IFilm } from '../../../store/features/featureFilm/featureFilmType';
+import { LoadingStatusType } from '../../../types/types';
+import { capitalizeFirstLetter } from '../../../utils/capitalizeFirstLetter';
+import { formatDate } from '../../../utils/transformDate';
+import { statusTranslation } from '../../../utils/statusTranslation';
 
-import SkeletonFilmInfo from '../../shared/skeleton/SkeletonFilmInfo';
+import SkeletonFilmInfo from '../../../shared/skeleton/SkeletonFilmInfo';
 
 import styles from './filmInfo.module.scss';
 
@@ -57,11 +57,9 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                     <TableRow
                         label={filmItem.typeNumber === 2 ? 'Завершенность' : 'Бюджет'}
                         value={
-                            filmItem.typeNumber === 2
-                                ? filmItem.status && statusTranslation(filmItem.status)
-                                : filmItem.budget &&
-                                  filmItem.budget.value &&
-                                  filmItem.budget.currency
+                            filmItem.status && filmItem.typeNumber === 2
+                                ? statusTranslation(filmItem.status)
+                                : filmItem.budget?.value && filmItem.budget?.currency
                                 ? `${filmItem.budget.value} ${filmItem.budget.currency}`
                                 : '...'
                         }
@@ -119,7 +117,7 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                             'композиторы',
                             'художники',
                             'монтажеры',
-                            'редакторы',
+                            'сценаристы',
                         ])}
                     </div>
                 </div>

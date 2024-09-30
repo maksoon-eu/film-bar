@@ -5,10 +5,10 @@ import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useEffect } from 'react';
 import { getFilm } from '../../service/filmService';
 
-import ChooseFilm from '../../components/chooseFilm/ChooseFilm';
+import ChooseFilm from '../../components/chooseFilm/MainPoster/MainPoster';
 import FilmPlayer from '../../components/filmPlayer/FilmPlayer';
-import FilmInfo from '../../components/filmInfo/FilmInfo';
-import FilmPreview from '../../components/filmPreview/FilmPreview';
+import FilmInfo from '../../components/chooseFilm/filmInfo/FilmInfo';
+import FilmPreview from '../../components/chooseFilm/filmPreview/FilmPreview';
 import ActorsSlider from '../../components/actorsSlider/ActorsSlider';
 import SequelAndPrequelSlider from '../../components/sequelAndPrequelSlider/SequelAndPrequelSlider';
 

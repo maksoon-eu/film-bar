@@ -1,25 +1,25 @@
 import { useMemo } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { IFilm } from '../../store/features/featureFilm/featureFilmType';
-import { LoadingStatusType, Rating } from '../../types/types';
-import { findKey } from '../../utils/findKey';
+import { IFilm } from '../../../store/features/featureFilm/featureFilmType';
+import { LoadingStatusType, Rating } from '../../../types/types';
+import { findKey } from '../../../utils/findKey';
 
-import AssetsList from '../../shared/assetsList/AssetsList';
-import PlaceholderImg from '../../shared/placeholderImg/PlaceholderImg';
-import RatingItem from '../../shared/ratingItem/RatingItem';
-import SkeletonMainSlider from '../../shared/skeleton/SkeletonMainSlider';
+import AssetsList from '../../../shared/assetsList/AssetsList';
+import PlaceholderImg from '../../../shared/placeholderImg/PlaceholderImg';
+import RatingItem from '../../../shared/ratingItem/RatingItem';
+import SkeletonMainSlider from '../../../shared/skeleton/SkeletonMainSlider';
 
-import loader from '../../assets/loader/loader.svg';
+import loader from '../../../assets/loader/loader.svg';
 
-import styles from './chooseFilm.module.scss';
+import styles from './mainPoster.module.scss';
 
-interface IChooseFilm {
+interface IMainPoster {
     film: IFilm[] | [];
     loadingStatus: LoadingStatusType;
 }
 
-const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
-    const chooseFilmList = useMemo(
+const MainPoster = ({ loadingStatus, film }: IMainPoster) => {
+    const mainPosterList = useMemo(
         () =>
             film.map((item) => {
                 const ratingKey =
@@ -29,9 +29,9 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
                     .map((rating) => <RatingItem key={rating.name} rating={rating} />);
 
                 return (
-                    <div key={item.id} className={styles.chooseFilm}>
-                        <div className={styles.chooseFilm__backdrop}>
-                            <div className={styles.chooseFilm__fade} />
+                    <div key={item.id} className={styles.mainPoster}>
+                        <div className={styles.mainPoster__backdrop}>
+                            <div className={styles.mainPoster__fade} />
                             {item.backdrop?.url ? (
                                 <LazyLoadImage
                                     alt={item.name}
@@ -41,7 +41,7 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
                                     height={'100%'}
                                     threshold={0}
                                     placeholderSrc={loader}
-                                    className={styles.chooseFilm__backdrop_img}
+                                    className={styles.mainPoster__backdrop_img}
                                 />
                             ) : (
                                 item.poster?.url && (
@@ -53,14 +53,14 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
                                         height={'100%'}
                                         threshold={0}
                                         placeholderSrc={loader}
-                                        className={styles.chooseFilm__backdrop_poster}
+                                        className={styles.mainPoster__backdrop_poster}
                                     />
                                 )
                             )}
                         </div>
-                        <div className={styles.chooseFilm__inner}>
-                            <div className={styles.chooseFilm__left}>
-                                <div className={styles.chooseFilm__poster}>
+                        <div className={styles.mainPoster__inner}>
+                            <div className={styles.mainPoster__left}>
+                                <div className={styles.mainPoster__poster}>
                                     {item.poster?.url ? (
                                         <LazyLoadImage
                                             alt={item.name}
@@ -70,39 +70,39 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
                                             height={'100%'}
                                             threshold={0}
                                             placeholderSrc={loader}
-                                            className={styles.chooseFilm__poster_img}
+                                            className={styles.mainPoster__poster_img}
                                         />
                                     ) : (
                                         <PlaceholderImg />
                                     )}
                                 </div>
                             </div>
-                            <div className={styles.chooseFilm__right}>
-                                <div className={styles.chooseFilm__content}>
-                                    <div className={styles.chooseFilm__logo}>
+                            <div className={styles.mainPoster__right}>
+                                <div className={styles.mainPoster__content}>
+                                    <div className={styles.mainPoster__logo}>
                                         {item.logo?.url ? (
                                             <img
                                                 src={item.logo.url}
                                                 alt={item.name}
-                                                className={styles.chooseFilm__logo_img}
+                                                className={styles.mainPoster__logo_img}
                                             />
                                         ) : (
                                             <>
-                                                <div className={styles.chooseFilm__logo_text}>
+                                                <div className={styles.mainPoster__logo_text}>
                                                     {item.name}
                                                 </div>
                                             </>
                                         )}
-                                        <div className={styles.chooseFilm__logo_subtext}>
+                                        <div className={styles.mainPoster__logo_subtext}>
                                             {item.enName || item.alternativeName}
                                         </div>
                                     </div>
-                                    <div className={styles.chooseFilm__rating}>{ratingList}</div>
+                                    <div className={styles.mainPoster__rating}>{ratingList}</div>
 
-                                    <div className={styles.chooseFilm__assets}>
-                                        <div className={styles.chooseFilm__assets_ageRating}>
+                                    <div className={styles.mainPoster__assets}>
+                                        <div className={styles.mainPoster__assets_ageRating}>
                                             {item.ageRating && (
-                                                <div className={styles.chooseFilm__ageRating}>
+                                                <div className={styles.mainPoster__ageRating}>
                                                     {item.ageRating}+
                                                 </div>
                                             )}
@@ -117,7 +117,7 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
 
                                     {item.countries?.length && (
                                         <div
-                                            className={`${styles.chooseFilm__assets} ${styles.chooseFilm__assets_last}`}>
+                                            className={`${styles.mainPoster__assets} ${styles.mainPoster__assets_last}`}>
                                             <AssetsList
                                                 list={item.countries.slice(0, 5)}
                                                 path="countries"
@@ -126,7 +126,7 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
                                     )}
 
                                     {item.description && (
-                                        <div className={styles.chooseFilm__description}>
+                                        <div className={styles.mainPoster__description}>
                                             {item.description}
                                         </div>
                                     )}
@@ -145,7 +145,7 @@ const ChooseFilm = ({ loadingStatus, film }: IChooseFilm) => {
         return <div>Error</div>;
     }
 
-    return <>{chooseFilmList}</>;
+    return <>{mainPosterList}</>;
 };
 
-export default ChooseFilm;
+export default MainPoster;
