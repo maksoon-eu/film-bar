@@ -1,12 +1,6 @@
 .filmInfo {
     margin-top: 150px;
 
-    &__row {
-        text-align: left;
-        vertical-align: center;
-        height: 70px;
-    }
-
     &__table {
         width: 100%;
 
@@ -18,15 +12,5 @@
     &__tables {
         display: flex;
         justify-content: space-between;
-    }
-
-    &__title {
-        font-weight: var(--font-weight-l);
-        font-size: var(--font-size-l);
-        color: var(--font-color-optional);
-    }
-
-    &__text {
-        max-width: 100px;
     }
 }

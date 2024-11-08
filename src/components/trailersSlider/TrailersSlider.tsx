@@ -1,9 +1,9 @@
 import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useAppSelector } from '../../hooks/selector.hook';
-import { selectTrailers } from '../../store/features/featureTrailers/featureTrailersSelectors';
+import { selectTrailers } from "../../store/features/trailers/selectors/featureTrailersSelectors";
 import { useEffect, useMemo } from 'react';
-import { getTrailers } from '../../service/trailersService';
-import { sliderSettingsTrailers } from "../../settings/sliderSettings";
+import { getTrailers } from '../../store/features/trailers/service/trailersService';
+import { sliderSettingsTrailers } from '../../settings/sliderSettings';
 
 import Slider from 'react-slick';
 import TrailersSliderItem from '../trailersSliderItem/TrailersSliderItem';

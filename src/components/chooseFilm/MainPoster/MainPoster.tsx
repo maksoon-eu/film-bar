@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { IFilm } from '../../../store/features/featureFilm/featureFilmType';
+import { IFilm } from "../../../store/features/film/types/featureFilmType";
 import { LoadingStatusType, Rating } from '../../../types/types';
 import { findKey } from '../../../utils/findKey';
 

@@ -1,5 +1,5 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { IFilmSlider } from '../../store/features/featureFilmsSliderNew/featureFilmsSliderNewTypes';
+import { IFilmSlider } from '../../store/features/filmsSliderNew/types/featureFilmsSliderNewTypes';
 import { Link } from 'react-router-dom';
 import { getRatingBg } from '../../utils/ratingBg';
 import { lengthOfWatch } from '../../utils/lengthOfWatch';

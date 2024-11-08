@@ -1,9 +1,7 @@
-import { Video } from "../types/types";
+import { Video } from '../types/types';
 
 export const getFilteredTrailer = (trailers: Video[]) => {
-    let filteredTrailer = trailers.find((trailer) =>
-        /[А-Яа-яЁё]/.test(trailer.name)
-    );
+    let filteredTrailer = trailers.find((trailer) => /[А-Яа-яЁё]/.test(trailer.name));
 
     if (!filteredTrailer) {
         filteredTrailer =
@@ -12,9 +10,7 @@ export const getFilteredTrailer = (trailers: Video[]) => {
                     trailer.name.toLowerCase().includes('official trailer') &&
                     !/\d/.test(trailer.name)
             ) ||
-            trailers.find((trailer) =>
-                trailer.name.toLowerCase().includes('official trailer')
-            );
+            trailers.find((trailer) => trailer.name.toLowerCase().includes('official trailer'));
     }
 
     return filteredTrailer || trailers[0];

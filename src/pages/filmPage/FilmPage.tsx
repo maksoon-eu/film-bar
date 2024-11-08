@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom';
 import { useAppSelector } from '../../hooks/selector.hook';
-import { selectFilm } from '../../store/features/featureFilm/featureFilmSelector';
+import { selectFilm } from '../../store/features/film/selectors/getFilm';
 import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useEffect } from 'react';
-import { getFilm } from '../../service/filmService';
+import { getFilm } from '../../store/features/film/service/filmService';
 
 import ChooseFilm from '../../components/chooseFilm/MainPoster/MainPoster';
 import FilmPlayer from '../../components/filmPlayer/FilmPlayer';

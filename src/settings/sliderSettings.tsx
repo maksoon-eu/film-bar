@@ -1,4 +1,4 @@
-import { NextArrow, PrevArrow } from '../components/arrows/Arrows';
+import { NextArrow, PrevArrow } from '../shared/arrows/Arrows';
 
 const settings = {
     dots: false,

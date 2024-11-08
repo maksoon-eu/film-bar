@@ -3,19 +3,19 @@ import Slider from 'react-slick';
 import { LoadingStatusType } from '../../types/types';
 import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useAppSelector } from '../../hooks/selector.hook';
-import { RootState } from '../../store/store';
 import { AsyncThunk } from '@reduxjs/toolkit';
-import { IFilmSlider } from '../../store/features/featureFilmsSliderNew/featureFilmsSliderNewTypes';
-import { sliderSettingsAssets } from "../../settings/sliderSettings";
+import { IFilmSlider } from '../../store/features/filmsSliderNew/types/featureFilmsSliderNewTypes';
+import { sliderSettingsAssets } from '../../settings/sliderSettings';
 
 import FilmsSliderItem from '../filmsSliderItem/FilmsSliderItem';
 import SkeletonFilmsSlider from '../../shared/skeleton/SkeletonFilmsSlider';
 
 import styles from './filmsSlider.module.scss';
+import { StateSchema } from "../../store/config/StateSchema";
 
 interface FilmsSliderProps {
     title: string;
-    selector: (state: RootState) => { loadingStatus: LoadingStatusType; data: IFilmSlider[] };
+    selector: (state: StateSchema) => { loadingStatus: LoadingStatusType; data: IFilmSlider[] };
     fetchData: AsyncThunk<IFilmSlider[], void, { rejectValue: string }>;
 }
 

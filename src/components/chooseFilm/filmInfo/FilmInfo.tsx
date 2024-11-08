@@ -1,11 +1,12 @@
-import React, { useCallback, useMemo } from 'react';
-import { IFilm } from '../../../store/features/featureFilm/featureFilmType';
+import { useCallback, useMemo } from 'react';
+import { IFilm } from "../../../store/features/film/types/featureFilmType";
 import { LoadingStatusType } from '../../../types/types';
 import { capitalizeFirstLetter } from '../../../utils/capitalizeFirstLetter';
 import { formatDate } from '../../../utils/transformDate';
 import { statusTranslation } from '../../../utils/statusTranslation';
 
 import SkeletonFilmInfo from '../../../shared/skeleton/SkeletonFilmInfo';
+import FilmTableRow from '../filmTableRow/FilmTableRow';
 
 import styles from './filmInfo.module.scss';
 
@@ -33,18 +34,21 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                 className={`${styles.filmInfo__table} ${styles.filmInfo__table_left}`}
                 key={filmItem.id}>
                 <tbody>
-                    <TableRow label="Год" value={filmItem.year ? `${filmItem.year} г.` : '...'} />
-                    <TableRow
+                    <FilmTableRow
+                        label="Год"
+                        value={filmItem.year ? `${filmItem.year} г.` : '...'}
+                    />
+                    <FilmTableRow
                         label="Страны"
                         value={
                             filmItem.countries?.map((country) => country.name).join(', ') || '...'
                         }
                     />
-                    <TableRow
+                    <FilmTableRow
                         label="Жанры"
                         value={filmItem.genres?.map((genre) => genre.name).join(', ') || '...'}
                     />
-                    <TableRow
+                    <FilmTableRow
                         label={filmItem.typeNumber === 2 ? 'Длительность серии' : 'Длительность'}
                         value={
                             filmItem.movieLength
@@ -54,7 +58,7 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                                 : '...'
                         }
                     />
-                    <TableRow
+                    <FilmTableRow
                         label={filmItem.typeNumber === 2 ? 'Завершенность' : 'Бюджет'}
                         value={
                             filmItem.status && filmItem.typeNumber === 2
@@ -64,7 +68,7 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                                 : '...'
                         }
                     />
-                    <TableRow
+                    <FilmTableRow
                         label="Сборы в мире"
                         value={
                             filmItem.fees?.world?.value
@@ -72,7 +76,7 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                                 : '...'
                         }
                     />
-                    <TableRow
+                    <FilmTableRow
                         label="Премьера в мире"
                         value={filmItem.premiere ? formatDate(filmItem.premiere.world) : '...'}
                     />
@@ -86,7 +90,7 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
         <table className={styles.filmInfo__table}>
             <tbody>
                 {personList.map((profession) => (
-                    <TableRow
+                    <FilmTableRow
                         key={profession}
                         label={capitalizeFirstLetter(profession)}
                         value={renderProfession(profession)}
@@ -95,13 +99,6 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
             </tbody>
         </table>
     );
-
-    const TableRow = React.memo(({ label, value }: { label: string; value: React.ReactNode }) => (
-        <tr className={styles.filmInfo__row}>
-            <th className={styles.filmInfo__title}>{label}</th>
-            <td className={styles.filmInfo__text}>{value}</td>
-        </tr>
-    ));
 
     const filmInfoList = useMemo(
         () =>

@@ -1,6 +1,6 @@
 import { LoadingStatusType, Rating } from '../../../types/types';
 import { getFilteredTrailer } from '../../../utils/getFilteredTrailer';
-import { IFilm } from '../../../store/features/featureFilm/featureFilmType';
+import { IFilm } from "../../../store/features/film/types/featureFilmType";
 import { findKey } from '../../../utils/findKey';
 import { useMemo } from 'react';
 

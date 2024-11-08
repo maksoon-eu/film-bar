@@ -1,0 +1,17 @@
+.filmTableRow {
+    &__item {
+        text-align: left;
+        vertical-align: center;
+        height: 70px;
+
+        &_title {
+            font-weight: var(--font-weight-l);
+            font-size: var(--font-size-l);
+            color: var(--font-color-optional);
+        }
+
+        &_text {
+            max-width: 100px;
+        }
+    }
+}

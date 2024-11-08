@@ -1,5 +1,5 @@
-import { setForbiddenError } from '../store/globalStore';
-import { AppDispatch } from '../store/store'; // Импорт AppDispatch
+import { setForbiddenError } from '../store/global/globalStore';
+import { AppDispatch } from "../store/config/StateSchema";
 
 type HttpRequestMethods = 'GET' | 'POST' | 'PATCH' | 'DELETE';
 
@@ -12,7 +12,7 @@ interface useHttpProps {
     method?: HttpRequestMethods;
     body?: string | null;
     headers?: HTTPHeaders;
-    dispatch: AppDispatch; // Используем правильный тип для dispatch
+    dispatch: AppDispatch;
 }
 
 export const request = async ({
@@ -33,7 +33,7 @@ export const request = async ({
             if (response.status === 403) {
                 dispatch(setForbiddenError());
             }
-            throw new Error(`HTTP error! status: ${response.status}`);
+            throw new Error(`Request error! Status: ${response.status}`);
         }
 
         const data = await response.json();

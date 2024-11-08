@@ -1,8 +1,13 @@
 import { RefObject, useEffect, useMemo } from 'react';
 import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useAppSelector } from '../../hooks/selector.hook';
-import { selectFilmsSearch } from '../../store/features/featureFilmsSearch/featureFilmsSearchSelector';
-import { getFilmsSearch } from '../../service/filmsSearchService';
+import { selectFilmsSearchFilms } from '../../store/features/filmsSearch/selectors/selectFilmsSearchFilms';
+import DynamicModuleLoader, {
+    ReducerList,
+} from '../../shared/dynamicModuleLoader/DynamicModuleLoader';
+import { filmsSearchReducer } from '../../store/features/filmsSearch/slice/featureFilmsSearchSlice';
+import { selectFilmsSearchLoading } from '../../store/features/filmsSearch/selectors/selectFilmsSearchLoading';
+import { getFilmsSearch } from '../../store/features/filmsSearch/service/filmsSearchService';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { findKey } from '../../utils/findKey';
 import { Rating } from '../../types/types';
@@ -19,29 +24,27 @@ import styles from './modalSearch.module.scss';
 
 interface ModalSearchProps {
     inputSearch: string;
-    isOpenModal: boolean;
     closeHandler: () => void;
     clearHandler: () => void;
     refModal: RefObject<HTMLDivElement>;
 }
 
-const ModalSearch = ({
-    inputSearch,
-    isOpenModal,
-    closeHandler,
-    clearHandler,
-    refModal,
-}: ModalSearchProps) => {
-    const dispatch = useAppDispatch();
-    const { filmsSearch, loadingStatus } = useAppSelector(selectFilmsSearch);
+const initialReducers: ReducerList = {
+    filmsSearch: filmsSearchReducer,
+};
 
-    useModal({ isOpenModal, closeHandler, refModal });
+const ModalSearch = ({ inputSearch, closeHandler, clearHandler, refModal }: ModalSearchProps) => {
+    const dispatch = useAppDispatch();
+    const filmsSearch = useAppSelector(selectFilmsSearchFilms);
+    const loadingStatus = useAppSelector(selectFilmsSearchLoading);
+
+    useModal({ isOpenModal: true, closeHandler, refModal });
 
     useEffect(() => {
-        if ((inputSearch.trim() || inputSearch.length === 0) && isOpenModal) {
+        if (inputSearch.trim() || inputSearch.length === 0) {
             dispatch(getFilmsSearch(inputSearch));
         }
-    }, [dispatch, inputSearch, isOpenModal]);
+    }, [dispatch, inputSearch]);
 
     const filmsSearchList = useMemo(() => {
         return filmsSearch.map((film) => {
@@ -104,8 +107,8 @@ const ModalSearch = ({
     }, [filmsSearch]);
 
     return (
-        <div className={styles.modalSearch}>
-            {isOpenModal && (
+        <DynamicModuleLoader reducers={initialReducers}>
+            <div className={styles.modalSearch}>
                 <div className={styles.modalSearch__list}>
                     {loadingStatus === 'loading' ? (
                         <Loader />
@@ -117,8 +120,8 @@ const ModalSearch = ({
                         filmsSearchList
                     )}
                 </div>
-            )}
-        </div>
+            </div>
+        </DynamicModuleLoader>
     );
 };
 

@@ -1,3 +1,5 @@
+import { Action, AnyAction, Reducer } from '@reduxjs/toolkit';
+
 export type LoadingStatusType = 'idle' | 'loading' | 'error';
 
 export interface Video {

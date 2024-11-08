@@ -1,9 +1,9 @@
-import { selectFilmsSliderNew } from '../../store/features/featureFilmsSliderNew/featureFilmsSliderNewSelectors';
-import { getFilmsSliderNew } from '../../service/filmsSliderNewService';
-import { selectFilmsSliderPopular } from '../../store/features/featureFilmsSliderPopular/featureFilmsSliderPopularSelectors';
-import { getFilmsSliderPopular } from '../../service/filmsSliderPopularService';
-import { selectSeries } from '../../store/features/featureSeries/featureSeriesSelector';
-import { getSeries } from '../../service/seriesService';
+import { selectFilmsSliderNew } from '../../store/features/filmsSliderNew/selectors/featureFilmsSliderNewSelectors';
+import { getFilmsSliderNew } from '../../store/features/filmsSliderNew/service/filmsSliderNewService';
+import { selectFilmsSliderPopular } from '../../store/features/filmsSliderPopular/selectors/featureFilmsSliderPopularSelectors';
+import { getFilmsSliderPopular } from '../../store/features/filmsSliderPopular/service/filmsSliderPopularService';
+import { selectSeries } from "../../store/features/series/selectors/featureSeriesSelector";
+import { getSeries } from '../../store/features/series/service/seriesService';
 
 import MainSlider from '../../components/mainSlider/MainSlider';
 import GenreSlider from '../../components/genresSlider/GenresSlider';

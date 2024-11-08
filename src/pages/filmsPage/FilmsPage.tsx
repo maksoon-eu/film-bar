@@ -1,9 +1,11 @@
+import FilmsCatalog from '../../components/filmsCatalog/FilmsCatalog';
+
 const FilmsPage = () => {
     return (
         <>
-            FilmsPage
+            <FilmsCatalog />
         </>
-    )
-}
+    );
+};
 
 export default FilmsPage;

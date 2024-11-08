@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useModal } from '../../hooks/modal.hook';
 
-import Portal from '../Portal/Portal';
+import Portal from '../portal/Portal';
 
 import styles from './modal.module.scss';
 

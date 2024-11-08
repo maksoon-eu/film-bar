@@ -1,4 +1,4 @@
-import { IFilm } from '../../store/features/featureFilm/featureFilmType';
+import { IFilm } from "../../store/features/film/types/featureFilmType";
 import { LoadingStatusType } from '../../types/types';
 import { useMemo } from 'react';
 import { sliderSettingsAssets } from '../../settings/sliderSettings';

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { getRatingBg } from '../../utils/ratingBg';
-import { IFilm } from '../../store/features/featureFilm/featureFilmType';
+import { IFilm } from "../../store/features/film/types/featureFilmType";
 
 import loader from '../../assets/loader/loader.svg';
 

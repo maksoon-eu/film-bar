@@ -1,9 +1,9 @@
 import { useAppSelector } from '../../hooks/selector.hook';
-import { selectGenres } from '../../store/features/featureGenres/featureGenresSelectors';
+import { selectGenres } from "../../store/features/genres/selectors/featureGenresSelectors";
 import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useEffect, useMemo } from 'react';
-import { getGenres } from '../../service/genresService';
-import { sliderSettingsGenres } from "../../settings/sliderSettings";
+import { getGenres } from '../../store/features/genres/service/genresService';
+import { sliderSettingsGenres } from '../../settings/sliderSettings';
 
 import Slider from 'react-slick';
 import SkeletonGenresSlider from '../../shared/skeleton/SkeletonGenresSlider';

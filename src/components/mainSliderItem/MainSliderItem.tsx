@@ -1,4 +1,4 @@
-import { IFilms } from '../../store/features/featureFilms/featureFilmsTypes';
+import { IFilms } from "../../store/features/films/types/featureFilmsTypes";
 import { findKey } from '../../utils/findKey';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';

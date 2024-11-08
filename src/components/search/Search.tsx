@@ -1,6 +1,5 @@
-import { useCallback, useRef, useState } from 'react';
-
-import ModalSearch from '../modalSearch/modalSearch';
+import { Suspense, useCallback, useRef, useState } from 'react';
+import { ModalSearchAsync } from '../modalSearch/ModalSearch.async';
 
 import styles from './search.module.scss';
 
@@ -58,14 +57,15 @@ const Search = () => {
                     </svg>
                 </div>
             </div>
-
-            <ModalSearch
-                inputSearch={inputSearch}
-                isOpenModal={isOpenModal}
-                closeHandler={closeHandler}
-                clearHandler={clearHandler}
-                refModal={refModal}
-            />
+            {isOpenModal &&
+            <Suspense fallback="">
+                <ModalSearchAsync
+                    inputSearch={inputSearch}
+                    closeHandler={closeHandler}
+                    clearHandler={clearHandler}
+                    refModal={refModal}
+                />
+            </Suspense>}
         </div>
     );
 };
