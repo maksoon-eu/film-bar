@@ -27,6 +27,10 @@ export const sliderSettingsAssets = {
     prevArrow: <PrevArrow />,
 };
 
+export const sliderSettingsAsync = {
+    lazyLoad: 'ondemand' as const,
+};
+
 export const sliderSettingsGenres = {
     ...sliderSettingsAssets,
     slidesToShow: 5,

@@ -1,6 +1,4 @@
-import { Action, AnyAction, Reducer } from '@reduxjs/toolkit';
-
-export type LoadingStatusType = 'idle' | 'loading' | 'error';
+export type LoadingStatusType = 'idle' | 'loading' | 'error' | 'update';
 
 export interface Video {
     url: string;
@@ -26,3 +24,5 @@ export interface Rating {
 export interface NameItem {
     name: string;
 }
+
+export type Path = 'genres' | 'countries';

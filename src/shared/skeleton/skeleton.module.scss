@@ -37,7 +37,7 @@
         }
     }
 
-    &__colum {
+    &__column {
         display: flex;
         flex-direction: column;
     }
@@ -88,7 +88,7 @@
 }
 
 .skeletonFilms {
-    .skeleton__colum {
+    .skeleton__column {
         margin: 5px 0;
     }
 
@@ -164,6 +164,16 @@
         overflow: hidden;
         position: relative;
     }
+}
+
+.skeletonFilmsCatalog {
+    margin-top: 0;
+    flex-wrap: wrap;
+    gap: 50px;
+    row-gap: 70px;
+    justify-content: space-between;
+    padding: 0 15px;
+    padding-top: 200px;
 }
 
 .skeletonWave {

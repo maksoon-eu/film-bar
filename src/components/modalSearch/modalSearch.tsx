@@ -9,7 +9,7 @@ import { filmsSearchReducer } from '../../store/features/filmsSearch/slice/featu
 import { selectFilmsSearchLoading } from '../../store/features/filmsSearch/selectors/selectFilmsSearchLoading';
 import { getFilmsSearch } from '../../store/features/filmsSearch/service/filmsSearchService';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { findKey } from '../../utils/findKey';
+import { findKey } from '../../utils/ui/findKey';
 import { Rating } from '../../types/types';
 import { useModal } from '../../hooks/modal.hook';
 import { Link } from 'react-router-dom';

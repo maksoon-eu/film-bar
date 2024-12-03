@@ -14,7 +14,7 @@ const MainPage = () => {
     return (
         <>
             <MainSlider />
-            <div className="content-page">
+            <div className="content__page">
                 <GenreSlider />
                 <FilmsSlider
                     title="Новые фильмы"

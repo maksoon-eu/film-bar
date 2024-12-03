@@ -1,5 +1,5 @@
-import { IFilms } from "../../store/features/films/types/featureFilmsTypes";
-import { findKey } from '../../utils/findKey';
+import { IFilmsSliderMain } from '../../store/features/filmsSliderMain/types/featureFilmsSliderMainTypes';
+import { findKey } from '../../utils/ui/findKey';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ import loader from '../../assets/loader/loader.svg';
 import styles from './mainSliderItem.module.scss';
 
 interface SliderFilmItemProps {
-    film: IFilms;
+    film: IFilmsSliderMain;
 }
 
 const MainSliderItem = ({ film }: SliderFilmItemProps) => {

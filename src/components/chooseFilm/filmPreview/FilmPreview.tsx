@@ -1,15 +1,15 @@
+import { IFilm } from '../../../store/features/film/types/featureFilmType';
+import { getFilteredTrailer } from '../../../utils/ui/getFilteredTrailer';
 import { LoadingStatusType, Rating } from '../../../types/types';
-import { getFilteredTrailer } from '../../../utils/getFilteredTrailer';
-import { IFilm } from "../../../store/features/film/types/featureFilmType";
-import { findKey } from '../../../utils/findKey';
+import { findKey } from '../../../utils/ui/findKey';
 import { useMemo } from 'react';
 
 import SkeletonFilmPreview from '../../../shared/skeleton/SkeletonFilmPreview';
 
 import loader from '../../../assets/loader/loader.svg';
 
-import styles from './filmPreview.module.scss';
 import TrailerPlayer from '../../../shared/trailerPlayer/TrailerPlayer';
+import styles from './filmPreview.module.scss';
 
 interface IFilmPreview {
     film: IFilm[] | [];
@@ -66,21 +66,19 @@ const FilmPreview = ({ film, loadingStatus }: IFilmPreview) => {
             film.map((item) => {
                 const ratingKey =
                     item.rating && findKey<Rating, 'imdb' | 'kp'>(item.rating, ['imdb', 'kp']);
-                const ratingList = ratingKey
-                    ?.filter((rating) => rating.value)
-                    .map((rating) => (
-                        <div key={rating.value} className={styles.filmPreview__stars}>
-                            <div className={styles.filmPreview__stars_name}>
-                                Рейтинг:
-                                <div className={`${styles[`filmPreview__stars_${rating.name}`]}`}>
-                                    {rating.name}
-                                </div>
-                            </div>
-                            <div className={styles.filmPreview__stars_value}>
-                                {ratingStars(rating.value)}
+                const ratingList = ratingKey?.map((rating) => (
+                    <div key={rating.value} className={styles.filmPreview__stars}>
+                        <div className={styles.filmPreview__stars_name}>
+                            Рейтинг:
+                            <div className={`${styles[`filmPreview__stars_${rating.name}`]}`}>
+                                {rating.name}
                             </div>
                         </div>
-                    ));
+                        <div className={styles.filmPreview__stars_value}>
+                            {ratingStars(rating.value)}
+                        </div>
+                    </div>
+                ));
 
                 return (
                     <div key={item.id} className={styles.filmPreview__inner}>

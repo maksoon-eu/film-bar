@@ -5,7 +5,7 @@ interface Image {
     previewUrl?: string;
 }
 
-export interface IFilms {
+export interface IFilmsSliderMain {
     rating: Rating;
     backdrop: Image;
     id: number;
@@ -17,7 +17,7 @@ export interface IFilms {
     logo: Image;
 }
 
-export interface IFilmsSlice {
-    films: IFilms[] | [];
+export interface IFilmsSliderMainSlice {
+    films: IFilmsSliderMain[] | [];
     loadingStatus: LoadingStatusType;
 }

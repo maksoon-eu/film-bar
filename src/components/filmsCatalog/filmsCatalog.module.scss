@@ -1,3 +1,11 @@
 .filmsCatalog {
-    display: block;
+    padding-top: 200px;
+
+    &__inner {
+        display: flex;
+        gap: 50px;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }

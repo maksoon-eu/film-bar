@@ -1,4 +1,4 @@
-import { Video } from '../types/types';
+import { Video } from '../../types/types';
 
 export const getFilteredTrailer = (trailers: Video[]) => {
     let filteredTrailer = trailers.find((trailer) => /[А-Яа-яЁё]/.test(trailer.name));

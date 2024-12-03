@@ -1,23 +1,23 @@
+import { selectFilmsSliderMain } from '../../store/features/filmsSliderMain/selectors/featureFilmsSliderMainSelectors';
+import { getFilmsSliderMain } from '../../store/features/filmsSliderMain/service/filmsSliderMainService';
+import { sliderSettingsMain } from '../../settings/sliderSettings';
 import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useAppSelector } from '../../hooks/selector.hook';
-import { selectFilms } from "../../store/features/films/selectors/featureFilmsSelectors";
-import { getFilms } from '../../store/features/films/service/filmsService';
 import { useEffect, useMemo } from 'react';
-import { sliderSettingsMain } from '../../settings/sliderSettings';
 
-import Slider from 'react-slick';
-import MainSliderItem from '../mainSliderItem/MainSliderItem';
 import SkeletonMainSlider from '../../shared/skeleton/SkeletonMainSlider';
+import MainSliderItem from '../mainSliderItem/MainSliderItem';
+import Slider from 'react-slick';
 
 import styles from './mainSlider.module.scss';
 
 const MainSlider = () => {
     const dispatch = useAppDispatch();
-    const { loadingStatus, films } = useAppSelector(selectFilms);
+    const { loadingStatus, films } = useAppSelector(selectFilmsSliderMain);
 
     useEffect(() => {
         if (!films.length) {
-            dispatch(getFilms());
+            dispatch(getFilmsSliderMain());
         }
     }, [dispatch, films.length]);
 

@@ -1,4 +1,4 @@
-.filmsSliderItem {
+.filmsItem {
     &__slide {
         display: flex;
         justify-content: center;
@@ -19,6 +19,12 @@
             font-weight: var(--font-weight-l);
             color: var(--font-color-optional);
             margin-top: 10px;
+        }
+
+        &_ageRating {
+            font-size: var(--font-size-m);
+            font-weight: var(--font-weight-l);
+            color: var(--font-color-optional);
         }
 
         &_name {
@@ -86,11 +92,11 @@
         &:hover {
             transform: translateY(-5px);
 
-            .filmsSliderItem__item_poster img {
+            .filmsItem__item_poster img {
                 transform: scale(1.05);
             }
 
-            .filmsSliderItem__item_fade {
+            .filmsItem__item_fade {
                 opacity: 1;
             }
         }

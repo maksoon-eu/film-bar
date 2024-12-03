@@ -1,7 +1,7 @@
-import { IFilm } from "../../store/features/film/types/featureFilmType";
+import { IFilm } from '../../store/features/film/types/featureFilmType';
 import { LoadingStatusType } from '../../types/types';
 import { useMemo } from 'react';
-import { sliderSettingsAssets } from '../../settings/sliderSettings';
+import { sliderSettingsAssets, sliderSettingsAsync } from '../../settings/sliderSettings';
 
 import Slider from 'react-slick';
 import ActorsSliderItem from '../actorsSliderItem/ActorsSliderItem';
@@ -31,7 +31,9 @@ const ActorsSlider = ({ film, loadingStatus }: IActorsSlider) => {
                 {actorSliderList && actorSliderList.length && (
                     <div className={styles.actorsSlider}>
                         <div className="title">Актеры</div>
-                        <Slider {...sliderSettingsAssets}>{actorSliderList}</Slider>
+                        <Slider {...{ ...sliderSettingsAssets, ...sliderSettingsAsync}}>
+                            {actorSliderList}
+                        </Slider>
                     </div>
                 )}
             </>

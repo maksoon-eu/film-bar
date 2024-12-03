@@ -1,11 +1,20 @@
-import SkeletonFilms from "./SkeletonFilms";
-import SkeletonTitle from "./SkeletonTitle";
+import SkeletonFilms from './SkeletonFilms';
+import SkeletonTitle from './SkeletonTitle';
 
-const SkeletonFilmsSlider = () => {
+import styles from './skeleton.module.scss';
+
+interface SkeletonFilmsSliderProps {
+    count: number;
+}
+
+const SkeletonFilmsSlider = ({ count }: SkeletonFilmsSliderProps) => {
     return (
         <>
             <SkeletonTitle />
-            <SkeletonFilms />
+            <div
+                className={`${styles.skeletonFilms} ${styles.skeleton} ${styles.skeleton__slider}`}>
+                <SkeletonFilms count={count} />
+            </div>
         </>
     );
 };

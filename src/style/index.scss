@@ -14,11 +14,16 @@ body {
     position: relative;
 }
 
-.content-page {
+.content__page {
     max-width: 1710px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+    position: relative;
+
+    &--max {
+        max-width: 1540px;
+    }
 }
 
 .title {

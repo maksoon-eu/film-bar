@@ -1,5 +1,5 @@
-import { setForbiddenError } from '../store/global/globalStore';
-import { AppDispatch } from "../store/config/StateSchema";
+import { setForbiddenError } from '../../store/global/globalStore';
+import { AppDispatch } from '../../store/config/StateSchema';
 
 type HttpRequestMethods = 'GET' | 'POST' | 'PATCH' | 'DELETE';
 
@@ -27,7 +27,18 @@ export const request = async ({
     dispatch,
 }: useHttpProps): Promise<any> => {
     try {
-        const response = await fetch(url, { method, body, headers });
+        let response;
+        if (process.env.NODE_ENV === 'development') {
+            response = await fetch(url, { method, body });
+
+            await new Promise((res) => {
+                setTimeout(() => {
+                    res(1);
+                }, 1500);
+            });
+        } else {
+            response = await fetch(url, { method, body, headers });
+        }
 
         if (!response.ok) {
             if (response.status === 403) {

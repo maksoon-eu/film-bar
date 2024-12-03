@@ -1,0 +1,26 @@
+.dropdown {
+    &__inner {
+        &_title {
+            font-weight: bold;
+            background-color: var(--background-color-assets);
+            min-width: 150px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            border-radius: 999px;
+        }
+
+        &_list {
+            overflow: scroll;
+            display: none;
+            flex-direction: column;
+            height: 400px;
+            width: 400px;
+            row-gap: 20px;
+
+            &_active {
+                display: flex;
+            }
+        }
+    }
+}

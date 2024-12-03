@@ -1,9 +1,9 @@
 import { useCallback, useMemo } from 'react';
-import { IFilm } from "../../../store/features/film/types/featureFilmType";
+import { IFilm } from '../../../store/features/film/types/featureFilmType';
 import { LoadingStatusType } from '../../../types/types';
-import { capitalizeFirstLetter } from '../../../utils/capitalizeFirstLetter';
-import { formatDate } from '../../../utils/transformDate';
-import { statusTranslation } from '../../../utils/statusTranslation';
+import { capitalizeFirstLetter } from '../../../utils/ui/capitalizeFirstLetter';
+import { formatDate } from '../../../utils/ui/transformDate';
+import { statusTranslation } from '../../../utils/ui/statusTranslation';
 
 import SkeletonFilmInfo from '../../../shared/skeleton/SkeletonFilmInfo';
 import FilmTableRow from '../filmTableRow/FilmTableRow';

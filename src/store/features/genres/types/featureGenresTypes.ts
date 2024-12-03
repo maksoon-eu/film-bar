@@ -1,4 +1,4 @@
-import { LoadingStatusType } from "../../../../types/types";
+import { LoadingStatusType } from '../../../../types/types';
 
 export interface IGenre {
     name: string;

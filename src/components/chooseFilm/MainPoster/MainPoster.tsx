@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { IFilm } from "../../../store/features/film/types/featureFilmType";
+import { IFilm } from '../../../store/features/film/types/featureFilmType';
 import { LoadingStatusType, Rating } from '../../../types/types';
-import { findKey } from '../../../utils/findKey';
+import { findKey } from '../../../utils/ui/findKey';
 
 import AssetsList from '../../../shared/assetsList/AssetsList';
 import PlaceholderImg from '../../../shared/placeholderImg/PlaceholderImg';
@@ -24,9 +24,9 @@ const MainPoster = ({ loadingStatus, film }: IMainPoster) => {
             film.map((item) => {
                 const ratingKey =
                     item.rating && findKey<Rating, 'imdb' | 'kp'>(item.rating, ['imdb', 'kp']);
-                const ratingList = ratingKey
-                    ?.filter((rating) => rating.value)
-                    .map((rating) => <RatingItem key={rating.name} rating={rating} />);
+                const ratingList = ratingKey?.map((rating) => (
+                    <RatingItem key={rating.name} rating={rating} />
+                ));
 
                 return (
                     <div key={item.id} className={styles.mainPoster}>
@@ -87,16 +87,15 @@ const MainPoster = ({ loadingStatus, film }: IMainPoster) => {
                                                 className={styles.mainPoster__logo_img}
                                             />
                                         ) : (
-                                            <>
-                                                <div className={styles.mainPoster__logo_text}>
-                                                    {item.name}
-                                                </div>
-                                            </>
+                                            <div className={styles.mainPoster__logo_text}>
+                                                {item.name}
+                                            </div>
                                         )}
                                         <div className={styles.mainPoster__logo_subtext}>
                                             {item.enName || item.alternativeName}
                                         </div>
                                     </div>
+
                                     <div className={styles.mainPoster__rating}>{ratingList}</div>
 
                                     <div className={styles.mainPoster__assets}>

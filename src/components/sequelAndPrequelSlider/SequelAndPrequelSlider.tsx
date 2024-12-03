@@ -1,11 +1,11 @@
-import { LoadingStatusType } from '../../types/types';
-import { IFilm } from "../../store/features/film/types/featureFilmType";
-import { useMemo } from 'react';
+import { IFilm } from '../../store/features/film/types/featureFilmType';
 import { sliderSettingsAssets } from '../../settings/sliderSettings';
+import { LoadingStatusType } from '../../types/types';
+import { useMemo } from 'react';
 
-import Slider from 'react-slick';
 import SequelAndPrequelSliderItem from '../sequelAndPrequelSliderItem/SequelAndPrequelSliderItem';
 import SkeletonFilmsSlider from '../../shared/skeleton/SkeletonFilmsSlider';
+import Slider from 'react-slick';
 
 import styles from './sequelAndPrequelSlider.module.scss';
 
@@ -33,7 +33,8 @@ const SequelAndPrequelSlider = ({ film, loadingStatus }: ISequelAndPrequelSlider
         () => (
             <>
                 {sequelAndPrequelSliderList?.length === 1 ? (
-                    <div className={`${styles.sequelAndPrequelSlider} ${styles.sequelAndPrequelSlider__one}`}>
+                    <div
+                        className={`${styles.sequelAndPrequelSlider} ${styles.sequelAndPrequelSlider__one}`}>
                         <div className="title">Сиквелы и приквелы</div>
                         {sequelAndPrequelSliderList}
                     </div>
@@ -49,7 +50,7 @@ const SequelAndPrequelSlider = ({ film, loadingStatus }: ISequelAndPrequelSlider
     );
 
     if (loadingStatus === 'loading') {
-        return <SkeletonFilmsSlider />;
+        return <SkeletonFilmsSlider count={4} />;
     } else if (loadingStatus === 'error') {
         return <div>Error</div>;
     }

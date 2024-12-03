@@ -5,7 +5,7 @@ import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useEffect } from 'react';
 import { getFilm } from '../../store/features/film/service/filmService';
 
-import ChooseFilm from '../../components/chooseFilm/MainPoster/MainPoster';
+import ChooseFilm from '../../components/chooseFilm/mainPoster/MainPoster';
 import FilmPlayer from '../../components/filmPlayer/FilmPlayer';
 import FilmInfo from '../../components/chooseFilm/filmInfo/FilmInfo';
 import FilmPreview from '../../components/chooseFilm/filmPreview/FilmPreview';
@@ -35,7 +35,7 @@ const FilmPage = () => {
     return (
         <>
             <ChooseFilm loadingStatus={loadingStatus} film={film} />
-            <div className="content-page">
+            <div className="content__page">
                 <FilmPreview film={film} loadingStatus={loadingStatus} />
                 <FilmInfo film={film} loadingStatus={loadingStatus} />
                 <FilmPlayer

@@ -1,4 +1,4 @@
-import { IFilmSlider } from '../store/features/filmsSliderNew/types/featureFilmsSliderNewTypes';
+import { IFilmSlider } from '../../store/features/filmsSliderNew/types/featureFilmsSliderNewTypes';
 
 const getSeasonLabel = (count: number) => {
     const lastDigit = count % 10;
