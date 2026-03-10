@@ -1,31 +1,64 @@
-FilmBar 🎬
+# FilmBar
 
-Description
-    FilmBar is a modern web application that allows users to explore a wide range of films, built with React, Redux, TypeScript, React Router DOM, SCSS Modules, and Service Workers for a rich, interactive, and caching.
+A web application for browsing films with filtering, search, trailers, and actor information.
 
-Features
-    React: Fast and scalable component-based UI.
-    Redux: Centralized state management for efficient data flow.
-    TypeScript: Strong typing for improved development and maintenance.
-    Service Worker: Enables cache and improved performance.
-    SCSS Modules: Scoped and maintainable styles using modern SCSS practices.
+## Tech Stack
 
-Installation
-    Clone the repository:
-    git clone https://github.com/maksoon-eu/film-bar.git
+- **React 18** — component-based UI
+- **TypeScript** — static typing
+- **Redux Toolkit** — state management with dynamic module loading
+- **React Router DOM v6** — client-side routing with lazy-loaded pages
+- **SCSS Modules** — scoped component styles
+- **Service Workers (Workbox)** — offline caching and performance
+- **react-slick** — carousels and sliders
+- **json-server** — local mock API
 
-Usage
-    Explore various films, navigate through different pages, thanks to the service worker integration.
+## Features
 
-Technologies Used
-    React
-    Redux Toolkit
-    TypeScript
-    SCSS Modules
-    Service Workers
+- Browse films by genre and country with a filter panel
+- Search modal with instant results
+- Film detail page with trailer player, actors slider, sequels/prequels
+- Skeleton loaders for all async content
+- Error boundary and 404 page
+- CI/CD via GitHub Actions (lint + build on every push)
 
-Contributing
-    If you'd like to contribute, please fork the repository, make your changes, and submit a pull request. Contributions are always welcome!
+## Getting Started
 
-License
-    This project is licensed under the MIT License.
+```bash
+# Install dependencies
+npm install
+
+# Start the mock API server (port 5001)
+npm run dev:server
+
+# Start the development server
+npm start
+```
+
+## Scripts
+
+| Command | Description |
+|---|---|
+| `npm start` | Development server |
+| `npm run build` | Production build |
+| `npm run dev:server` | Mock API via json-server |
+| `npm run lint:ts` | Lint TypeScript files |
+| `npm run lint:ts:fix` | Lint and auto-fix TypeScript |
+| `npm run lint:scss` | Lint SCSS files |
+| `npm run lint:scss:fix` | Lint and auto-fix SCSS |
+
+## Project Structure
+
+```
+src/
+├── components/     # Feature components (sliders, filters, player, etc.)
+├── pages/          # Route pages (lazy-loaded via .async.tsx)
+├── shared/         # Reusable UI (Button, Modal, Loader, Skeleton, etc.)
+├── store/          # Redux store and slices
+├── hooks/          # Custom hooks
+└── assets/         # Images (genres, countries, logo)
+```
+
+## License
+
+MIT
