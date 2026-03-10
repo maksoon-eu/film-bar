@@ -17,7 +17,7 @@ export const getSeries = createAsyncThunk<
             });
         } else {
             response = await request({
-                url: `${process.env.REACT_APP_API_BASE_V1_4}movie?page=1&limit=10&selectFields=id&selectFields=name&selectFields=year&selectFields=rating&selectFields=ageRating&selectFields=seasonsInfo&selectFields=genres&selectFields=countries&selectFields=poster&notNullFields=id&notNullFields=name&notNullFields=year&notNullFields=rating.imdb&notNullFields=genres.name&notNullFields=countries.name&notNullFields=poster.url&notNullFields=ageRating&notNullFields=top250&sortField=year&sortField=rating.imdb&sortType=-1&sortType=-1&typeNumber=2`,
+                url: `${process.env.REACT_APP_API_BASE_V1_4}movie?page=1&limit=10&selectFields=id&selectFields=name&selectFields=year&selectFields=rating&selectFields=ageRating&selectFields=genres&selectFields=countries&selectFields=poster&notNullFields=id&notNullFields=name&notNullFields=year&notNullFields=rating.imdb&notNullFields=genres.name&notNullFields=countries.name&notNullFields=poster.url&notNullFields=ageRating&sortField=rating.imdb&sortType=-1&typeNumber=2`,
                 dispatch,
             });
         }

@@ -17,7 +17,7 @@ export const getTrailers = createAsyncThunk<
             });
         } else {
             response = await request({
-                url: `${process.env.REACT_APP_API_BASE_V1_4}movie?page=1&limit=10&selectFields=id&selectFields=name&selectFields=rating&selectFields=poster&selectFields=videos&selectFields=backdrop&notNullFields=id&notNullFields=name&notNullFields=rating.kp&notNullFields=poster.url&notNullFields=videos.trailers.url&sortField=rating.kp&sortType=-1&year=2024`,
+                url: `${process.env.REACT_APP_API_BASE_V1_4}movie?page=1&limit=10&selectFields=id&selectFields=name&selectFields=rating&selectFields=poster&selectFields=videos&selectFields=backdrop&notNullFields=id&notNullFields=name&notNullFields=rating.kp&notNullFields=poster.url&notNullFields=videos.trailers.url&sortField=rating.kp&sortType=-1&year=2025-2026`,
                 dispatch,
             });
         }
