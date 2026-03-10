@@ -116,15 +116,17 @@ const FilmPlayer = ({ filmId, loadingStatus }: IFilmPlayer): JSX.Element | null 
                     </div>
                 </div>
             )}
-            <iframe
-                title="Film Player"
-                src={playerSrc}
-                width="100%"
-                height="100%"
-                style={{ border: 'none' }}
-                allowFullScreen
-                allow="autoplay; fullscreen"
-            />
+            <div className={styles.filmPlayer__iframe}>
+                <iframe
+                    title="Film Player"
+                    src={playerSrc}
+                    width="100%"
+                    height="100%"
+                    style={{ border: 'none' }}
+                    allowFullScreen
+                    allow="autoplay; fullscreen"
+                />
+            </div>
         </div>
     );
 };

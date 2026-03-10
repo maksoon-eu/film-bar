@@ -1,18 +1,21 @@
 .filmPlayer {
     margin-top: 70px;
-    border-radius: 10px;
-    overflow: hidden;
     max-width: 1680px;
     width: 100%;
+}
+
+.filmPlayer__iframe {
+    border-radius: 10px;
+    overflow: hidden;
     height: 945px;
+    width: 100%;
 }
 
 .filmPlayer__controls {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 16px 0;
-    overflow: hidden;
+    margin-bottom: 16px;
 }
 
 .filmPlayer__seasons,
@@ -25,15 +28,15 @@
 .filmPlayer__btn {
     padding: 6px 14px;
     border-radius: 6px;
-    border: 1px solid rgb(255 255 255 / 15%);
+    border: 1px solid #ffffff26;
     background: transparent;
-    color: rgb(255 255 255 / 70%);
+    color: #ffffffb3;
     font-size: 14px;
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
 
     &:hover {
-        background: rgb(255 255 255 / 10%);
+        background: #ffffff1a;
         color: #fff;
     }
 

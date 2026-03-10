@@ -39,7 +39,7 @@ const FilmPage = () => {
                 <FilmInfo film={film} loadingStatus={loadingStatus} />
                 <FilmPlayer
                     loadingStatus={loadingStatus}
-                    filmId={film[0]?.id}
+                    filmId={id as string}
                     backdropSrc={film[0]?.backdrop?.url}
                 />
                 <ActorsSlider film={film} loadingStatus={loadingStatus} />
