@@ -28,6 +28,7 @@ const DynamicModuleLoader = ({ children, reducers }: DynamicModuleLoaderProps) =
                 dispatch({ type: `@DESTROY ${name} reducer` });
             });
         };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return <>{children}</>;

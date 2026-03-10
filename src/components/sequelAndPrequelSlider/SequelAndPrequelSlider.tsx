@@ -46,7 +46,7 @@ const SequelAndPrequelSlider = ({ film, loadingStatus }: ISequelAndPrequelSlider
                 ) : null}
             </>
         ),
-        [film]
+        [sequelAndPrequelSliderList, settings]
     );
 
     if (loadingStatus === 'loading') {

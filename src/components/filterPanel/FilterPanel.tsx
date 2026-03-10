@@ -23,7 +23,7 @@ const FilterPanel = () => {
         if (!countries.length) {
             dispatch(getCountries());
         }
-    }, [dispatch]);
+    }, [dispatch, genres.length, countries.length]);
 
     return (
         <div className={styles.filterPanel}>

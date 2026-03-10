@@ -19,7 +19,7 @@ const FilmPage = () => {
 
     useEffect(() => {
         dispatch(getFilm(id as string));
-    }, [id]);
+    }, [id, dispatch]);
 
     useEffect(() => {
         if (film.length) {

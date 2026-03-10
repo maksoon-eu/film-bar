@@ -35,7 +35,7 @@ const Dropdown = ({ title, list, path, filter, loadingStatus, styleAsset }: Drop
     const changeFilter = useCallback((filter: IFilters) => {
         dispatch(filmsCatalogActions.changeFilter(filter));
         dispatch(getFilmsCatalog());
-    }, []);
+    }, [dispatch]);
 
     return (
         <div className={styles.dropdown}>

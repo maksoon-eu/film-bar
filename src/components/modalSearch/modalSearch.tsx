@@ -104,7 +104,7 @@ const ModalSearch = ({ inputSearch, closeHandler, clearHandler, refModal }: Moda
                 </Link>
             );
         });
-    }, [filmsSearch]);
+    }, [filmsSearch, clearHandler, closeHandler]);
 
     return (
         <DynamicModuleLoader reducers={initialReducers}>

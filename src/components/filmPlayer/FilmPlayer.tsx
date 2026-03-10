@@ -26,6 +26,7 @@ const FilmPlayer = ({ filmId, loadingStatus }: IFilmPlayer): JSX.Element | null 
     return (
         <div className={styles.filmPlayer}>
             <iframe
+                title="Film Player"
                 src={src}
                 width="100%"
                 height="100%"
