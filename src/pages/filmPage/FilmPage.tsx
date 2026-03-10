@@ -9,7 +9,7 @@ import FilmInfo from '../../components/chooseFilm/filmInfo/FilmInfo';
 import FilmPreview from '../../components/chooseFilm/filmPreview/FilmPreview';
 import ActorsSlider from '../../components/actorsSlider/ActorsSlider';
 import SequelAndPrequelSlider from '../../components/sequelAndPrequelSlider/SequelAndPrequelSlider';
-import MainPoster from "../../components/chooseFilm/mainPoster/MainPoster";
+import MainPoster from '../../components/chooseFilm/mainPoster/MainPoster';
 
 const FilmPage = () => {
     const { id } = useParams();
