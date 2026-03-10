@@ -3,7 +3,7 @@ import { getFilmsCatalog } from '../../store/features/filmsCatalog/service/films
 import { usePagination } from '../../hooks/pagination.hook';
 import { useAppDispatch } from '../../hooks/dispatch.hook';
 import { useAppSelector } from '../../hooks/selector.hook';
-import { useEffect, useMemo, useRef } from 'react';
+import { useCallback, useEffect, useMemo, useRef } from 'react';
 
 import SkeletonFilmsCatalog from '../../shared/skeleton/SkeletonFilmsCatalog';
 import FilmsItem from '../filmsItem/FilmsItem';
@@ -16,6 +16,10 @@ const FilmsCatalog = () => {
     const dispatch = useAppDispatch();
     const { filmsCatalog, loadingStatus } = useAppSelector(selectFilmsCatalog);
 
+    const fetchFilmsCatalog = useCallback(() => {
+        dispatch(getFilmsCatalog());
+    }, [dispatch]);
+
     usePagination({
         ref: filmsCatalogRef,
         loadingStatus: loadingStatus,
@@ -23,15 +27,11 @@ const FilmsCatalog = () => {
         rootMargin: '500px',
     });
 
-    function fetchFilmsCatalog() {
-        dispatch(getFilmsCatalog());
-    }
-
     useEffect(() => {
         if (filmsCatalog.length === 0) {
             fetchFilmsCatalog();
         }
-    }, [dispatch]);
+    }, [dispatch, fetchFilmsCatalog, filmsCatalog.length]);
 
     const filmsCatalogList = useMemo(() => {
         return filmsCatalog.map((film) => <FilmsItem key={film.id} film={film} />);

@@ -23,11 +23,11 @@ const SequelAndPrequelSlider = ({ film, loadingStatus }: ISequelAndPrequelSlider
         [film]
     );
 
-    const settings = {
+    const settings = useMemo(() => ({
         ...sliderSettingsAssets,
         slidesToShow:
             (sequelAndPrequelSliderList?.length ?? 0) > 4 ? 4 : sequelAndPrequelSliderList?.length,
-    };
+    }), [sequelAndPrequelSliderList]);
 
     const sequelAndPrequelList = useMemo(
         () => (

@@ -38,7 +38,7 @@ const ActorsSlider = ({ film, loadingStatus }: IActorsSlider) => {
                 )}
             </>
         ),
-        [film]
+        [actorSliderList]
     );
 
     if (loadingStatus === 'loading') {

@@ -86,7 +86,7 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
         []
     );
 
-    const renderPeopleTable = (personList: Array<string>) => (
+    const renderPeopleTable = useCallback((personList: Array<string>) => (
         <table className={styles.filmInfo__table}>
             <tbody>
                 {personList.map((profession) => (
@@ -98,7 +98,7 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                 ))}
             </tbody>
         </table>
-    );
+    ), [renderProfession]);
 
     const filmInfoList = useMemo(
         () =>
@@ -119,7 +119,7 @@ const FilmInfo = ({ film, loadingStatus }: IFilmInfo) => {
                     </div>
                 </div>
             )),
-        [film]
+        [film, renderFilmTable, renderPeopleTable]
     );
 
     if (loadingStatus === 'loading') {
